@@ -1,0 +1,729 @@
+{
+  "task_type": "code_breaker_strategy_switch",
+  "description": "Code Breaker problems (4 positions, 6 colours, repeats allowed) where guessing a non-candidate distinguisher is strictly better than guessing any candidate code.",
+  "colours": [
+    "R",
+    "G",
+    "B",
+    "Y",
+    "O",
+    "P"
+  ],
+  "n_positions": 4,
+  "problems": [
+    {
+      "secret": "GROP",
+      "secret_has_repeats": false,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 312
+        },
+        {
+          "guess": "GYOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 8
+        }
+      ],
+      "candidates_at_switch": [
+        "BYOP",
+        "GBOP",
+        "GROP",
+        "GYGP",
+        "GYOG",
+        "GYOO",
+        "GYPP",
+        "GYYP"
+      ],
+      "n_candidates": 8,
+      "best_candidate_guess": {
+        "code": "GYGP",
+        "info_bits": 1.75,
+        "top_3": [
+          {
+            "code": "GYGP",
+            "info_bits": 1.75
+          },
+          {
+            "code": "GBOP",
+            "info_bits": 1.549
+          },
+          {
+            "code": "GYOG",
+            "info_bits": 1.549
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "BYPY",
+        "info_bits": 2.75,
+        "top_3": [
+          {
+            "code": "BYPY",
+            "info_bits": 2.75
+          },
+          {
+            "code": "RGOG",
+            "info_bits": 2.5
+          },
+          {
+            "code": "RBGO",
+            "info_bits": 2.5
+          }
+        ]
+      },
+      "info_gap_bits": 1.0
+    },
+    {
+      "secret": "GBOP",
+      "secret_has_repeats": false,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 312
+        },
+        {
+          "guess": "GYOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 8
+        }
+      ],
+      "candidates_at_switch": [
+        "BYOP",
+        "GBOP",
+        "GROP",
+        "GYGP",
+        "GYOG",
+        "GYOO",
+        "GYPP",
+        "GYYP"
+      ],
+      "n_candidates": 8,
+      "best_candidate_guess": {
+        "code": "GYGP",
+        "info_bits": 1.75,
+        "top_3": [
+          {
+            "code": "GYGP",
+            "info_bits": 1.75
+          },
+          {
+            "code": "GBOP",
+            "info_bits": 1.549
+          },
+          {
+            "code": "GYOG",
+            "info_bits": 1.549
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "BYPY",
+        "info_bits": 2.75,
+        "top_3": [
+          {
+            "code": "BYPY",
+            "info_bits": 2.75
+          },
+          {
+            "code": "RGOG",
+            "info_bits": 2.5
+          },
+          {
+            "code": "RBGO",
+            "info_bits": 2.5
+          }
+        ]
+      },
+      "info_gap_bits": 1.0
+    },
+    {
+      "secret": "GYOO",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 312
+        },
+        {
+          "guess": "GYOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 8
+        }
+      ],
+      "candidates_at_switch": [
+        "BYOP",
+        "GBOP",
+        "GROP",
+        "GYGP",
+        "GYOG",
+        "GYOO",
+        "GYPP",
+        "GYYP"
+      ],
+      "n_candidates": 8,
+      "best_candidate_guess": {
+        "code": "GYGP",
+        "info_bits": 1.75,
+        "top_3": [
+          {
+            "code": "GYGP",
+            "info_bits": 1.75
+          },
+          {
+            "code": "GBOP",
+            "info_bits": 1.549
+          },
+          {
+            "code": "GYOG",
+            "info_bits": 1.549
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "BYPY",
+        "info_bits": 2.75,
+        "top_3": [
+          {
+            "code": "BYPY",
+            "info_bits": 2.75
+          },
+          {
+            "code": "RGOG",
+            "info_bits": 2.5
+          },
+          {
+            "code": "RBGO",
+            "info_bits": 2.5
+          }
+        ]
+      },
+      "info_gap_bits": 1.0
+    },
+    {
+      "secret": "BYOP",
+      "secret_has_repeats": false,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 312
+        },
+        {
+          "guess": "GYOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 8
+        }
+      ],
+      "candidates_at_switch": [
+        "BYOP",
+        "GBOP",
+        "GROP",
+        "GYGP",
+        "GYOG",
+        "GYOO",
+        "GYPP",
+        "GYYP"
+      ],
+      "n_candidates": 8,
+      "best_candidate_guess": {
+        "code": "GYGP",
+        "info_bits": 1.75,
+        "top_3": [
+          {
+            "code": "GYGP",
+            "info_bits": 1.75
+          },
+          {
+            "code": "GBOP",
+            "info_bits": 1.549
+          },
+          {
+            "code": "GYOG",
+            "info_bits": 1.549
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "BYPY",
+        "info_bits": 2.75,
+        "top_3": [
+          {
+            "code": "BYPY",
+            "info_bits": 2.75
+          },
+          {
+            "code": "RGOG",
+            "info_bits": 2.5
+          },
+          {
+            "code": "RBGO",
+            "info_bits": 2.5
+          }
+        ]
+      },
+      "info_gap_bits": 1.0
+    },
+    {
+      "secret": "GGBR",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            2,
+            1
+          ],
+          "feedback_display": "2 exact, 1 colour",
+          "remaining_candidates": 48
+        },
+        {
+          "guess": "RBOB",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "GGBR",
+        "GOBY",
+        "OGRY",
+        "PGBR",
+        "PRBY",
+        "YGBO",
+        "YRBY"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOBY",
+        "info_bits": 2.128,
+        "top_3": [
+          {
+            "code": "GOBY",
+            "info_bits": 2.128
+          },
+          {
+            "code": "YGBO",
+            "info_bits": 2.128
+          },
+          {
+            "code": "PRBY",
+            "info_bits": 2.128
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "OGYP",
+        "info_bits": 2.807,
+        "top_3": [
+          {
+            "code": "OGYP",
+            "info_bits": 2.807
+          },
+          {
+            "code": "OPGY",
+            "info_bits": 2.807
+          },
+          {
+            "code": "PGYO",
+            "info_bits": 2.807
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    },
+    {
+      "secret": "GOOO",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            1
+          ],
+          "feedback_display": "0 exact, 1 colour",
+          "remaining_candidates": 152
+        },
+        {
+          "guess": "GOOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "BOOP",
+        "GOGP",
+        "GOOG",
+        "GOOO",
+        "GOPP",
+        "GPOP",
+        "YOOP"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOGP",
+        "info_bits": 1.842,
+        "top_3": [
+          {
+            "code": "GOGP",
+            "info_bits": 1.842
+          },
+          {
+            "code": "GOPP",
+            "info_bits": 1.664
+          },
+          {
+            "code": "GPOP",
+            "info_bits": 1.664
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "GGPB",
+        "info_bits": 2.522,
+        "top_3": [
+          {
+            "code": "GGPB",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GGPY",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GBPG",
+            "info_bits": 2.522
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    },
+    {
+      "secret": "BOOP",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            1
+          ],
+          "feedback_display": "0 exact, 1 colour",
+          "remaining_candidates": 152
+        },
+        {
+          "guess": "GOOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "BOOP",
+        "GOGP",
+        "GOOG",
+        "GOOO",
+        "GOPP",
+        "GPOP",
+        "YOOP"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOGP",
+        "info_bits": 1.842,
+        "top_3": [
+          {
+            "code": "GOGP",
+            "info_bits": 1.842
+          },
+          {
+            "code": "GOPP",
+            "info_bits": 1.664
+          },
+          {
+            "code": "GPOP",
+            "info_bits": 1.664
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "GGPB",
+        "info_bits": 2.522,
+        "top_3": [
+          {
+            "code": "GGPB",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GGPY",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GBPG",
+            "info_bits": 2.522
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    },
+    {
+      "secret": "YRBY",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            2,
+            1
+          ],
+          "feedback_display": "2 exact, 1 colour",
+          "remaining_candidates": 48
+        },
+        {
+          "guess": "RBOB",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "GGBR",
+        "GOBY",
+        "OGRY",
+        "PGBR",
+        "PRBY",
+        "YGBO",
+        "YRBY"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOBY",
+        "info_bits": 2.128,
+        "top_3": [
+          {
+            "code": "GOBY",
+            "info_bits": 2.128
+          },
+          {
+            "code": "YGBO",
+            "info_bits": 2.128
+          },
+          {
+            "code": "PRBY",
+            "info_bits": 2.128
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "OGYP",
+        "info_bits": 2.807,
+        "top_3": [
+          {
+            "code": "OGYP",
+            "info_bits": 2.807
+          },
+          {
+            "code": "OPGY",
+            "info_bits": 2.807
+          },
+          {
+            "code": "PGYO",
+            "info_bits": 2.807
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    },
+    {
+      "secret": "YOOP",
+      "secret_has_repeats": true,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            0,
+            1
+          ],
+          "feedback_display": "0 exact, 1 colour",
+          "remaining_candidates": 152
+        },
+        {
+          "guess": "GOOP",
+          "feedback": [
+            3,
+            0
+          ],
+          "feedback_display": "3 exact, 0 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "BOOP",
+        "GOGP",
+        "GOOG",
+        "GOOO",
+        "GOPP",
+        "GPOP",
+        "YOOP"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOGP",
+        "info_bits": 1.842,
+        "top_3": [
+          {
+            "code": "GOGP",
+            "info_bits": 1.842
+          },
+          {
+            "code": "GOPP",
+            "info_bits": 1.664
+          },
+          {
+            "code": "GPOP",
+            "info_bits": 1.664
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "GGPB",
+        "info_bits": 2.522,
+        "top_3": [
+          {
+            "code": "GGPB",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GGPY",
+            "info_bits": 2.522
+          },
+          {
+            "code": "GBPG",
+            "info_bits": 2.522
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    },
+    {
+      "secret": "PRBY",
+      "secret_has_repeats": false,
+      "history": [
+        {
+          "guess": "RGBY",
+          "feedback": [
+            2,
+            1
+          ],
+          "feedback_display": "2 exact, 1 colour",
+          "remaining_candidates": 48
+        },
+        {
+          "guess": "RBOB",
+          "feedback": [
+            0,
+            2
+          ],
+          "feedback_display": "0 exact, 2 colour",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "GGBR",
+        "GOBY",
+        "OGRY",
+        "PGBR",
+        "PRBY",
+        "YGBO",
+        "YRBY"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "code": "GOBY",
+        "info_bits": 2.128,
+        "top_3": [
+          {
+            "code": "GOBY",
+            "info_bits": 2.128
+          },
+          {
+            "code": "YGBO",
+            "info_bits": 2.128
+          },
+          {
+            "code": "PRBY",
+            "info_bits": 2.128
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "code": "OGYP",
+        "info_bits": 2.807,
+        "top_3": [
+          {
+            "code": "OGYP",
+            "info_bits": 2.807
+          },
+          {
+            "code": "OPGY",
+            "info_bits": 2.807
+          },
+          {
+            "code": "PGYO",
+            "info_bits": 2.807
+          }
+        ]
+      },
+      "info_gap_bits": 0.679
+    }
+  ]
+}

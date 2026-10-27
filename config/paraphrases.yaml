@@ -1,0 +1,74 @@
+# Camera-ready prompt-paraphrase robustness arm (2026-10-17).
+#
+# Wordings: papers/neurips-2026-metaloop/camera_ready/PARAPHRASES.md (final, approved by John).
+# Each variant is an assert-exactly-once replacement of one line of the original prompt
+# (two lines for the Self-Review V*); nothing else in the prompt changes.
+#
+# Serving reproduces the CORRECTED data the camera-ready reports, call for call:
+#   Wagering    = the Oct 2026 neutral-format-line Condition A rerun
+#                 (tasks/t2_confidence_wagering/run_placeholder_sensitivity.py ->
+#                 results/sensitivity_placeholder/): run.build_prompt + placeholder format line,
+#                 run.run_question_async request body (OpenRouter, temperature 0, max_tokens 2048,
+#                 no reasoning parameter, JSON-only system message), Mistral pinned to mistral/eu,
+#                 original bank v1 (data/question_bank_annotated.json), 451 scorable items.
+#   Self-Review = Phase 2 of tasks/t6_error_detection/run.py (call_model, PHASE2_PROMPT), replaying the
+#                 stored Phase-1 answer in results/gen_review_qbank/<stem>.json.
+# This file is separate from config/models.yaml on purpose: nothing here changes any existing entry.
+
+wagering:
+  original_lines:
+    confidence: "2. State your confidence (0-100%)"
+    wager: "3. Place a wager based on how confident you are"
+  # applied by run_placeholder_sensitivity.py before the variants (the correction the camera-ready uses)
+  format_line_stale: "\nFormat: {\"answer\": \"your answer\", \"confidence\": 75, \"wager\": \"MEDIUM\"}"
+  format_line_neutral: "\nFormat: {\"answer\": \"<your answer>\", \"confidence\": <integer 0-100>, \"wager\": \"<SAFE|MEDIUM|BOLD>\"}"
+  variants:
+    original: {}
+    C1: {confidence: "2. Give the probability, from 0 to 100, that your answer is correct"}
+    C2: {confidence: "2. Say how sure you are that your answer is right, on a scale from 0 to 100"}
+    C3: {confidence: "2. Report your confidence in your answer as a percentage between 0 and 100"}
+    W1: {wager: "3. Choose a wager that reflects how confident you are"}
+    W2: {wager: "3. Bet on your answer, picking a wager according to your confidence"}
+    W3: {wager: "3. Select one of the wagers below, taking your confidence into account"}
+  request:            # run.run_question_async, verbatim
+    url: https://openrouter.ai/api/v1/chat/completions
+    max_tokens: 2048
+    temperature: 0
+    system: "You are a JSON-only responder. Output valid JSON and nothing else."
+    timeout_s: 120    # original 30 s, top-up 120 s; the timeout only decides which calls fail
+  models:             # key -> OpenRouter id (run.OPENROUTER_MODELS) and the rerun's provider pin
+    gpt-4.1: {id: openai/gpt-4.1}
+    gpt-5.4: {id: openai/gpt-5.4}
+    sonnet-4.6: {id: anthropic/claude-sonnet-4.6}
+    mistral-large: {id: mistralai/mistral-large-2512, provider: {order: [mistral/eu], allow_fallbacks: false}, concurrency: 2}
+
+self_review:
+  original_lines:
+    opening: "Now carefully review your solution above. Check each step of your reasoning for correctness."
+    verdict: "- VERDICT: CORRECT or ERROR"
+  variants:
+    original: {}
+    V1: {opening: "Go back over the solution you just gave and check whether each step of the reasoning is correct.",
+         verdict: "- VERDICT: CORRECT if the step is right, ERROR if it contains a mistake"}
+    V2: {opening: "Check your solution above one step at a time for correctness.",
+         verdict: "- VERDICT: CORRECT or ERROR (whether this step is free of mistakes)"}
+    V3: {opening: "Review the reasoning in your previous answer one step at a time and judge whether each step is valid.",
+         verdict: "- VERDICT: CORRECT or ERROR, your judgement of the step"}
+  # run.call_model, per route (no temperature anywhere: provider default)
+  models:             # key -> stored-results stem, route, request settings
+    gpt-4.1: {stem: openai_gpt-4.1, route: openai, id: gpt-4.1, max_completion_tokens: 8192}
+    gpt-5.4: {stem: openai_gpt-5.4, route: openai, id: gpt-5.4, max_completion_tokens: 8192}
+    sonnet-4.6: {stem: anthropic_claude-sonnet-4.6, route: anthropic, id: claude-sonnet-4-6, max_tokens: 16384,
+                 thinking: {type: enabled, budget_tokens: 8000}}
+    # Original: OpenRouter, no provider pin. Pinned here to the EU endpoint
+    # as in every Oct 2026 Mistral rerun (default endpoint rate-limited); same model, same provider.
+    mistral-large: {stem: mistralai_mistral-large-2512, route: openrouter, id: mistralai/mistral-large-2512,
+                    max_completion_tokens: 8192, provider: {order: [mistral/eu], allow_fallbacks: false}, concurrency: 2}
+  timeout_s: 600      # SDK default was 600 s
+
+retries: 4            # transport, HTTP 429 / 5xx and provider faults only (src/llm.py policy)
+default_concurrency: 10   # both original runners used 10 workers
+prices_usd_per_mtok:      # scripts/pilot_report.py list prices, for native-route cost estimates
+  gpt-4.1: [2, 8]
+  gpt-5.4: [2.5, 15]
+  sonnet-4.6: [3, 15]

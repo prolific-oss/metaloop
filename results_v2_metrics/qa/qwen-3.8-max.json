@@ -1,0 +1,114 @@
+{
+ "model": "qwen-3.8-max",
+ "wagering": {
+  "A": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 83.813747228,
+   "ece": 0.0352,
+   "wr": 56.76,
+   "brier": 0.0951,
+   "payout": 4857,
+   "payout_gap": 2703,
+   "mean_conf_correct": 87.566137566,
+   "mean_conf_wrong": 54.904109589,
+   "wagers": {
+    "BOLD": 226,
+    "MEDIUM": 151,
+    "SAFE": 74
+   }
+  },
+  "B": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 84.035476718,
+   "ece": 0.0389,
+   "wr": 100.0,
+   "brier": 0.0933,
+   "payout": 6142,
+   "payout_gap": 1438,
+   "mean_conf_correct": 85.778364116,
+   "mean_conf_wrong": 50.736111111,
+   "wagers": {
+    "BOLD": 361,
+    "MEDIUM": 59,
+    "SAFE": 31
+   }
+  }
+ },
+ "deferral": {
+  "A": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 378,
+    "DEFER": 76
+   },
+   "defer_rate": {
+    "low": 11.842105263,
+    "medium": 13.245033113,
+    "high": 25.165562914
+   },
+   "defer_change_low_to_high_pp": 13.323457651,
+   "clar_recall": 30.43,
+   "clar_precision": 100.0,
+   "points": {
+    "low": 1040,
+    "high": 570,
+    "medium": 950,
+    "total": 2560
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 92.533333333,
+   "counterfactual": {
+    "n_declined": 76,
+    "n_forced_scored": 76,
+    "accuracy_declined": 43.421052632
+   }
+  },
+  "B": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 376,
+    "DEFER": 78
+   },
+   "defer_rate": {
+    "low": 9.210526316,
+    "medium": 14.569536424,
+    "high": 27.814569536
+   },
+   "defer_change_low_to_high_pp": 18.604043221,
+   "clar_recall": 34.06,
+   "clar_precision": 100.0,
+   "points": {
+    "low": 1020,
+    "high": 750,
+    "medium": 930,
+    "total": 2700
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 92.225201072
+  }
+ },
+ "consistency": {
+  "n_items": 153,
+  "n_paired": 150,
+  "accuracy": {
+   "direct": 90.666666667,
+   "explanation": 90.666666667,
+   "adversarial_correct": 94.666666667,
+   "adversarial_wrong": 90.0
+  },
+  "explanation_effect_pp": 0.0,
+  "conf_correct": 93.398550725,
+  "conf_wrong": 85.642857143,
+  "conf_gap": 7.755693582,
+  "n_wrong_direct": 14,
+  "decoy_rate_adversarial_wrong": 2.666666667
+ }
+}

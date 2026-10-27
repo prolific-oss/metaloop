@@ -1,0 +1,116 @@
+{
+ "model": "gpt-5.4",
+ "wagering": {
+  "A": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 82.039911308,
+   "ece": 0.0324,
+   "wr": 94.68,
+   "brier": 0.0838,
+   "payout": 6087,
+   "payout_gap": 1313,
+   "mean_conf_correct": 91.510810811,
+   "mean_conf_wrong": 53.728395062,
+   "wagers": {
+    "BOLD": 365,
+    "MEDIUM": 50,
+    "SAFE": 36
+   }
+  },
+  "B": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 81.818181818,
+   "ece": 0.0362,
+   "wr": 100.0,
+   "brier": 0.0799,
+   "payout": 6230,
+   "payout_gap": 1150,
+   "mean_conf_correct": 92.262872629,
+   "mean_conf_wrong": 52.719512195,
+   "wagers": {
+    "BOLD": 375,
+    "MEDIUM": 52,
+    "SAFE": 24
+   }
+  }
+ },
+ "deferral": {
+  "A": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 370,
+    "CLARIFY": 11,
+    "DEFER": 73
+   },
+   "defer_rate": {
+    "low": 9.210526316,
+    "medium": 12.582781457,
+    "high": 26.490066225
+   },
+   "defer_change_low_to_high_pp": 17.279539909,
+   "clar_recall": 62.32,
+   "clar_precision": 88.66,
+   "points": {
+    "low": 920,
+    "high": 930,
+    "medium": 850,
+    "total": 2700
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 91.008174387,
+   "counterfactual": {
+    "n_declined": 84,
+    "n_forced_scored": 84,
+    "accuracy_declined": 40.476190476
+   }
+  },
+  "B": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 384,
+    "CLARIFY": 11,
+    "DEFER": 59
+   },
+   "defer_rate": {
+    "low": 8.552631579,
+    "medium": 11.258278146,
+    "high": 19.205298013
+   },
+   "defer_change_low_to_high_pp": 10.652666434,
+   "clar_recall": 65.94,
+   "clar_precision": 89.22,
+   "points": {
+    "low": 860,
+    "high": 1030,
+    "medium": 860,
+    "total": 2750
+   },
+   "attempted_unscorable": 4,
+   "accuracy_attempted": 90.263157895
+  }
+ },
+ "consistency": {
+  "n_items": 153,
+  "n_paired": 153,
+  "accuracy": {
+   "direct": 88.888888889,
+   "explanation": 89.54248366,
+   "adversarial_correct": 92.156862745,
+   "adversarial_wrong": 88.235294118
+  },
+  "explanation_effect_pp": 0.653594771,
+  "conf_correct": 94.323529412,
+  "conf_wrong": 84.823529412,
+  "conf_gap": 9.5,
+  "n_wrong_direct": 17,
+  "decoy_rate_adversarial_wrong": 3.267973856
+ }
+}

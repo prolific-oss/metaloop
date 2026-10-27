@@ -1,0 +1,72 @@
+# MetaLoop Study 1 — Condition B (Explanation)
+# Participant reads a MC question, explains each option, then picks answer + confidence.
+
+study:
+  title: "Knowledge Quiz"
+  subtitle: "Evaluate each option before answering"
+  logo_text: "M"
+  guidelines: >
+    For each question, briefly explain why each answer option is likely correct or
+    incorrect, then give your final answer. We're interested in your reasoning —
+    do not look anything up.
+
+allocation:
+  scenarios_per_participant: 5
+  target_ratings_per_scenario: 20
+  slot_timeout_minutes: 20
+
+questions:
+  - id: explain_a
+    type: text
+    label: "Option A"
+    hint: "Why is this correct or incorrect?"
+    placeholder: "e.g. This is incorrect because..."
+    required: true
+
+  - id: explain_b
+    type: text
+    label: "Option B"
+    hint: "Why is this correct or incorrect?"
+    placeholder: "e.g. This is correct because..."
+    required: true
+
+  - id: explain_c
+    type: text
+    label: "Option C"
+    hint: "Why is this correct or incorrect?"
+    placeholder: "e.g. This is incorrect because..."
+    required: true
+
+  - id: explain_d
+    type: text
+    label: "Option D"
+    hint: "Why is this correct or incorrect?"
+    placeholder: "e.g. This is incorrect because..."
+    required: true
+
+  - id: answer
+    type: rating
+    label: "Your final answer"
+    required: true
+    options:
+      A: "A"
+      B: "B"
+      C: "C"
+      D: "D"
+    colors:
+      A: "#4f46e5"
+      B: "#4f46e5"
+      C: "#4f46e5"
+      D: "#4f46e5"
+
+  - id: confidence
+    type: slider
+    label: "How confident are you?"
+    required: true
+    min: 0
+    max: 100
+    step: 1
+    default: 50
+    labels:
+      left: "Guessing"
+      right: "Certain"

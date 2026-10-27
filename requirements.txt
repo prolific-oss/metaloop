@@ -1,0 +1,15 @@
+# Python 3.12. Versions as used for the camera-ready runs (October 2026).
+anthropic==0.102.0
+openai==2.36.0
+httpx==0.28.1
+python-dotenv==1.2.2
+PyYAML==6.0.3
+numpy==2.4.4
+scipy==1.18.1
+statsmodels==0.15.0
+matplotlib==3.10.9
+datasets==4.8.5
+huggingface-hub==1.14.0
+typer==0.25.1          # the hf CLI; later typer releases no longer install click
+click==8.3.3
+pytest==9.0.3

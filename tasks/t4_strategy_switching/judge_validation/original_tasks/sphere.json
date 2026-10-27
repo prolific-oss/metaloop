@@ -1,0 +1,820 @@
+{
+  "task_type": "sphere_strategy_switch",
+  "description": "Problems where points are given as unlabelled (x, y) coordinate pairs (actually latitude, longitude of real cities) with known reference distances in km. Euclidean distance doesn't match the references because the points lie on a sphere. The model must recognise the geometry is non-Euclidean and switch to the Haversine / great circle formula.",
+  "problems": [
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 51.51,
+          "y": -0.13
+        },
+        {
+          "label": "B",
+          "x": 40.71,
+          "y": -74.01
+        },
+        {
+          "label": "C",
+          "x": 48.86,
+          "y": 2.35
+        },
+        {
+          "label": "D",
+          "x": 35.68,
+          "y": 139.69
+        },
+        {
+          "label": "E",
+          "x": -33.87,
+          "y": 151.21
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "C",
+          "distance_km": 343,
+          "cities": "London to Paris"
+        },
+        {
+          "from": "A",
+          "to": "D",
+          "distance_km": 9559,
+          "cities": "London to Tokyo"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 9713,
+          "cities": "Paris to Tokyo"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "B"
+      ],
+      "correct_distance_km": 5570,
+      "euclidean_distance": 74.67,
+      "cities_used": [
+        "London",
+        "New York",
+        "Paris",
+        "Tokyo",
+        "Sydney"
+      ],
+      "target_cities": [
+        "London",
+        "New York"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (51.51, -0.13)\n  B: (40.71, -74.01)\n  C: (48.86, 2.35)\n  D: (35.68, 139.69)\n  E: (-33.87, 151.21)\n\nThe following distances between points are known:\n\n  A to C: 343 km\n  A to D: 9559 km\n  C to D: 9713 km\n\nFind the shortest distance (in km) from A to B. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to B: sqrt((40.71-51.51)² + (-74.01--0.13)²) = sqrt(116.64 + 5458.25) = 74.67\n\nChecking against reference distances:\nA to C: sqrt((48.86-51.51)² + (2.35--0.13)²) = sqrt(7.02 + 6.15) = 3.63\nKnown: 343 km\nA to D: sqrt((35.68-51.51)² + (139.69--0.13)²) = sqrt(250.59 + 19549.63) = 140.71\nKnown: 9559 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 55.76,
+          "y": 37.62
+        },
+        {
+          "label": "B",
+          "x": 25.2,
+          "y": 55.27
+        },
+        {
+          "label": "C",
+          "x": 19.08,
+          "y": 72.88
+        },
+        {
+          "label": "D",
+          "x": 1.35,
+          "y": 103.82
+        },
+        {
+          "label": "E",
+          "x": -33.87,
+          "y": 151.21
+        },
+        {
+          "label": "F",
+          "x": 35.68,
+          "y": 139.69
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 3687,
+          "cities": "Moscow to Dubai"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 1935,
+          "cities": "Dubai to Mumbai"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 3904,
+          "cities": "Mumbai to Singapore"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "E"
+      ],
+      "correct_distance_km": 14496,
+      "euclidean_distance": 144.69,
+      "cities_used": [
+        "Moscow",
+        "Dubai",
+        "Mumbai",
+        "Singapore",
+        "Sydney",
+        "Tokyo"
+      ],
+      "target_cities": [
+        "Moscow",
+        "Sydney"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (55.76, 37.62)\n  B: (25.20, 55.27)\n  C: (19.08, 72.88)\n  D: (1.35, 103.82)\n  E: (-33.87, 151.21)\n  F: (35.68, 139.69)\n\nThe following distances between points are known:\n\n  A to B: 3687 km\n  B to C: 1935 km\n  C to D: 3904 km\n\nFind the shortest distance (in km) from A to E. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to E: sqrt((-33.87-55.76)² + (151.21-37.62)²) = sqrt(8033.54 + 12902.69) = 144.69\n\nChecking against reference distances:\nA to B: sqrt((25.20-55.76)² + (55.27-37.62)²) = sqrt(933.91 + 311.52) = 35.29\nKnown: 3687 km\nB to C: sqrt((19.08-25.20)² + (72.88-55.27)²) = sqrt(37.45 + 310.11) = 18.64\nKnown: 1935 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 40.71,
+          "y": -74.01
+        },
+        {
+          "label": "B",
+          "x": 51.51,
+          "y": -0.13
+        },
+        {
+          "label": "C",
+          "x": 30.04,
+          "y": 31.24
+        },
+        {
+          "label": "D",
+          "x": 19.08,
+          "y": 72.88
+        },
+        {
+          "label": "E",
+          "x": 39.9,
+          "y": 116.4
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 5570,
+          "cities": "New York to London"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 3512,
+          "cities": "London to Cairo"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 4358,
+          "cities": "Cairo to Mumbai"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "E"
+      ],
+      "correct_distance_km": 10990,
+      "euclidean_distance": 190.41,
+      "cities_used": [
+        "New York",
+        "London",
+        "Cairo",
+        "Mumbai",
+        "Beijing"
+      ],
+      "target_cities": [
+        "New York",
+        "Beijing"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (40.71, -74.01)\n  B: (51.51, -0.13)\n  C: (30.04, 31.24)\n  D: (19.08, 72.88)\n  E: (39.90, 116.40)\n\nThe following distances between points are known:\n\n  A to B: 5570 km\n  B to C: 3512 km\n  C to D: 4358 km\n\nFind the shortest distance (in km) from A to E. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to E: sqrt((39.90-40.71)² + (116.40--74.01)²) = sqrt(0.66 + 36255.97) = 190.41\n\nChecking against reference distances:\nA to B: sqrt((51.51-40.71)² + (-0.13--74.01)²) = sqrt(116.64 + 5458.25) = 74.67\nKnown: 5570 km\nB to C: sqrt((30.04-51.51)² + (31.24--0.13)²) = sqrt(460.96 + 984.08) = 38.01\nKnown: 3512 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": -23.55,
+          "y": -46.63
+        },
+        {
+          "label": "B",
+          "x": -34.6,
+          "y": -58.38
+        },
+        {
+          "label": "C",
+          "x": -33.93,
+          "y": 18.42
+        },
+        {
+          "label": "D",
+          "x": -1.29,
+          "y": 36.82
+        },
+        {
+          "label": "E",
+          "x": 30.04,
+          "y": 31.24
+        },
+        {
+          "label": "F",
+          "x": 51.51,
+          "y": -0.13
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 1675,
+          "cities": "São Paulo to Buenos Aires"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 4103,
+          "cities": "Cape Town to Nairobi"
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "distance_km": 3534,
+          "cities": "Nairobi to Cairo"
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "distance_km": 3512,
+          "cities": "Cairo to London"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "C"
+      ],
+      "correct_distance_km": 6344,
+      "euclidean_distance": 65.87,
+      "cities_used": [
+        "São Paulo",
+        "Buenos Aires",
+        "Cape Town",
+        "Nairobi",
+        "Cairo",
+        "London"
+      ],
+      "target_cities": [
+        "São Paulo",
+        "Cape Town"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (-23.55, -46.63)\n  B: (-34.60, -58.38)\n  C: (-33.93, 18.42)\n  D: (-1.29, 36.82)\n  E: (30.04, 31.24)\n  F: (51.51, -0.13)\n\nThe following distances between points are known:\n\n  A to B: 1675 km\n  C to D: 4103 km\n  D to E: 3534 km\n  E to F: 3512 km\n\nFind the shortest distance (in km) from A to C. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to C: sqrt((-33.93--23.55)² + (18.42--46.63)²) = sqrt(107.74 + 4231.50) = 65.87\n\nChecking against reference distances:\nA to B: sqrt((-34.60--23.55)² + (-58.38--46.63)²) = sqrt(122.10 + 138.06) = 16.13\nKnown: 1675 km\nC to D: sqrt((-1.29--33.93)² + (36.82-18.42)²) = sqrt(1065.37 + 338.56) = 37.47\nKnown: 4103 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 34.05,
+          "y": -118.24
+        },
+        {
+          "label": "B",
+          "x": 19.43,
+          "y": -99.13
+        },
+        {
+          "label": "C",
+          "x": -12.05,
+          "y": -77.04
+        },
+        {
+          "label": "D",
+          "x": -23.55,
+          "y": -46.63
+        },
+        {
+          "label": "E",
+          "x": -34.6,
+          "y": -58.38
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 2491,
+          "cities": "Los Angeles to Mexico City"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 4255,
+          "cities": "Mexico City to Lima"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 3454,
+          "cities": "Lima to São Paulo"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "E"
+      ],
+      "correct_distance_km": 9851,
+      "euclidean_distance": 91.08,
+      "cities_used": [
+        "Los Angeles",
+        "Mexico City",
+        "Lima",
+        "São Paulo",
+        "Buenos Aires"
+      ],
+      "target_cities": [
+        "Los Angeles",
+        "Buenos Aires"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (34.05, -118.24)\n  B: (19.43, -99.13)\n  C: (-12.05, -77.04)\n  D: (-23.55, -46.63)\n  E: (-34.60, -58.38)\n\nThe following distances between points are known:\n\n  A to B: 2491 km\n  B to C: 4255 km\n  C to D: 3454 km\n\nFind the shortest distance (in km) from A to E. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to E: sqrt((-34.60-34.05)² + (-58.38--118.24)²) = sqrt(4712.82 + 3583.22) = 91.08\n\nChecking against reference distances:\nA to B: sqrt((19.43-34.05)² + (-99.13--118.24)²) = sqrt(213.74 + 365.19) = 24.06\nKnown: 2491 km\nB to C: sqrt((-12.05-19.43)² + (-77.04--99.13)²) = sqrt(990.99 + 487.97) = 38.46\nKnown: 4255 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 52.52,
+          "y": 13.41
+        },
+        {
+          "label": "B",
+          "x": 41.01,
+          "y": 28.98
+        },
+        {
+          "label": "C",
+          "x": 25.2,
+          "y": 55.27
+        },
+        {
+          "label": "D",
+          "x": 19.08,
+          "y": 72.88
+        },
+        {
+          "label": "E",
+          "x": 13.76,
+          "y": 100.5
+        },
+        {
+          "label": "F",
+          "x": -6.21,
+          "y": 106.85
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 1738,
+          "cities": "Berlin to Istanbul"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 2995,
+          "cities": "Istanbul to Dubai"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 1935,
+          "cities": "Dubai to Mumbai"
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "distance_km": 3001,
+          "cities": "Mumbai to Bangkok"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "F"
+      ],
+      "correct_distance_km": 10788,
+      "euclidean_distance": 110.36,
+      "cities_used": [
+        "Berlin",
+        "Istanbul",
+        "Dubai",
+        "Mumbai",
+        "Bangkok",
+        "Jakarta"
+      ],
+      "target_cities": [
+        "Berlin",
+        "Jakarta"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (52.52, 13.41)\n  B: (41.01, 28.98)\n  C: (25.20, 55.27)\n  D: (19.08, 72.88)\n  E: (13.76, 100.50)\n  F: (-6.21, 106.85)\n\nThe following distances between points are known:\n\n  A to B: 1738 km\n  B to C: 2995 km\n  C to D: 1935 km\n  D to E: 3001 km\n\nFind the shortest distance (in km) from A to F. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to F: sqrt((-6.21-52.52)² + (106.85-13.41)²) = sqrt(3449.21 + 8731.03) = 110.36\n\nChecking against reference distances:\nA to B: sqrt((41.01-52.52)² + (28.98-13.41)²) = sqrt(132.48 + 242.42) = 19.36\nKnown: 1738 km\nB to C: sqrt((25.20-41.01)² + (55.27-28.98)²) = sqrt(249.96 + 691.16) = 30.68\nKnown: 2995 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 43.65,
+          "y": -79.38
+        },
+        {
+          "label": "B",
+          "x": 51.51,
+          "y": -0.13
+        },
+        {
+          "label": "C",
+          "x": 41.9,
+          "y": 12.5
+        },
+        {
+          "label": "D",
+          "x": 55.76,
+          "y": 37.62
+        },
+        {
+          "label": "E",
+          "x": 39.9,
+          "y": 116.4
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 5712,
+          "cities": "Toronto to London"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 1435,
+          "cities": "London to Rome"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 2376,
+          "cities": "Rome to Moscow"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "E"
+      ],
+      "correct_distance_km": 10591,
+      "euclidean_distance": 195.82,
+      "cities_used": [
+        "Toronto",
+        "London",
+        "Rome",
+        "Moscow",
+        "Beijing"
+      ],
+      "target_cities": [
+        "Toronto",
+        "Beijing"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (43.65, -79.38)\n  B: (51.51, -0.13)\n  C: (41.90, 12.50)\n  D: (55.76, 37.62)\n  E: (39.90, 116.40)\n\nThe following distances between points are known:\n\n  A to B: 5712 km\n  B to C: 1435 km\n  C to D: 2376 km\n\nFind the shortest distance (in km) from A to E. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to E: sqrt((39.90-43.65)² + (116.40--79.38)²) = sqrt(14.06 + 38329.81) = 195.82\n\nChecking against reference distances:\nA to B: sqrt((51.51-43.65)² + (-0.13--79.38)²) = sqrt(61.78 + 6280.56) = 79.64\nKnown: 5712 km\nB to C: sqrt((41.90-51.51)² + (12.50--0.13)²) = sqrt(92.35 + 159.52) = 15.87\nKnown: 1435 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": 37.57,
+          "y": 126.98
+        },
+        {
+          "label": "B",
+          "x": 35.68,
+          "y": 139.69
+        },
+        {
+          "label": "C",
+          "x": 1.35,
+          "y": 103.82
+        },
+        {
+          "label": "D",
+          "x": -33.87,
+          "y": 151.21
+        },
+        {
+          "label": "E",
+          "x": -6.21,
+          "y": 106.85
+        },
+        {
+          "label": "F",
+          "x": 13.76,
+          "y": 100.5
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 1153,
+          "cities": "Seoul to Tokyo"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 5314,
+          "cities": "Tokyo to Singapore"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 6306,
+          "cities": "Singapore to Sydney"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "D"
+      ],
+      "correct_distance_km": 8330,
+      "euclidean_distance": 75.44,
+      "cities_used": [
+        "Seoul",
+        "Tokyo",
+        "Singapore",
+        "Sydney",
+        "Jakarta",
+        "Bangkok"
+      ],
+      "target_cities": [
+        "Seoul",
+        "Sydney"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (37.57, 126.98)\n  B: (35.68, 139.69)\n  C: (1.35, 103.82)\n  D: (-33.87, 151.21)\n  E: (-6.21, 106.85)\n  F: (13.76, 100.50)\n\nThe following distances between points are known:\n\n  A to B: 1153 km\n  B to C: 5314 km\n  C to D: 6306 km\n\nFind the shortest distance (in km) from A to D. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to D: sqrt((-33.87-37.57)² + (151.21-126.98)²) = sqrt(5103.67 + 587.09) = 75.44\n\nChecking against reference distances:\nA to B: sqrt((35.68-37.57)² + (139.69-126.98)²) = sqrt(3.57 + 161.54) = 12.85\nKnown: 1153 km\nB to C: sqrt((1.35-35.68)² + (103.82-139.69)²) = sqrt(1178.55 + 1286.66) = 49.65\nKnown: 5314 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": -33.93,
+          "y": 18.42
+        },
+        {
+          "label": "B",
+          "x": -1.29,
+          "y": 36.82
+        },
+        {
+          "label": "C",
+          "x": 30.04,
+          "y": 31.24
+        },
+        {
+          "label": "D",
+          "x": 41.01,
+          "y": 28.98
+        },
+        {
+          "label": "E",
+          "x": 55.76,
+          "y": 37.62
+        },
+        {
+          "label": "F",
+          "x": 39.9,
+          "y": 116.4
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 4103,
+          "cities": "Cape Town to Nairobi"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 3534,
+          "cities": "Nairobi to Cairo"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 1237,
+          "cities": "Cairo to Istanbul"
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "distance_km": 1757,
+          "cities": "Istanbul to Moscow"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "F"
+      ],
+      "correct_distance_km": 12956,
+      "euclidean_distance": 122.68,
+      "cities_used": [
+        "Cape Town",
+        "Nairobi",
+        "Cairo",
+        "Istanbul",
+        "Moscow",
+        "Beijing"
+      ],
+      "target_cities": [
+        "Cape Town",
+        "Beijing"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (-33.93, 18.42)\n  B: (-1.29, 36.82)\n  C: (30.04, 31.24)\n  D: (41.01, 28.98)\n  E: (55.76, 37.62)\n  F: (39.90, 116.40)\n\nThe following distances between points are known:\n\n  A to B: 4103 km\n  B to C: 3534 km\n  C to D: 1237 km\n  D to E: 1757 km\n\nFind the shortest distance (in km) from A to F. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to F: sqrt((39.90--33.93)² + (116.40-18.42)²) = sqrt(5450.87 + 9600.08) = 122.68\n\nChecking against reference distances:\nA to B: sqrt((-1.29--33.93)² + (36.82-18.42)²) = sqrt(1065.37 + 338.56) = 37.47\nKnown: 4103 km\nB to C: sqrt((30.04--1.29)² + (31.24-36.82)²) = sqrt(981.57 + 31.14) = 31.82\nKnown: 3534 km"
+        }
+      ]
+    },
+    {
+      "points": [
+        {
+          "label": "A",
+          "x": -12.05,
+          "y": -77.04
+        },
+        {
+          "label": "B",
+          "x": 19.43,
+          "y": -99.13
+        },
+        {
+          "label": "C",
+          "x": 40.71,
+          "y": -74.01
+        },
+        {
+          "label": "D",
+          "x": 51.51,
+          "y": -0.13
+        },
+        {
+          "label": "E",
+          "x": 52.52,
+          "y": 13.41
+        },
+        {
+          "label": "F",
+          "x": 55.76,
+          "y": 37.62
+        }
+      ],
+      "reference_distances": [
+        {
+          "from": "A",
+          "to": "B",
+          "distance_km": 4255,
+          "cities": "Lima to Mexico City"
+        },
+        {
+          "from": "B",
+          "to": "C",
+          "distance_km": 3359,
+          "cities": "Mexico City to New York"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "distance_km": 5570,
+          "cities": "New York to London"
+        }
+      ],
+      "target_pair": [
+        "A",
+        "F"
+      ],
+      "correct_distance_km": 12644,
+      "euclidean_distance": 133.21,
+      "cities_used": [
+        "Lima",
+        "Mexico City",
+        "New York",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "target_cities": [
+        "Lima",
+        "Moscow"
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "I have a set of points with the following coordinates:\n\n  A: (-12.05, -77.04)\n  B: (19.43, -99.13)\n  C: (40.71, -74.01)\n  D: (51.51, -0.13)\n  E: (52.52, 13.41)\n  F: (55.76, 37.62)\n\nThe following distances between points are known:\n\n  A to B: 4255 km\n  B to C: 3359 km\n  C to D: 5570 km\n\nFind the shortest distance (in km) from A to F. You have one response. State your answer as SUBMIT: DISTANCE: [number] km"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use the distance formula d = sqrt((x2-x1)² + (y2-y1)²).\n\nFor A to F: sqrt((55.76--12.05)² + (37.62--77.04)²) = sqrt(4598.20 + 13146.92) = 133.21\n\nChecking against reference distances:\nA to B: sqrt((19.43--12.05)² + (-99.13--77.04)²) = sqrt(990.99 + 487.97) = 38.46\nKnown: 4255 km\nB to C: sqrt((40.71-19.43)² + (-74.01--99.13)²) = sqrt(452.84 + 631.01) = 32.92\nKnown: 3359 km"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1357 @@
+{
+  "task_type": "wordle_strategy_switch",
+  "description": "Wordle problems where optimal play leads to a state with many similar candidates. Guessing candidate words has low information gain; guessing a non-candidate distinguisher word is strictly better. The agent must recognise this and pivot from candidate-guessing to distinguisher-guessing.",
+  "problems": [
+    {
+      "target": "watch",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "catch",
+        "fatal",
+        "hatch",
+        "latch",
+        "match",
+        "patch",
+        "watch"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "word": "catch",
+        "info_bits": 1.149,
+        "top_3": [
+          {
+            "word": "catch",
+            "info_bits": 1.149
+          },
+          {
+            "word": "fatal",
+            "info_bits": 1.149
+          },
+          {
+            "word": "hatch",
+            "info_bits": 1.149
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "clamp",
+        "info_bits": 2.522,
+        "top_3": [
+          {
+            "word": "clamp",
+            "info_bits": 2.522
+          },
+          {
+            "word": "clump",
+            "info_bits": 2.522
+          },
+          {
+            "word": "clomp",
+            "info_bits": 2.522
+          }
+        ]
+      },
+      "info_gap_bits": 1.373,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 7
+        },
+        {
+          "guess": "clamp",
+          "feedback": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 2,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "ahigh",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "watch",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "latch",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "catch",
+        "fatal",
+        "hatch",
+        "latch",
+        "match",
+        "patch",
+        "watch"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "word": "catch",
+        "info_bits": 1.149,
+        "top_3": [
+          {
+            "word": "catch",
+            "info_bits": 1.149
+          },
+          {
+            "word": "fatal",
+            "info_bits": 1.149
+          },
+          {
+            "word": "hatch",
+            "info_bits": 1.149
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "clamp",
+        "info_bits": 2.522,
+        "top_3": [
+          {
+            "word": "clamp",
+            "info_bits": 2.522
+          },
+          {
+            "word": "clump",
+            "info_bits": 2.522
+          },
+          {
+            "word": "clomp",
+            "info_bits": 2.522
+          }
+        ]
+      },
+      "info_gap_bits": 1.373,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 7
+        },
+        {
+          "guess": "clamp",
+          "feedback": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "latch",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "nanny",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 10
+        }
+      ],
+      "candidates_at_switch": [
+        "candy",
+        "canny",
+        "dandy",
+        "fancy",
+        "fanny",
+        "handy",
+        "lanky",
+        "mangy",
+        "manly",
+        "nanny"
+      ],
+      "n_candidates": 10,
+      "best_candidate_guess": {
+        "word": "candy",
+        "info_bits": 1.961,
+        "top_3": [
+          {
+            "word": "candy",
+            "info_bits": 1.961
+          },
+          {
+            "word": "canny",
+            "info_bits": 1.961
+          },
+          {
+            "word": "fancy",
+            "info_bits": 1.571
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "child",
+        "info_bits": 2.846,
+        "top_3": [
+          {
+            "word": "child",
+            "info_bits": 2.846
+          },
+          {
+            "word": "cling",
+            "info_bits": 2.722
+          },
+          {
+            "word": "clung",
+            "info_bits": 2.722
+          }
+        ]
+      },
+      "info_gap_bits": 0.885,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 10
+        },
+        {
+          "guess": "child",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 3,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "fanny",
+          "feedback": [
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "nanny",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "fanny",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 10
+        }
+      ],
+      "candidates_at_switch": [
+        "candy",
+        "canny",
+        "dandy",
+        "fancy",
+        "fanny",
+        "handy",
+        "lanky",
+        "mangy",
+        "manly",
+        "nanny"
+      ],
+      "n_candidates": 10,
+      "best_candidate_guess": {
+        "word": "candy",
+        "info_bits": 1.961,
+        "top_3": [
+          {
+            "word": "candy",
+            "info_bits": 1.961
+          },
+          {
+            "word": "canny",
+            "info_bits": 1.961
+          },
+          {
+            "word": "fancy",
+            "info_bits": 1.571
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "child",
+        "info_bits": 2.846,
+        "top_3": [
+          {
+            "word": "child",
+            "info_bits": 2.846
+          },
+          {
+            "word": "cling",
+            "info_bits": 2.722
+          },
+          {
+            "word": "clung",
+            "info_bits": 2.722
+          }
+        ]
+      },
+      "info_gap_bits": 0.885,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 91
+        },
+        {
+          "guess": "bunty",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 10
+        },
+        {
+          "guess": "child",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 3,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "fanny",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "whack",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 92
+        },
+        {
+          "guess": "float",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 6
+        }
+      ],
+      "candidates_at_switch": [
+        "aback",
+        "champ",
+        "guava",
+        "knack",
+        "quack",
+        "whack"
+      ],
+      "n_candidates": 6,
+      "best_candidate_guess": {
+        "word": "aback",
+        "info_bits": 1.792,
+        "top_3": [
+          {
+            "word": "aback",
+            "info_bits": 1.792
+          },
+          {
+            "word": "champ",
+            "info_bits": 1.792
+          },
+          {
+            "word": "guava",
+            "info_bits": 1.792
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "ankus",
+        "info_bits": 2.585,
+        "top_3": [
+          {
+            "word": "ankus",
+            "info_bits": 2.585
+          },
+          {
+            "word": "bunce",
+            "info_bits": 2.585
+          },
+          {
+            "word": "chunk",
+            "info_bits": 2.585
+          }
+        ]
+      },
+      "info_gap_bits": 0.792,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 92
+        },
+        {
+          "guess": "float",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 6
+        },
+        {
+          "guess": "ankus",
+          "feedback": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "whack",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "prove",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 40
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        }
+      ],
+      "candidates_at_switch": [
+        "crone",
+        "drone",
+        "drove",
+        "erode",
+        "froze",
+        "prone",
+        "prove",
+        "trope",
+        "trove",
+        "wrote"
+      ],
+      "n_candidates": 10,
+      "best_candidate_guess": {
+        "word": "drone",
+        "info_bits": 1.961,
+        "top_3": [
+          {
+            "word": "drone",
+            "info_bits": 1.961
+          },
+          {
+            "word": "drove",
+            "info_bits": 1.961
+          },
+          {
+            "word": "prone",
+            "info_bits": 1.961
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "dents",
+        "info_bits": 2.722,
+        "top_3": [
+          {
+            "word": "dents",
+            "info_bits": 2.722
+          },
+          {
+            "word": "dints",
+            "info_bits": 2.722
+          },
+          {
+            "word": "dants",
+            "info_bits": 2.722
+          }
+        ]
+      },
+      "info_gap_bits": 0.761,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 40
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        },
+        {
+          "guess": "dents",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 2,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "avels",
+          "feedback": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "prove",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "trope",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 40
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        }
+      ],
+      "candidates_at_switch": [
+        "crone",
+        "drone",
+        "drove",
+        "erode",
+        "froze",
+        "prone",
+        "prove",
+        "trope",
+        "trove",
+        "wrote"
+      ],
+      "n_candidates": 10,
+      "best_candidate_guess": {
+        "word": "drone",
+        "info_bits": 1.961,
+        "top_3": [
+          {
+            "word": "drone",
+            "info_bits": 1.961
+          },
+          {
+            "word": "drove",
+            "info_bits": 1.961
+          },
+          {
+            "word": "prone",
+            "info_bits": 1.961
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "dents",
+        "info_bits": 2.722,
+        "top_3": [
+          {
+            "word": "dents",
+            "info_bits": 2.722
+          },
+          {
+            "word": "dints",
+            "info_bits": 2.722
+          },
+          {
+            "word": "dants",
+            "info_bits": 2.722
+          }
+        ]
+      },
+      "info_gap_bits": 0.761,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 40
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        },
+        {
+          "guess": "dents",
+          "feedback": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 2,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "avels",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "trope",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "awake",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 41
+        },
+        {
+          "guess": "bland",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        }
+      ],
+      "candidates_at_switch": [
+        "agape",
+        "agate",
+        "amaze",
+        "awake",
+        "chafe",
+        "heave",
+        "ovate",
+        "peace",
+        "quake",
+        "weave"
+      ],
+      "n_candidates": 10,
+      "best_candidate_guess": {
+        "word": "heave",
+        "info_bits": 2.161,
+        "top_3": [
+          {
+            "word": "heave",
+            "info_bits": 2.161
+          },
+          {
+            "word": "weave",
+            "info_bits": 2.161
+          },
+          {
+            "word": "awake",
+            "info_bits": 2.046
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "chowk",
+        "info_bits": 2.846,
+        "top_3": [
+          {
+            "word": "chowk",
+            "info_bits": 2.846
+          },
+          {
+            "word": "aught",
+            "info_bits": 2.722
+          },
+          {
+            "word": "apeek",
+            "info_bits": 2.722
+          }
+        ]
+      },
+      "info_gap_bits": 0.685,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 41
+        },
+        {
+          "guess": "bland",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 10
+        },
+        {
+          "guess": "chowk",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "awake",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "crazy",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 78
+        },
+        {
+          "guess": "brond",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 15
+        }
+      ],
+      "candidates_at_switch": [
+        "array",
+        "crack",
+        "craft",
+        "cramp",
+        "crawl",
+        "crazy",
+        "graft",
+        "graph",
+        "gravy",
+        "track",
+        "tract",
+        "tramp",
+        "trawl",
+        "wrack",
+        "wrath"
+      ],
+      "n_candidates": 15,
+      "best_candidate_guess": {
+        "word": "tract",
+        "info_bits": 3.19,
+        "top_3": [
+          {
+            "word": "tract",
+            "info_bits": 3.19
+          },
+          {
+            "word": "track",
+            "info_bits": 3.057
+          },
+          {
+            "word": "craft",
+            "info_bits": 2.923
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "clapt",
+        "info_bits": 3.774,
+        "top_3": [
+          {
+            "word": "clapt",
+            "info_bits": 3.774
+          },
+          {
+            "word": "clipt",
+            "info_bits": 3.64
+          },
+          {
+            "word": "clept",
+            "info_bits": 3.64
+          }
+        ]
+      },
+      "info_gap_bits": 0.584,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 78
+        },
+        {
+          "guess": "brond",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 15
+        },
+        {
+          "guess": "clapt",
+          "feedback": [
+            2,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 2,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "bandy",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "crazy",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "golly",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 168
+        },
+        {
+          "guess": "mulch",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 6
+        }
+      ],
+      "candidates_at_switch": [
+        "dolly",
+        "folly",
+        "golly",
+        "jolly",
+        "nylon",
+        "polyp"
+      ],
+      "n_candidates": 6,
+      "best_candidate_guess": {
+        "word": "dolly",
+        "info_bits": 1.792,
+        "top_3": [
+          {
+            "word": "dolly",
+            "info_bits": 1.792
+          },
+          {
+            "word": "folly",
+            "info_bits": 1.792
+          },
+          {
+            "word": "golly",
+            "info_bits": 1.792
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "defog",
+        "info_bits": 2.252,
+        "top_3": [
+          {
+            "word": "defog",
+            "info_bits": 2.252
+          },
+          {
+            "word": "dogey",
+            "info_bits": 2.252
+          },
+          {
+            "word": "dingy",
+            "info_bits": 2.252
+          }
+        ]
+      },
+      "info_gap_bits": 0.459,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 168
+        },
+        {
+          "guess": "mulch",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 6
+        },
+        {
+          "guess": "defog",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "golly",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    }
+  ]
+}

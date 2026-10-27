@@ -1,0 +1,740 @@
+{
+  "task_type": "knights_strategy_switch",
+  "description": "Knights, knaves, and spies logic puzzles. Each puzzle has no valid 2-role (knight/knave only) assignment, forcing the solver to recognise that a spy must be present. Exactly one person is a spy in each puzzle.",
+  "problems": [
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "Dave"
+      ],
+      "statements": {
+        "Alice": [
+          "There are exactly 3 knights among us"
+        ],
+        "Bob": [
+          "I am a knave"
+        ],
+        "Carol": [
+          "There are exactly 2 knaves among us"
+        ],
+        "Dave": [
+          "There are exactly 0 knights among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 3,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "is_role",
+            "subject": "Bob",
+            "role": "knave"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "exactly_n_role",
+            "role": "knave",
+            "n": 2,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Dave": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 0,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Bob": "spy",
+        "Alice": "knave",
+        "Carol": "knight",
+        "Dave": "knave"
+      },
+      "spy": "Bob",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 4 people: Alice, Bob, Carol, Dave. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"There are exactly 3 knights among us.\"\n- Bob says: \"I am a knave.\"\n- Carol says: \"There are exactly 2 knaves among us.\"\n- Dave says: \"There are exactly 0 knights among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knight:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knave:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: true. OK.\nBob (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knight:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: true. OK.\nBob (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "statements": {
+        "Alice": [
+          "I am a knave"
+        ],
+        "Bob": [
+          "Carol and I are the same type"
+        ],
+        "Carol": [
+          "There is exactly 1 knight among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "is_role",
+            "subject": "Alice",
+            "role": "knave"
+          }
+        ],
+        "Bob": [
+          {
+            "type": "same_type",
+            "person1": "Bob",
+            "person2": "Carol"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 1,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Alice": "spy",
+        "Bob": "knave",
+        "Carol": "knight"
+      },
+      "spy": "Alice",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 3 people: Alice, Bob, Carol. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"I am a knave.\"\n- Bob says: \"Carol and I are the same type.\"\n- Carol says: \"There is exactly 1 knight among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knight:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "statements": {
+        "Alice": [
+          "Carol is a knight"
+        ],
+        "Bob": [
+          "Alice is a knave"
+        ],
+        "Carol": [
+          "I am a knave"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knight"
+          }
+        ],
+        "Bob": [
+          {
+            "type": "is_role",
+            "subject": "Alice",
+            "role": "knave"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knave"
+          }
+        ]
+      },
+      "solution": {
+        "Carol": "spy",
+        "Alice": "knave",
+        "Bob": "knight"
+      },
+      "spy": "Carol",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 3 people: Alice, Bob, Carol. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"Carol is a knight.\"\n- Bob says: \"Alice is a knave.\"\n- Carol says: \"I am a knave.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight:\nAlice (knight) says \"Carol is a knight\" -- must be true. Check: true. OK.\nBob (knight) says \"Alice is a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave:\nAlice (knight) says \"Carol is a knight\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knight:\nAlice (knight) says \"Carol is a knight\" -- must be true. Check: true. OK.\nBob (knave) says \"Alice is a knave\" -- must be false. Check: false. OK.\nCarol (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "Dave"
+      ],
+      "statements": {
+        "Alice": [
+          "There are exactly 2 knights among us"
+        ],
+        "Bob": [
+          "Alice and I are the same type"
+        ],
+        "Carol": [
+          "I am a knave"
+        ],
+        "Dave": [
+          "There are exactly 3 knights among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 2,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "same_type",
+            "person1": "Alice",
+            "person2": "Bob"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knave"
+          }
+        ],
+        "Dave": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 3,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Carol": "spy",
+        "Alice": "knight",
+        "Bob": "knight",
+        "Dave": "knave"
+      },
+      "spy": "Carol",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 4 people: Alice, Bob, Carol, Dave. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"There are exactly 2 knights among us.\"\n- Bob says: \"Alice and I are the same type.\"\n- Carol says: \"I am a knave.\"\n- Dave says: \"There are exactly 3 knights among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knight:\nAlice (knight) says \"There are exactly 2 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knave:\nAlice (knight) says \"There are exactly 2 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knight:\nAlice (knight) says \"There are exactly 2 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "Dave"
+      ],
+      "statements": {
+        "Alice": [
+          "Dave and I are the same type"
+        ],
+        "Bob": [
+          "There are exactly 2 knaves among us"
+        ],
+        "Carol": [
+          "I am a knave"
+        ],
+        "Dave": [
+          "There is exactly 1 knave among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "same_type",
+            "person1": "Alice",
+            "person2": "Dave"
+          }
+        ],
+        "Bob": [
+          {
+            "type": "exactly_n_role",
+            "role": "knave",
+            "n": 2,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knave"
+          }
+        ],
+        "Dave": [
+          {
+            "type": "exactly_n_role",
+            "role": "knave",
+            "n": 1,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Carol": "spy",
+        "Alice": "knight",
+        "Bob": "knave",
+        "Dave": "knight"
+      },
+      "spy": "Carol",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 4 people: Alice, Bob, Carol, Dave. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"Dave and I are the same type.\"\n- Bob says: \"There are exactly 2 knaves among us.\"\n- Carol says: \"I am a knave.\"\n- Dave says: \"There is exactly 1 knave among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knight:\nAlice (knight) says \"Dave and I are the same type\" -- must be true. Check: true. OK.\nBob (knight) says \"There are exactly 2 knaves among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knave:\nAlice (knight) says \"Dave and I are the same type\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knight:\nAlice (knight) says \"Dave and I are the same type\" -- must be true. Check: true. OK.\nBob (knight) says \"There are exactly 2 knaves among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "Dave"
+      ],
+      "statements": {
+        "Alice": [
+          "There are exactly 3 knights among us"
+        ],
+        "Bob": [
+          "Dave and I are different types"
+        ],
+        "Carol": [
+          "I am a knave"
+        ],
+        "Dave": [
+          "Bob is a knave"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 3,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "diff_type",
+            "person1": "Bob",
+            "person2": "Dave"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knave"
+          }
+        ],
+        "Dave": [
+          {
+            "type": "is_role",
+            "subject": "Bob",
+            "role": "knave"
+          }
+        ]
+      },
+      "solution": {
+        "Carol": "spy",
+        "Alice": "knave",
+        "Bob": "knight",
+        "Dave": "knave"
+      },
+      "spy": "Carol",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 4 people: Alice, Bob, Carol, Dave. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"There are exactly 3 knights among us.\"\n- Bob says: \"Dave and I are different types.\"\n- Carol says: \"I am a knave.\"\n- Dave says: \"Bob is a knave.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knight:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knave:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: true. OK.\nBob (knight) says \"Dave and I are different types\" -- must be true. Check: true. OK.\nCarol (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knight:\nAlice (knight) says \"There are exactly 3 knights among us\" -- must be true. Check: true. OK.\nBob (knight) says \"Dave and I are different types\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "Dave"
+      ],
+      "statements": {
+        "Alice": [
+          "I am a knave"
+        ],
+        "Bob": [
+          "There are exactly 4 knights among us"
+        ],
+        "Carol": [
+          "Bob is a knave"
+        ],
+        "Dave": [
+          "Alice is a knave"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "is_role",
+            "subject": "Alice",
+            "role": "knave"
+          }
+        ],
+        "Bob": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 4,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol",
+              "Dave"
+            ]
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Bob",
+            "role": "knave"
+          }
+        ],
+        "Dave": [
+          {
+            "type": "is_role",
+            "subject": "Alice",
+            "role": "knave"
+          }
+        ]
+      },
+      "solution": {
+        "Alice": "spy",
+        "Bob": "knave",
+        "Carol": "knight",
+        "Dave": "knave"
+      },
+      "spy": "Alice",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 4 people: Alice, Bob, Carol, Dave. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"I am a knave.\"\n- Bob says: \"There are exactly 4 knights among us.\"\n- Carol says: \"Bob is a knave.\"\n- Dave says: \"Alice is a knave.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knight:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knight, Dave=knave:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knight:\nAlice (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave, Dave=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "statements": {
+        "Alice": [
+          "There is exactly 1 knight among us"
+        ],
+        "Bob": [
+          "Alice and I are the same type"
+        ],
+        "Carol": [
+          "I am a knave"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 1,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "same_type",
+            "person1": "Alice",
+            "person2": "Bob"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "is_role",
+            "subject": "Carol",
+            "role": "knave"
+          }
+        ]
+      },
+      "solution": {
+        "Carol": "spy",
+        "Alice": "knight",
+        "Bob": "knave"
+      },
+      "spy": "Carol",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 3 people: Alice, Bob, Carol. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"There is exactly 1 knight among us.\"\n- Bob says: \"Alice and I are the same type.\"\n- Carol says: \"I am a knave.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight:\nAlice (knight) says \"There is exactly 1 knight among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave:\nAlice (knight) says \"There is exactly 1 knight among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knight:\nAlice (knight) says \"There is exactly 1 knight among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "statements": {
+        "Alice": [
+          "There are exactly 0 knights among us"
+        ],
+        "Bob": [
+          "I am a knave"
+        ],
+        "Carol": [
+          "There is exactly 1 knight among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 0,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "is_role",
+            "subject": "Bob",
+            "role": "knave"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "exactly_n_role",
+            "role": "knight",
+            "n": 1,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Bob": "spy",
+        "Alice": "knave",
+        "Carol": "knight"
+      },
+      "spy": "Bob",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 3 people: Alice, Bob, Carol. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"There are exactly 0 knights among us.\"\n- Bob says: \"I am a knave.\"\n- Carol says: \"There is exactly 1 knight among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight:\nAlice (knight) says \"There are exactly 0 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave:\nAlice (knight) says \"There are exactly 0 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knight:\nAlice (knight) says \"There are exactly 0 knights among us\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knave:"
+        }
+      ]
+    },
+    {
+      "people": [
+        "Alice",
+        "Bob",
+        "Carol"
+      ],
+      "statements": {
+        "Alice": [
+          "At least 1 of us is a knave"
+        ],
+        "Bob": [
+          "I am a knave"
+        ],
+        "Carol": [
+          "There are exactly 2 knaves among us"
+        ]
+      },
+      "statements_structured": {
+        "Alice": [
+          {
+            "type": "at_least_n_role",
+            "role": "knave",
+            "n": 1,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ],
+        "Bob": [
+          {
+            "type": "is_role",
+            "subject": "Bob",
+            "role": "knave"
+          }
+        ],
+        "Carol": [
+          {
+            "type": "exactly_n_role",
+            "role": "knave",
+            "n": 2,
+            "group": [
+              "Alice",
+              "Bob",
+              "Carol"
+            ]
+          }
+        ]
+      },
+      "solution": {
+        "Bob": "spy",
+        "Alice": "knight",
+        "Carol": "knave"
+      },
+      "spy": "Bob",
+      "two_role_consistent": false,
+      "solution_unique": true,
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "There are 3 people: Alice, Bob, Carol. Each person is either a knight (always tells the truth), a knave (always lies), or possibly a spy (can say anything, true or false).\n\nThey make the following statements:\n- Alice says: \"At least 1 of us is a knave.\"\n- Bob says: \"I am a knave.\"\n- Carol says: \"There are exactly 2 knaves among us.\"\n\nYou have one response. State your answer as SUBMIT: [Name] is a [knight/knave/spy]"
+        },
+        {
+          "role": "assistant",
+          "content": "Let me work through the possible knight/knave assignments.\n\nTesting Alice=knight, Bob=knight, Carol=knight:\nAlice (knight) says \"At least 1 of us is a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knight, Carol=knave:\nAlice (knight) says \"At least 1 of us is a knave\" -- must be true. Check: true. OK.\nBob (knight) says \"I am a knave\" -- must be true. Check: false. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knight:\nAlice (knight) says \"At least 1 of us is a knave\" -- must be true. Check: true. OK.\nBob (knave) says \"I am a knave\" -- must be false. Check: true. Contradiction.\n\nTesting Alice=knight, Bob=knave, Carol=knave:"
+        }
+      ]
+    }
+  ]
+}

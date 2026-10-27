@@ -1,0 +1,19 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# source-dataset text fetched by scripts/fetch_qbank.py: never commit
+data/question_bank*.json
+tasks/*/qbank.json
+
+# new runs (pilots, call logs)
+tasks/*/results_v2_pilot/
+tasks/*/results_v2*/logs/
+run_logs/

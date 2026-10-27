@@ -1,0 +1,49 @@
+# MetaLoop Study 5: Source Monitoring (T3)
+# Read a passage about a fictional topic, classify statements by source.
+
+study:
+  title: "Passage Comprehension"
+  subtitle: "Read the passage and classify each statement by its source"
+  logo_text: "M"
+  guidelines: |
+    Read the passage, then classify each statement. Where does the information come from?
+
+    - **PASSAGE** — explicitly stated in the passage
+    - **GENERAL KNOWLEDGE** — a real-world fact you already knew, not from the passage
+    - **INFERRED** — not directly stated, but follows logically from the passage + your knowledge
+    - **FABRICATED** — sounds plausible but is not stated, not a real fact, and not logically derivable
+  two_panel: true
+  left_panel_title: "Passage"
+
+allocation:
+  scenarios_per_participant: 8
+  target_ratings_per_scenario: 20
+  slot_timeout_minutes: 20
+
+questions:
+  - id: classification
+    type: rating
+    label: "Where does this information come from?"
+    required: true
+    options:
+      PASSAGE: "PASSAGE — Stated in the passage"
+      TRAINING: "GENERAL KNOWLEDGE — A real fact I already knew"
+      INFERRED: "INFERRED — Follows logically from passage + my knowledge"
+      FABRICATED: "FABRICATED — Sounds plausible but not supported"
+    colors:
+      PASSAGE: "#4f46e5"
+      TRAINING: "#16a34a"
+      INFERRED: "#ca8a04"
+      FABRICATED: "#dc2626"
+
+  - id: confidence
+    type: slider
+    label: "How confident are you in this classification?"
+    required: true
+    min: 0
+    max: 100
+    step: 1
+    default: 50
+    labels:
+      left: "Guessing"
+      right: "Certain"

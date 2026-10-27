@@ -1,0 +1,1323 @@
+{
+  "task_type": "letter_guess_strategy_switch",
+  "description": "Letter Guess problems where optimal play leads to a state with many similar candidates. Guessing candidate words has low information gain; guessing a non-candidate distinguisher word is strictly better. The agent must recognise this and pivot from candidate-guessing to distinguisher-guessing.",
+  "problems": [
+    {
+      "target": "linch",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 396
+        },
+        {
+          "guess": "tonic",
+          "feedback": [
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "cinch",
+        "finch",
+        "hinch",
+        "kinch",
+        "linch",
+        "pinch",
+        "winch"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "word": "cinch",
+        "info_bits": 0.592,
+        "top_3": [
+          {
+            "word": "cinch",
+            "info_bits": 0.592
+          },
+          {
+            "word": "finch",
+            "info_bits": 0.592
+          },
+          {
+            "word": "hinch",
+            "info_bits": 0.592
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "clawk",
+        "info_bits": 2.128,
+        "top_3": [
+          {
+            "word": "clawk",
+            "info_bits": 2.128
+          },
+          {
+            "word": "clunk",
+            "info_bits": 1.664
+          },
+          {
+            "word": "cowal",
+            "info_bits": 1.664
+          }
+        ]
+      },
+      "info_gap_bits": 1.536,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 396
+        },
+        {
+          "guess": "tonic",
+          "feedback": [
+            0,
+            0,
+            2,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 7
+        },
+        {
+          "guess": "clawk",
+          "feedback": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "linch",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "liner",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 105
+        },
+        {
+          "guess": "delft",
+          "feedback": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 5
+        }
+      ],
+      "candidates_at_switch": [
+        "liber",
+        "liker",
+        "limer",
+        "liner",
+        "liver"
+      ],
+      "n_candidates": 5,
+      "best_candidate_guess": {
+        "word": "liber",
+        "info_bits": 0.722,
+        "top_3": [
+          {
+            "word": "liber",
+            "info_bits": 0.722
+          },
+          {
+            "word": "liker",
+            "info_bits": 0.722
+          },
+          {
+            "word": "limer",
+            "info_bits": 0.722
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "bronk",
+        "info_bits": 1.922,
+        "top_3": [
+          {
+            "word": "bronk",
+            "info_bits": 1.922
+          },
+          {
+            "word": "brank",
+            "info_bits": 1.922
+          },
+          {
+            "word": "bunko",
+            "info_bits": 1.922
+          }
+        ]
+      },
+      "info_gap_bits": 1.2,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 105
+        },
+        {
+          "guess": "delft",
+          "feedback": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 5
+        },
+        {
+          "guess": "bronk",
+          "feedback": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "liner",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "stray",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 85
+        },
+        {
+          "guess": "sprat",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\ud83d\udfe8",
+          "remaining_candidates": 5
+        }
+      ],
+      "candidates_at_switch": [
+        "strad",
+        "strag",
+        "stram",
+        "straw",
+        "stray"
+      ],
+      "n_candidates": 5,
+      "best_candidate_guess": {
+        "word": "strad",
+        "info_bits": 0.722,
+        "top_3": [
+          {
+            "word": "strad",
+            "info_bits": 0.722
+          },
+          {
+            "word": "strag",
+            "info_bits": 0.722
+          },
+          {
+            "word": "stram",
+            "info_bits": 0.722
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "didym",
+        "info_bits": 1.922,
+        "top_3": [
+          {
+            "word": "didym",
+            "info_bits": 1.922
+          },
+          {
+            "word": "gawky",
+            "info_bits": 1.922
+          },
+          {
+            "word": "dogly",
+            "info_bits": 1.922
+          }
+        ]
+      },
+      "info_gap_bits": 1.2,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 85
+        },
+        {
+          "guess": "sprat",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\ud83d\udfe8",
+          "remaining_candidates": 5
+        },
+        {
+          "guess": "didym",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "stray",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "shrag",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 85
+        },
+        {
+          "guess": "sprat",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\u2b1b",
+          "remaining_candidates": 13
+        }
+      ],
+      "candidates_at_switch": [
+        "scrab",
+        "scrag",
+        "scram",
+        "scran",
+        "scraw",
+        "scray",
+        "shrab",
+        "shraf",
+        "shrag",
+        "shram",
+        "soral",
+        "surah",
+        "sural"
+      ],
+      "n_candidates": 13,
+      "best_candidate_guess": {
+        "word": "shrab",
+        "info_bits": 1.823,
+        "top_3": [
+          {
+            "word": "shrab",
+            "info_bits": 1.823
+          },
+          {
+            "word": "shrag",
+            "info_bits": 1.823
+          },
+          {
+            "word": "shram",
+            "info_bits": 1.823
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "bough",
+        "info_bits": 2.931,
+        "top_3": [
+          {
+            "word": "bough",
+            "info_bits": 2.931
+          },
+          {
+            "word": "cumyl",
+            "info_bits": 2.719
+          },
+          {
+            "word": "bunch",
+            "info_bits": 2.719
+          }
+        ]
+      },
+      "info_gap_bits": 1.108,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 85
+        },
+        {
+          "guess": "sprat",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\u2b1b",
+          "remaining_candidates": 13
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "shrag",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "smeer",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 63
+        },
+        {
+          "guess": "steer",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 7
+        }
+      ],
+      "candidates_at_switch": [
+        "sheer",
+        "skeer",
+        "sleer",
+        "smeer",
+        "sneer",
+        "speer",
+        "sweer"
+      ],
+      "n_candidates": 7,
+      "best_candidate_guess": {
+        "word": "sheer",
+        "info_bits": 0.592,
+        "top_3": [
+          {
+            "word": "sheer",
+            "info_bits": 0.592
+          },
+          {
+            "word": "skeer",
+            "info_bits": 0.592
+          },
+          {
+            "word": "sleer",
+            "info_bits": 0.592
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "clunk",
+        "info_bits": 1.664,
+        "top_3": [
+          {
+            "word": "clunk",
+            "info_bits": 1.664
+          },
+          {
+            "word": "dukhn",
+            "info_bits": 1.664
+          },
+          {
+            "word": "clawk",
+            "info_bits": 1.664
+          }
+        ]
+      },
+      "info_gap_bits": 1.073,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 63
+        },
+        {
+          "guess": "steer",
+          "feedback": [
+            2,
+            0,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 7
+        },
+        {
+          "guess": "clunk",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 4,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "aleph",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\u2b1b",
+          "remaining_candidates": 2
+        },
+        {
+          "guess": "abeam",
+          "feedback": [
+            0,
+            0,
+            2,
+            0,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "smeer",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "moral",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 317
+        },
+        {
+          "guess": "artal",
+          "feedback": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 14
+        }
+      ],
+      "candidates_at_switch": [
+        "boral",
+        "coral",
+        "dural",
+        "fural",
+        "goral",
+        "gyral",
+        "horal",
+        "jural",
+        "loral",
+        "lural",
+        "moral",
+        "mural",
+        "poral",
+        "pyral"
+      ],
+      "n_candidates": 14,
+      "best_candidate_guess": {
+        "word": "goral",
+        "info_bits": 1.592,
+        "top_3": [
+          {
+            "word": "goral",
+            "info_bits": 1.592
+          },
+          {
+            "word": "loral",
+            "info_bits": 1.592
+          },
+          {
+            "word": "moral",
+            "info_bits": 1.592
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "bogum",
+        "info_bits": 2.664,
+        "top_3": [
+          {
+            "word": "bogum",
+            "info_bits": 2.664
+          },
+          {
+            "word": "bumpy",
+            "info_bits": 2.664
+          },
+          {
+            "word": "dumpy",
+            "info_bits": 2.638
+          }
+        ]
+      },
+      "info_gap_bits": 1.073,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 317
+        },
+        {
+          "guess": "artal",
+          "feedback": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 14
+        },
+        {
+          "guess": "bogum",
+          "feedback": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "moral",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "timed",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 153
+        },
+        {
+          "guess": "lined",
+          "feedback": [
+            0,
+            2,
+            0,
+            2,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 8
+        }
+      ],
+      "candidates_at_switch": [
+        "biped",
+        "fixed",
+        "hided",
+        "mixed",
+        "piked",
+        "piped",
+        "tided",
+        "timed"
+      ],
+      "n_candidates": 8,
+      "best_candidate_guess": {
+        "word": "biped",
+        "info_bits": 1.549,
+        "top_3": [
+          {
+            "word": "biped",
+            "info_bits": 1.549
+          },
+          {
+            "word": "mixed",
+            "info_bits": 1.549
+          },
+          {
+            "word": "piked",
+            "info_bits": 1.549
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "ampyx",
+        "info_bits": 2.5,
+        "top_3": [
+          {
+            "word": "ampyx",
+            "info_bits": 2.5
+          },
+          {
+            "word": "empty",
+            "info_bits": 2.5
+          },
+          {
+            "word": "depth",
+            "info_bits": 2.25
+          }
+        ]
+      },
+      "info_gap_bits": 0.951,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8",
+          "remaining_candidates": 153
+        },
+        {
+          "guess": "lined",
+          "feedback": [
+            0,
+            2,
+            0,
+            2,
+            2
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 8
+        },
+        {
+          "guess": "ampyx",
+          "feedback": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "timed",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "redye",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            2,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 27
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 5
+        }
+      ],
+      "candidates_at_switch": [
+        "recce",
+        "redye",
+        "reeve",
+        "renne",
+        "reree"
+      ],
+      "n_candidates": 5,
+      "best_candidate_guess": {
+        "word": "reeve",
+        "info_bits": 1.371,
+        "top_3": [
+          {
+            "word": "reeve",
+            "info_bits": 1.371
+          },
+          {
+            "word": "reree",
+            "info_bits": 1.371
+          },
+          {
+            "word": "recce",
+            "info_bits": 0.722
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "coned",
+        "info_bits": 2.322,
+        "top_3": [
+          {
+            "word": "coned",
+            "info_bits": 2.322
+          },
+          {
+            "word": "creen",
+            "info_bits": 2.322
+          },
+          {
+            "word": "coved",
+            "info_bits": 2.322
+          }
+        ]
+      },
+      "info_gap_bits": 0.951,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            2,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 27
+        },
+        {
+          "guess": "bough",
+          "feedback": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\u2b1b\u2b1b",
+          "remaining_candidates": 5
+        },
+        {
+          "guess": "coned",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "redye",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "disna",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\ud83d\udfe8\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 47
+        },
+        {
+          "guess": "simal",
+          "feedback": [
+            1,
+            2,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe9\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 5
+        }
+      ],
+      "candidates_at_switch": [
+        "cista",
+        "disna",
+        "kiswa",
+        "vista",
+        "wisha"
+      ],
+      "n_candidates": 5,
+      "best_candidate_guess": {
+        "word": "cista",
+        "info_bits": 1.371,
+        "top_3": [
+          {
+            "word": "cista",
+            "info_bits": 1.371
+          },
+          {
+            "word": "kiswa",
+            "info_bits": 1.371
+          },
+          {
+            "word": "vista",
+            "info_bits": 1.371
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "chink",
+        "info_bits": 2.322,
+        "top_3": [
+          {
+            "word": "chink",
+            "info_bits": 2.322
+          },
+          {
+            "word": "chunk",
+            "info_bits": 2.322
+          },
+          {
+            "word": "datch",
+            "info_bits": 2.322
+          }
+        ]
+      },
+      "info_gap_bits": 0.951,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe8\ud83d\udfe8\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 47
+        },
+        {
+          "guess": "simal",
+          "feedback": [
+            1,
+            2,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\ud83d\udfe8\ud83d\udfe9\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 5
+        },
+        {
+          "guess": "chink",
+          "feedback": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe9\u2b1b",
+          "remaining_candidates": 1,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "disna",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    },
+    {
+      "target": "dorje",
+      "history": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 106
+        },
+        {
+          "guess": "courb",
+          "feedback": [
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 12
+        }
+      ],
+      "candidates_at_switch": [
+        "doree",
+        "dorje",
+        "forge",
+        "forme",
+        "forte",
+        "gorge",
+        "horde",
+        "horme",
+        "joree",
+        "morne",
+        "porge",
+        "torve"
+      ],
+      "n_candidates": 12,
+      "best_candidate_guess": {
+        "word": "forme",
+        "info_bits": 1.781,
+        "top_3": [
+          {
+            "word": "forme",
+            "info_bits": 1.781
+          },
+          {
+            "word": "forge",
+            "info_bits": 1.614
+          },
+          {
+            "word": "doree",
+            "info_bits": 1.585
+          }
+        ]
+      },
+      "best_overall_guess": {
+        "word": "gated",
+        "info_bits": 2.689,
+        "top_3": [
+          {
+            "word": "gated",
+            "info_bits": 2.689
+          },
+          {
+            "word": "fight",
+            "info_bits": 2.585
+          },
+          {
+            "word": "fated",
+            "info_bits": 2.585
+          }
+        ]
+      },
+      "info_gap_bits": 0.908,
+      "optimal_solution": [
+        {
+          "guess": "raise",
+          "feedback": [
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe8\u2b1b\u2b1b\u2b1b\ud83d\udfe9",
+          "remaining_candidates": 106
+        },
+        {
+          "guess": "courb",
+          "feedback": [
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "feedback_display": "\u2b1b\ud83d\udfe9\u2b1b\ud83d\udfe8\u2b1b",
+          "remaining_candidates": 12
+        },
+        {
+          "guess": "gated",
+          "feedback": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "feedback_display": "\u2b1b\u2b1b\u2b1b\ud83d\udfe8\ud83d\udfe8",
+          "remaining_candidates": 2,
+          "is_distinguisher": true
+        },
+        {
+          "guess": "aleph",
+          "feedback": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "feedback_display": "\u2b1b\u2b1b\ud83d\udfe8\u2b1b\u2b1b",
+          "remaining_candidates": 1
+        },
+        {
+          "guess": "dorje",
+          "feedback": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "feedback_display": "\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9\ud83d\udfe9",
+          "remaining_candidates": 1
+        }
+      ]
+    }
+  ]
+}

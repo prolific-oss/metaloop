@@ -1,0 +1,1021 @@
+{
+  "task_type": "graph_coloring_strategy_switch",
+  "description": "Graph coloring problems where greedy coloring in the given node order gets stuck. The graph is K-colorable, but the model must backtrack and recolor earlier nodes to complete the coloring.",
+  "problems": [
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "edges": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "G"
+        ],
+        [
+          "B",
+          "D"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "B",
+          "G"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "G",
+          "H"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "F",
+        "C",
+        "E",
+        "B",
+        "H",
+        "D",
+        "A",
+        "G"
+      ],
+      "greedy_coloring": {
+        "F": 1,
+        "C": 2,
+        "E": 1,
+        "B": 2,
+        "H": 1,
+        "D": 3
+      },
+      "stuck_node": "A",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "F": 1,
+        "C": 2,
+        "E": 2,
+        "B": 2,
+        "H": 1,
+        "D": 3,
+        "A": 1,
+        "G": 3
+      },
+      "recolor_moves": [
+        {
+          "node": "E",
+          "from": 1,
+          "to": 2
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G, H\nEdges: A-C, A-D, A-E, A-G, B-D, B-F, B-G, C-D, C-F, D-F, G-H\n\nAdjacency list:\n  A: C, D, E, G\n  B: D, F, G\n  C: A, D, F\n  D: A, B, C, F\n  E: A\n  F: B, C, D\n  G: A, B, H\n  H: G\n\nColor the nodes in this order: F, C, E, B, H, D, A, G.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "F -> 1 (no colored neighbors)\nC -> 2 (neighbors F=1)\nE -> 1 (no colored neighbors)\nB -> 2 (neighbors F=1)\nH -> 1 (no colored neighbors)\nD -> 3 (neighbors B=2, C=2, F=1)\nA -> 4 (neighbors C=2, D=3, E=1)\nG -> 3 (neighbors A=4, B=2, H=1)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "edges": [
+        [
+          "B",
+          "D"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "C",
+          "G"
+        ],
+        [
+          "D",
+          "E"
+        ],
+        [
+          "D",
+          "G"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "C",
+        "F",
+        "B",
+        "A",
+        "G",
+        "D",
+        "E"
+      ],
+      "greedy_coloring": {
+        "C": 1,
+        "F": 2,
+        "B": 1,
+        "A": 1,
+        "G": 2,
+        "D": 3
+      },
+      "stuck_node": "E",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "C": 1,
+        "F": 3,
+        "B": 1,
+        "A": 1,
+        "G": 2,
+        "D": 3,
+        "E": 2
+      },
+      "recolor_moves": [
+        {
+          "node": "F",
+          "from": 2,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G\nEdges: B-D, B-E, C-D, C-F, C-G, D-E, D-G, E-F\n\nAdjacency list:\n  A: \n  B: D, E\n  C: D, F, G\n  D: B, C, E, G\n  E: B, D, F\n  F: C, E\n  G: C, D\n\nColor the nodes in this order: C, F, B, A, G, D, E.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "C -> 1 (no colored neighbors)\nF -> 2 (neighbors C=1)\nB -> 1 (no colored neighbors)\nA -> 1 (no colored neighbors)\nG -> 2 (neighbors C=1)\nD -> 3 (neighbors B=1, C=1, G=2)\nE -> 4 (neighbors B=1, D=3, F=2)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "edges": [
+        [
+          "A",
+          "C"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "C",
+          "G"
+        ],
+        [
+          "D",
+          "G"
+        ],
+        [
+          "E",
+          "F"
+        ],
+        [
+          "E",
+          "G"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "B",
+        "C",
+        "F",
+        "D",
+        "G",
+        "A",
+        "E"
+      ],
+      "greedy_coloring": {
+        "B": 1,
+        "C": 1,
+        "F": 2,
+        "D": 2,
+        "G": 3,
+        "A": 2
+      },
+      "stuck_node": "E",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "B": 1,
+        "C": 1,
+        "F": 3,
+        "D": 2,
+        "G": 3,
+        "A": 2,
+        "E": 2
+      },
+      "recolor_moves": [
+        {
+          "node": "F",
+          "from": 2,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G\nEdges: A-C, C-D, C-E, C-F, C-G, D-G, E-F, E-G\n\nAdjacency list:\n  A: C\n  B: \n  C: A, D, E, F, G\n  D: C, G\n  E: C, F, G\n  F: C, E\n  G: C, D, E\n\nColor the nodes in this order: B, C, F, D, G, A, E.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "B -> 1 (no colored neighbors)\nC -> 1 (no colored neighbors)\nF -> 2 (neighbors C=1)\nD -> 2 (neighbors C=1)\nG -> 3 (neighbors C=1, D=2)\nA -> 2 (neighbors C=1)\nE -> 4 (neighbors C=1, F=2, G=3)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "H"
+        ],
+        [
+          "B",
+          "G"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "C",
+          "G"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "D",
+          "G"
+        ],
+        [
+          "D",
+          "H"
+        ],
+        [
+          "E",
+          "G"
+        ],
+        [
+          "F",
+          "H"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "A",
+        "D",
+        "B",
+        "H",
+        "E",
+        "C",
+        "F",
+        "G"
+      ],
+      "greedy_coloring": {
+        "A": 1,
+        "D": 1,
+        "B": 2,
+        "H": 2,
+        "E": 2,
+        "C": 3
+      },
+      "stuck_node": "F",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "A": 1,
+        "D": 2,
+        "B": 2,
+        "H": 3,
+        "E": 2,
+        "C": 3,
+        "F": 1,
+        "G": 1
+      },
+      "recolor_moves": [
+        {
+          "node": "D",
+          "from": 1,
+          "to": 2
+        },
+        {
+          "node": "H",
+          "from": 2,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G, H\nEdges: A-B, A-C, A-E, A-H, B-G, C-D, C-E, C-F, C-G, D-F, D-G, D-H, E-G, F-H\n\nAdjacency list:\n  A: B, C, E, H\n  B: A, G\n  C: A, D, E, F, G\n  D: C, F, G, H\n  E: A, C, G\n  F: C, D, H\n  G: B, C, D, E\n  H: A, D, F\n\nColor the nodes in this order: A, D, B, H, E, C, F, G.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "A -> 1 (no colored neighbors)\nD -> 1 (no colored neighbors)\nB -> 2 (neighbors A=1)\nH -> 2 (neighbors A=1, D=1)\nE -> 2 (neighbors A=1)\nC -> 3 (neighbors A=1, D=1, E=2)\nF -> 4 (neighbors C=3, D=1, H=2)\nG -> 4 (neighbors B=2, C=3, D=1, E=2)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "edges": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "E",
+          "F"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "B",
+        "E",
+        "F",
+        "A",
+        "D",
+        "C"
+      ],
+      "greedy_coloring": {
+        "B": 1,
+        "E": 2,
+        "F": 3,
+        "A": 1,
+        "D": 1
+      },
+      "stuck_node": "C",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "B": 1,
+        "E": 2,
+        "F": 3,
+        "A": 1,
+        "D": 2,
+        "C": 1
+      },
+      "recolor_moves": [
+        {
+          "node": "D",
+          "from": 1,
+          "to": 2
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F\nEdges: A-F, B-E, B-F, C-D, C-E, C-F, E-F\n\nAdjacency list:\n  A: F\n  B: E, F\n  C: D, E, F\n  D: C\n  E: B, C, F\n  F: A, B, C, E\n\nColor the nodes in this order: B, E, F, A, D, C.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "B -> 1 (no colored neighbors)\nE -> 2 (neighbors B=1)\nF -> 3 (neighbors B=1, E=2)\nA -> 1 (neighbors F=3)\nD -> 1 (no colored neighbors)\nC -> 4 (neighbors D=1, E=2, F=3)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "edges": [
+        [
+          "A",
+          "D"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "B",
+          "G"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "H"
+        ],
+        [
+          "E",
+          "F"
+        ],
+        [
+          "E",
+          "H"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "C",
+        "D",
+        "H",
+        "F",
+        "G",
+        "A",
+        "E",
+        "B"
+      ],
+      "greedy_coloring": {
+        "C": 1,
+        "D": 2,
+        "H": 2,
+        "F": 1,
+        "G": 1,
+        "A": 3
+      },
+      "stuck_node": "E",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "C": 1,
+        "D": 2,
+        "H": 3,
+        "F": 1,
+        "G": 1,
+        "A": 3,
+        "E": 2,
+        "B": 2
+      },
+      "recolor_moves": [
+        {
+          "node": "H",
+          "from": 2,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G, H\nEdges: A-D, A-E, A-F, B-C, B-F, B-G, C-D, C-H, E-F, E-H\n\nAdjacency list:\n  A: D, E, F\n  B: C, F, G\n  C: B, D, H\n  D: A, C\n  E: A, F, H\n  F: A, B, E\n  G: B\n  H: C, E\n\nColor the nodes in this order: C, D, H, F, G, A, E, B.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "C -> 1 (no colored neighbors)\nD -> 2 (neighbors C=1)\nH -> 2 (neighbors C=1)\nF -> 1 (no colored neighbors)\nG -> 1 (no colored neighbors)\nA -> 3 (neighbors D=2, F=1)\nE -> 4 (neighbors A=3, F=1, H=2)\nB -> 2 (neighbors C=1, F=1, G=1)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "A",
+          "G"
+        ],
+        [
+          "B",
+          "C"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "D",
+          "E"
+        ],
+        [
+          "E",
+          "G"
+        ],
+        [
+          "F",
+          "G"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "C",
+        "A",
+        "B",
+        "D",
+        "F",
+        "G",
+        "E"
+      ],
+      "greedy_coloring": {
+        "C": 1,
+        "A": 1,
+        "B": 2,
+        "D": 2,
+        "F": 2,
+        "G": 3
+      },
+      "stuck_node": "E",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "C": 3,
+        "A": 1,
+        "B": 2,
+        "D": 2,
+        "F": 2,
+        "G": 3,
+        "E": 1
+      },
+      "recolor_moves": [
+        {
+          "node": "C",
+          "from": 1,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G\nEdges: A-B, A-D, A-G, B-C, C-E, C-F, D-E, E-G, F-G\n\nAdjacency list:\n  A: B, D, G\n  B: A, C\n  C: B, E, F\n  D: A, E\n  E: C, D, G\n  F: C, G\n  G: A, E, F\n\nColor the nodes in this order: C, A, B, D, F, G, E.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "C -> 1 (no colored neighbors)\nA -> 1 (no colored neighbors)\nB -> 2 (neighbors A=1, C=1)\nD -> 2 (neighbors A=1)\nF -> 2 (neighbors C=1)\nG -> 3 (neighbors A=1, F=2)\nE -> 4 (neighbors C=1, D=2, G=3)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "B",
+          "G"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "D",
+          "F"
+        ],
+        [
+          "D",
+          "G"
+        ],
+        [
+          "F",
+          "G"
+        ],
+        [
+          "F",
+          "H"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "B",
+        "F",
+        "C",
+        "H",
+        "E",
+        "A",
+        "G",
+        "D"
+      ],
+      "greedy_coloring": {
+        "B": 1,
+        "F": 2,
+        "C": 1,
+        "H": 1,
+        "E": 1,
+        "A": 3,
+        "G": 3
+      },
+      "stuck_node": "D",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "B": 1,
+        "F": 2,
+        "C": 3,
+        "H": 1,
+        "E": 1,
+        "A": 3,
+        "G": 3,
+        "D": 1
+      },
+      "recolor_moves": [
+        {
+          "node": "C",
+          "from": 1,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G, H\nEdges: A-B, A-F, B-F, B-G, C-D, C-F, D-F, D-G, F-G, F-H\n\nAdjacency list:\n  A: B, F\n  B: A, F, G\n  C: D, F\n  D: C, F, G\n  E: \n  F: A, B, C, D, G, H\n  G: B, D, F\n  H: F\n\nColor the nodes in this order: B, F, C, H, E, A, G, D.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "B -> 1 (no colored neighbors)\nF -> 2 (neighbors B=1)\nC -> 1 (neighbors F=2)\nH -> 1 (neighbors F=2)\nE -> 1 (no colored neighbors)\nA -> 3 (neighbors B=1, F=2)\nG -> 3 (neighbors B=1, F=2)\nD -> 4 (neighbors C=1, F=2, G=3)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "C",
+          "F"
+        ],
+        [
+          "D",
+          "E"
+        ],
+        [
+          "D",
+          "G"
+        ],
+        [
+          "E",
+          "G"
+        ],
+        [
+          "F",
+          "G"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "E",
+        "F",
+        "C",
+        "A",
+        "G",
+        "D",
+        "B"
+      ],
+      "greedy_coloring": {
+        "E": 1,
+        "F": 1,
+        "C": 2,
+        "A": 3,
+        "G": 2
+      },
+      "stuck_node": "D",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "E": 3,
+        "F": 1,
+        "C": 2,
+        "A": 3,
+        "G": 2,
+        "D": 1,
+        "B": 1
+      },
+      "recolor_moves": [
+        {
+          "node": "E",
+          "from": 1,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F, G\nEdges: A-B, A-C, A-D, A-F, B-E, C-F, D-E, D-G, E-G, F-G\n\nAdjacency list:\n  A: B, C, D, F\n  B: A, E\n  C: A, F\n  D: A, E, G\n  E: B, D, G\n  F: A, C, G\n  G: D, E, F\n\nColor the nodes in this order: E, F, C, A, G, D, B.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "E -> 1 (no colored neighbors)\nF -> 1 (no colored neighbors)\nC -> 2 (neighbors F=1)\nA -> 3 (neighbors C=2, F=1)\nG -> 2 (neighbors E=1, F=1)\nD -> 4 (neighbors A=3, E=1, G=2)\nB -> 2 (neighbors A=3, E=1)"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "edges": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "B",
+          "F"
+        ],
+        [
+          "C",
+          "D"
+        ],
+        [
+          "C",
+          "E"
+        ],
+        [
+          "D",
+          "E"
+        ],
+        [
+          "D",
+          "F"
+        ]
+      ],
+      "k": 3,
+      "node_order": [
+        "B",
+        "F",
+        "A",
+        "E",
+        "D",
+        "C"
+      ],
+      "greedy_coloring": {
+        "B": 1,
+        "F": 2,
+        "A": 2,
+        "E": 1,
+        "D": 3
+      },
+      "stuck_node": "C",
+      "stuck_node_neighbor_colors": [
+        1,
+        2,
+        3
+      ],
+      "valid_coloring": {
+        "B": 1,
+        "F": 2,
+        "A": 3,
+        "E": 1,
+        "D": 3,
+        "C": 2
+      },
+      "recolor_moves": [
+        {
+          "node": "A",
+          "from": 2,
+          "to": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Color the following graph using at most 3 colors (labeled 1 through 3) so that no two adjacent nodes share a color.\n\nNodes: A, B, C, D, E, F\nEdges: A-B, A-C, B-F, C-D, C-E, D-E, D-F\n\nAdjacency list:\n  A: B, C\n  B: A, F\n  C: A, D, E\n  D: C, E, F\n  E: C, D\n  F: B, D\n\nColor the nodes in this order: B, F, A, E, D, C.\nFor each node, assign the smallest valid color (not used by any already-colored neighbor).\n\nYou have one response. State your answer as SUBMIT: [Node] -> [color] for every node."
+        },
+        {
+          "role": "assistant",
+          "content": "B -> 1 (no colored neighbors)\nF -> 2 (neighbors B=1)\nA -> 2 (neighbors B=1)\nE -> 1 (no colored neighbors)\nD -> 3 (neighbors E=1, F=2)\nC -> 4 (neighbors A=2, D=3, E=1)"
+        }
+      ]
+    }
+  ]
+}

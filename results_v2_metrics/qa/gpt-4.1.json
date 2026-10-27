@@ -1,0 +1,118 @@
+{
+ "model": "gpt-4.1",
+ "wagering": {
+  "A": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 68.292682927,
+   "ece": 0.2577,
+   "wr": 71.84,
+   "brier": 0.2606,
+   "payout": 3263,
+   "payout_gap": 2897,
+   "mean_conf_correct": 95.964285714,
+   "mean_conf_wrong": 89.972027972,
+   "wagers": {
+    "BOLD": 323,
+    "MEDIUM": 127,
+    "SAFE": 1
+   }
+  },
+  "B": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 69.179600887,
+   "ece": 0.2108,
+   "wr": 100.0,
+   "brier": 0.2328,
+   "payout": 2184,
+   "payout_gap": 4056,
+   "mean_conf_correct": 92.46474359,
+   "mean_conf_wrong": 85.294964029,
+   "wagers": {
+    "BOLD": 447,
+    "MEDIUM": 3,
+    "SAFE": 1
+   }
+  }
+ },
+ "deferral": {
+  "A": {
+   "n_items": 592,
+   "n_valid": 591,
+   "excluded": {
+    "invalid_decision": 1
+   },
+   "decisions_wellspec": {
+    "ATTEMPT": 402,
+    "DEFER": 49,
+    "CLARIFY": 3
+   },
+   "defer_rate": {
+    "low": 1.315789474,
+    "medium": 5.298013245,
+    "high": 25.82781457
+   },
+   "defer_change_low_to_high_pp": 24.512025096,
+   "clar_recall": 40.88,
+   "clar_precision": 94.92,
+   "points": {
+    "low": 590,
+    "high": -890,
+    "medium": -50,
+    "total": -350
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 75.187969925,
+   "counterfactual": {
+    "n_declined": 52,
+    "n_forced_scored": 52,
+    "accuracy_declined": 26.923076923
+   }
+  },
+  "B": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 386,
+    "DEFER": 65,
+    "CLARIFY": 3
+   },
+   "defer_rate": {
+    "low": 2.631578947,
+    "medium": 11.920529801,
+    "high": 28.476821192
+   },
+   "defer_change_low_to_high_pp": 25.845242245,
+   "clar_recall": 40.58,
+   "clar_precision": 94.92,
+   "points": {
+    "low": 550,
+    "high": -590,
+    "medium": 80,
+    "total": 40
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 76.240208877
+  }
+ },
+ "consistency": {
+  "n_items": 153,
+  "n_paired": 152,
+  "accuracy": {
+   "direct": 78.289473684,
+   "explanation": 78.947368421,
+   "adversarial_correct": 84.868421053,
+   "adversarial_wrong": 82.236842105
+  },
+  "explanation_effect_pp": 0.657894737,
+  "conf_correct": 96.441666667,
+  "conf_wrong": 88.939393939,
+  "conf_gap": 7.502272728,
+  "n_wrong_direct": 33,
+  "decoy_rate_adversarial_wrong": 7.236842105
+ }
+}

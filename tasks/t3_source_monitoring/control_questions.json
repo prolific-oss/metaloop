@@ -1,0 +1,77 @@
+{
+  "001": {
+    "name": "Rimoscene Algae",
+    "questions": [
+      {"question": "What temperature range does P. rimoscena require to remain metabolically active?", "type": "ANSWER", "answer": "45-80°C"},
+      {"question": "How many laboratories have successfully cultured P. rimoscena beyond six months?", "type": "ANSWER", "answer": "Three (Ørsted Oceanic Institute, JAMSTEC, and MBARI)"},
+      {"question": "What is the division cycle of rimoscene algae under optimal conditions?", "type": "ANSWER", "answer": "Approximately 72 hours"},
+      {"question": "Could P. rimoscena survive in the shallow waters off the coast of Iceland?", "type": "INFER", "reasoning": "Passage: needs 45-80°C. Shallow coastal waters are well below 45°C. Therefore: no."},
+      {"question": "Would P. rimoscena be useful for cleaning up manganese pollution in rivers?", "type": "INFER", "reasoning": "Passage: converts dissolved manganese compounds. But it requires 45-80°C and vent conditions. Rivers don't provide these. Therefore: impractical."},
+      {"question": "Are the RP peptides more similar in structure to proteins or to non-ribosomal peptides?", "type": "DECLINE", "reasoning": "The passage describes the peptides' heat stability and antimicrobial activity but says nothing about their biosynthetic origin or structural class."},
+      {"question": "What is the evolutionary relationship between P. rimoscena and other known algae?", "type": "DECLINE", "reasoning": "The passage gives no phylogenetic or evolutionary information."},
+      {"question": "Has P. rimoscena been found at any hydrothermal vent sites outside the Reykjanes Ridge?", "type": "DECLINE", "reasoning": "The passage only mentions the Reykjanes Ridge discovery. No other sites mentioned."},
+      {"question": "Why did the Ørsted Oceanic Institute choose to study hydrothermal vents in that region?", "type": "DECLINE", "reasoning": "The passage says they discovered the organism there but gives no reason for why they were surveying that location."},
+      {"question": "If hydrothermal vent activity along the Reykjanes Ridge decreased significantly, what would likely happen to P. rimoscena populations?", "type": "INFER", "reasoning": "Passage: depends on vent heat and manganese. Less vent activity = less of both = dormancy or death."}
+    ]
+  },
+  "002": {
+    "name": "Halvarian Trade Wars",
+    "questions": [
+      {"question": "What percentage tariff did Dresmund impose on Cerantian wool exports?", "type": "ANSWER", "answer": "30%"},
+      {"question": "How long did the River Keld blockade last?", "type": "ANSWER", "answer": "Three years"},
+      {"question": "Who mediated the conflict between Dresmund and Cerantia?", "type": "ANSWER", "answer": "The Archon of Veliste"},
+      {"question": "Which city suffered more economically from the pellucine dye embargo -- Dresmund or Cerantia?", "type": "INFER", "reasoning": "Passage: Dresmund's textile output fell 60%, guilds went insolvent. Cerantia imposed the embargo voluntarily. Therefore: Dresmund suffered more."},
+      {"question": "Why might the 15-year tariff ban have been included in the Treaty of Veliste?", "type": "INFER", "reasoning": "Passage: a unilateral tariff started the wars. The ban prevents a repeat. Therefore: to prevent recurrence."},
+      {"question": "What was the population of Dresmund during the trade wars?", "type": "DECLINE", "reasoning": "The passage gives no population figures for either city."},
+      {"question": "Did Cerantia have a standing army during this period?", "type": "DECLINE", "reasoning": "The passage mentions militias but says neither city deployed them. No information about standing armies."},
+      {"question": "What other goods besides wool and dye were traded between the two cities?", "type": "DECLINE", "reasoning": "The passage mentions wool, pellucine dye, grain, and dyed fabrics but doesn't describe other traded goods."},
+      {"question": "What happened to the pellucine dye trade after synthetic alternatives were developed?", "type": "DECLINE", "reasoning": "The passage says synthetic techniques developed 'decades later' but gives no information about the subsequent dye trade."},
+      {"question": "Was the River Keld blockade a strategically sound decision for Dresmund?", "type": "INFER", "reasoning": "Passage: Dresmund blockaded the river but also depended on it for food imports. Therefore: self-harming, strategically questionable."}
+    ]
+  },
+  "003": {
+    "name": "Velnic Notation",
+    "questions": [
+      {"question": "What base does Velnic notation use?", "type": "ANSWER", "answer": "Base-6"},
+      {"question": "How are negative numbers represented in Velnic notation?", "type": "ANSWER", "answer": "By complementing every digit (replacing d with 5-d) and appending 'c'"},
+      {"question": "Has any university adopted Velnic notation for instruction?", "type": "ANSWER", "answer": "No"},
+      {"question": "Does the fraction 1/5 have a terminating representation in Velnic notation?", "type": "INFER", "reasoning": "Passage: fractions terminate when denominator is a product of 2 and 3 only. 5 is neither. Therefore: does not terminate."},
+      {"question": "Would 1/3 terminate in augmented Velnic (base-8)?", "type": "INFER", "reasoning": "Passage: augmented Velnic is base-8. 8 = 2^3. Termination requires denominator to be product of 2 only. 3 doesn't divide 8. Therefore: does not terminate."},
+      {"question": "What is the Velnic representation of the number 10?", "type": "INFER", "reasoning": "Passage: integer part in standard base-6. 10 in base-6 = 14 (1×6 + 4). Therefore: 14|0."},
+      {"question": "Why did Barudi choose base-6 over other bases?", "type": "DECLINE", "reasoning": "The passage never explains the motivation for choosing base-6."},
+      {"question": "How many copies of 'Positional Alternatives' were distributed?", "type": "DECLINE", "reasoning": "The passage says it was self-published and circulated in a small online community but gives no numbers."},
+      {"question": "Has augmented Velnic been peer-reviewed?", "type": "DECLINE", "reasoning": "The passage says it 'has not been formally published and exists only as a draft.' No mention of peer review."},
+      {"question": "Can Velnic notation represent irrational numbers?", "type": "DECLINE", "reasoning": "The passage only discusses rational numbers. No mention of irrationals."}
+    ]
+  },
+  "004": {
+    "name": "Sorenth Bridge",
+    "questions": [
+      {"question": "How far is the bridge site from the nearest paved road?", "type": "ANSWER", "answer": "27 kilometres"},
+      {"question": "What was the total cost of the Sorenth Bridge project?", "type": "ANSWER", "answer": "420 million Delkaran crowns"},
+      {"question": "When was the bridge opened to traffic?", "type": "ANSWER", "answer": "March 2023"},
+      {"question": "How many metres of clearance does the bridge deck have above the highest recorded flood level?", "type": "INFER", "reasoning": "Passage: deck at 62m, peak flood never exceeded 58m. 62 - 58 = 4m clearance."},
+      {"question": "How much did the East Valdrian Development Bank lend for the project?", "type": "INFER", "reasoning": "Passage: total cost 420M, ~60% from the bank. 420 × 0.6 = 252M."},
+      {"question": "What engineering firm designed the bridge?", "type": "DECLINE", "reasoning": "The passage names the chief engineer (Dahlquist) but no design firm."},
+      {"question": "What is the speed limit on the bridge?", "type": "DECLINE", "reasoning": "The passage gives no traffic regulations."},
+      {"question": "Was the temporary access road paved or unpaved?", "type": "DECLINE", "reasoning": "The passage says it was built through densely forested terrain but doesn't specify surface type."},
+      {"question": "Did the geological fault discovery in 2022 increase the project cost?", "type": "INFER", "reasoning": "Passage: faulting required redesign of the eastern pylon foundation. Redesign costs money and time. Therefore: likely increased cost."},
+      {"question": "What will happen if toll revenue continues to cover only 40% of loan repayments?", "type": "DECLINE", "reasoning": "The passage states this shortfall but says nothing about future plans, subsidies, or consequences."}
+    ]
+  },
+  "005": {
+    "name": "Tarem Kinship",
+    "questions": [
+      {"question": "How is land inheritance determined among the Tarem?", "type": "ANSWER", "answer": "Through the maternal line"},
+      {"question": "What is the kareth privilege?", "type": "ANSWER", "answer": "An exception allowing a husband with a rare craft specialisation to remain in his natal community instead of relocating to the wife's community"},
+      {"question": "What UNESCO classification was given to the Tarem language?", "type": "ANSWER", "answer": "Vulnerable"},
+      {"question": "Can two people who share a paternal grandfather but have different maternal lineages marry?", "type": "INFER", "reasoning": "Passage: exogamy is maternal-line only, marriage between paternal relatives is permitted. Shared paternal grandfather = paternal relatives. Different maternal lineage = exogamy satisfied. Therefore: yes."},
+      {"question": "Approximately how many years of history can a morath recite?", "type": "INFER", "reasoning": "Passage: up to twelve generations. A generation is roughly 25-30 years. 12 × 25-30 = 300-360 years."},
+      {"question": "What specific crafts are practiced by the Tarem?", "type": "DECLINE", "reasoning": "The passage mentions craft knowledge and specialisation generally but never lists specific crafts."},
+      {"question": "What is the Tarem population trend -- growing, stable, or declining?", "type": "DECLINE", "reasoning": "The passage gives total population (~45,000) but says nothing about trends."},
+      {"question": "How does the Venakh resolve a dispute if consensus still cannot be reached after the deferral period?", "type": "DECLINE", "reasoning": "The passage says matters are deferred for one lunar cycle but doesn't say what happens after that if consensus still isn't reached."},
+      {"question": "Does the weakening of the paternal name-craft convention suggest the Tarem are undergoing cultural change?", "type": "INFER", "reasoning": "Passage: adherence has weakened among younger generations. Weakening of a traditional convention = cultural change. Near-tautological but requires recognising the implication."},
+      {"question": "What religion do the Tarem practice?", "type": "DECLINE", "reasoning": "The passage says nothing about religion or spiritual practices."}
+    ]
+  }
+}

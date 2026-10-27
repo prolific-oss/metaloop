@@ -1,0 +1,13 @@
+This wordlist is derived from /usr/share/dict/words on macOS (BSD heritage),
+which is itself derived from Webster's 2nd International Dictionary (1934).
+
+The list of English words is a list of facts and is not copyrightable
+(Feist Publications v. Rural Telephone Service Co., 499 U.S. 340 (1991)).
+
+This file contains all 5-letter lowercase-alphabetic English words from
+that source, extracted via:
+
+    awk 'length==5 && /^[a-z]+$/' /usr/share/dict/words
+
+No attribution is required; included here as a stable, reproducible word
+universe for the letter-guess strategy-switching task.

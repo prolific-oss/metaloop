@@ -1,0 +1,139 @@
+{
+ "per_model": {
+  "deepseek-v3.2": {
+   "n_blind_spot": 14,
+   "n_true_approve": 121,
+   "gap": 1.94,
+   "ci95": [
+    -0.38,
+    4.27
+   ],
+   "gap_quadratic": 1.96
+  },
+  "gemini-2.5-pro": {
+   "n_blind_spot": 15,
+   "n_true_approve": 134,
+   "gap": 0.09,
+   "ci95": [
+    -0.15,
+    0.37
+   ],
+   "gap_quadratic": 0.1
+  },
+  "gemini-3.1-pro": {
+   "n_blind_spot": 6,
+   "n_true_approve": 142,
+   "gap": -0.0,
+   "ci95": [
+    -0.0,
+    0.0
+   ],
+   "gap_quadratic": -0.0
+  },
+  "gemma-4-31b": {
+   "n_blind_spot": 16,
+   "n_true_approve": 133,
+   "gap": 1.17,
+   "ci95": [
+    0.26,
+    2.24
+   ],
+   "gap_quadratic": 1.17
+  },
+  "gpt-4.1": {
+   "n_blind_spot": 30,
+   "n_true_approve": 118,
+   "gap": 1.23,
+   "ci95": [
+    0.55,
+    2.02
+   ],
+   "gap_quadratic": 1.27
+  },
+  "gpt-5.4": {
+   "n_blind_spot": 14,
+   "n_true_approve": 125,
+   "gap": 5.87,
+   "ci95": [
+    1.06,
+    11.16
+   ],
+   "gap_quadratic": 5.96
+  },
+  "grok-4.7": {
+   "n_blind_spot": 9,
+   "n_true_approve": 107,
+   "gap": 6.93,
+   "ci95": [
+    2.12,
+    13.01
+   ],
+   "gap_quadratic": 6.96
+  },
+  "mistral-large": {
+   "n_blind_spot": 8,
+   "n_true_approve": 72,
+   "gap": 0.92,
+   "ci95": [
+    -0.64,
+    2.6
+   ],
+   "gap_quadratic": 0.82
+  },
+  "opus-4.6": {
+   "n_blind_spot": 16,
+   "n_true_approve": 132,
+   "gap": 7.23,
+   "ci95": [
+    3.34,
+    11.79
+   ],
+   "gap_quadratic": 7.24
+  },
+  "qwen-3.8-max": {
+   "n_blind_spot": 15,
+   "n_true_approve": 134,
+   "gap": 3.94,
+   "ci95": [
+    1.55,
+    6.86
+   ],
+   "gap_quadratic": 3.92
+  },
+  "sonnet-4": {
+   "n_blind_spot": 7,
+   "n_true_approve": 107,
+   "gap": 1.98,
+   "ci95": [
+    -0.43,
+    4.38
+   ],
+   "gap_quadratic": 2.09
+  },
+  "sonnet-4.6": {
+   "n_blind_spot": 12,
+   "n_true_approve": 128,
+   "gap": 6.43,
+   "ci95": [
+    1.19,
+    12.5
+   ],
+   "gap_quadratic": 6.45
+  }
+ },
+ "skipped_fewer_than_2_blind_spots": [],
+ "pooled": {
+  "gap": 3.15,
+  "ci95": [
+   1.52,
+   5.18
+  ]
+ },
+ "equal_model_mean": {
+  "gap": 3.15,
+  "ci95": [
+   1.49,
+   5.2
+  ]
+ }
+}

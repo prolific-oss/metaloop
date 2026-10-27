@@ -1,0 +1,230 @@
+{
+ "deepseek-v3.2": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 1,
+   "defer": 1,
+   "attempt": 28
+  }
+ },
+ "gemini-2.5-pro": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 1,
+   "attempt": 29
+  }
+ },
+ "gemini-3.1-pro": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 1,
+   "defer": 2,
+   "attempt": 27
+  }
+ },
+ "gemma-4-31b": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 3,
+   "attempt": 27
+  }
+ },
+ "gpt-4.1": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 9,
+   "defer": 6,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 1,
+   "attempt": 29
+  }
+ },
+ "gpt-5.4": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 1,
+   "defer": 2,
+   "attempt": 27
+  }
+ },
+ "grok-4.7": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 1,
+   "defer": 2,
+   "attempt": 27
+  }
+ },
+ "mistral-large": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 1,
+   "attempt": 29
+  }
+ },
+ "opus-4.6": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 0,
+   "attempt": 30
+  }
+ },
+ "qwen-3.8-max": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 1,
+   "attempt": 29
+  }
+ },
+ "sonnet-4.6": {
+  "n": 45,
+  "unparsed": 0,
+  "status": {
+   "ok": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 15,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 1,
+   "attempt": 29
+  }
+ },
+ "sonnet-4": {
+  "n": 45,
+  "unparsed": 45,
+  "status": {
+   "error": 45
+  },
+  "underspecified": {
+   "n": 15,
+   "clarify": 0,
+   "defer": 0,
+   "attempt": 0
+  },
+  "answerable": {
+   "n": 30,
+   "clarify": 0,
+   "defer": 0,
+   "attempt": 0
+  }
+ }
+}

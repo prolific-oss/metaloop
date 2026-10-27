@@ -1,0 +1,1586 @@
+{
+  "task_type": "dijkstra_strategy_switch",
+  "description": "Directed graph shortest-path problems with hidden negative edge weights.",
+  "problems": [
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 5
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 4
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -8
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 2
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -8
+      },
+      "negative_edge_discovery_step": 6,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "dijkstra_distance": 7,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "bellman_ford_distance": 0,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 5
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 4
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -8
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 2
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 1\n  A -> C: weight 5\n  B -> D: weight 3\n  B -> E: weight 4\n  C -> D: weight -8\n  D -> F: weight 3\n  E -> F: weight 2\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 5, tentative 0+5=5 \u2192 update dist[C] = 5\n  Unsettled: B=1, C=5\n\nExpand B (settled distance = 1):\n  B->D: weight 3, tentative 1+3=4 \u2192 update dist[D] = 4\n  B->E: weight 4, tentative 1+4=5 \u2192 update dist[E] = 5\n  Unsettled: C=5, D=4, E=5\n\nExpand D (settled distance = 4):\n  D->F: weight 3, tentative 4+3=7 \u2192 update dist[F] = 7\n  Unsettled: C=5, E=5, F=7\n\nExpand C (settled distance = 5):\n  C->D: weight -8, tentative 5+-8=-3 \u2192 update dist[D] = -3\n  Unsettled: E=5, F=7\n\nExpand E (settled distance = 5):\n  E->F: weight 2, tentative 5+2=7 \u2192 no improvement (dist[F] = 7)\n  Unsettled: F=7\n\nExpand F (settled distance = 7):\n\nDijkstra result: A -> B -> E -> F, distance = 7\n\nSUBMIT: PATH: A->B->E->F DISTANCE: 7"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "C",
+          "to": "E"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -7
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 5
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 2
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "E",
+        "weight": -7
+      },
+      "negative_edge_discovery_step": 6,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "F"
+      ],
+      "dijkstra_distance": 7,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "E",
+        "F"
+      ],
+      "bellman_ford_distance": 1,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 2
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -7
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 5
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 2\n  A -> C: weight 6\n  B -> E: weight 3\n  B -> D: weight 4\n  C -> E: weight -7\n  D -> F: weight 5\n  E -> F: weight 2\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 2, tentative 0+2=2 \u2192 update dist[B] = 2\n  A->C: weight 6, tentative 0+6=6 \u2192 update dist[C] = 6\n  Unsettled: B=2, C=6\n\nExpand B (settled distance = 2):\n  B->E: weight 3, tentative 2+3=5 \u2192 update dist[E] = 5\n  B->D: weight 4, tentative 2+4=6 \u2192 update dist[D] = 6\n  Unsettled: C=6, D=6, E=5\n\nExpand E (settled distance = 5):\n  E->F: weight 2, tentative 5+2=7 \u2192 update dist[F] = 7\n  Unsettled: C=6, D=6, F=7\n\nExpand C (settled distance = 6):\n  C->E: weight -7, tentative 6+-7=-1 \u2192 update dist[E] = -1\n  Unsettled: D=6, F=7\n\nExpand D (settled distance = 6):\n  D->F: weight 5, tentative 6+5=11 \u2192 no improvement (dist[F] = 7)\n  Unsettled: F=7\n\nExpand F (settled distance = 7):\n\nDijkstra result: A -> B -> E -> F, distance = 7\n\nSUBMIT: PATH: A->B->E->F DISTANCE: 7"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 5
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -9
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 3
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -9
+      },
+      "negative_edge_discovery_step": 6,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "dijkstra_distance": 9,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "bellman_ford_distance": 1,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 5
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -9
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 1\n  A -> C: weight 6\n  B -> D: weight 4\n  B -> E: weight 5\n  C -> D: weight -9\n  D -> F: weight 4\n  E -> F: weight 3\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 6, tentative 0+6=6 \u2192 update dist[C] = 6\n  Unsettled: B=1, C=6\n\nExpand B (settled distance = 1):\n  B->D: weight 4, tentative 1+4=5 \u2192 update dist[D] = 5\n  B->E: weight 5, tentative 1+5=6 \u2192 update dist[E] = 6\n  Unsettled: C=6, D=5, E=6\n\nExpand D (settled distance = 5):\n  D->F: weight 4, tentative 5+4=9 \u2192 update dist[F] = 9\n  Unsettled: C=6, E=6, F=9\n\nExpand C (settled distance = 6):\n  C->D: weight -9, tentative 6+-9=-3 \u2192 update dist[D] = -3\n  Unsettled: E=6, F=9\n\nExpand E (settled distance = 6):\n  E->F: weight 3, tentative 6+3=9 \u2192 no improvement (dist[F] = 9)\n  Unsettled: F=9\n\nExpand F (settled distance = 9):\n\nDijkstra result: A -> B -> E -> F, distance = 9\n\nSUBMIT: PATH: A->B->E->F DISTANCE: 9"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "source": "A",
+      "target": "G",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "D",
+          "to": "G"
+        },
+        {
+          "from": "E",
+          "to": "G"
+        },
+        {
+          "from": "F",
+          "to": "G"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 7
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 5
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -10
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 2
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 5
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 4
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 3
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -10
+      },
+      "negative_edge_discovery_step": 9,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "D",
+        "G"
+      ],
+      "dijkstra_distance": 9,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "G"
+      ],
+      "bellman_ford_distance": 2,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 7
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 5
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 2
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 5
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 4
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -10
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to G in this directed graph.\n\nNodes: A, B, C, D, E, F, G\nEdges:\n  A -> B: weight 1\n  A -> C: weight 7\n  B -> D: weight 3\n  B -> E: weight 5\n  C -> D: weight -10\n  D -> F: weight 2\n  D -> G: weight 5\n  E -> G: weight 4\n  F -> G: weight 3\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 7, tentative 0+7=7 \u2192 update dist[C] = 7\n  Unsettled: B=1, C=7\n\nExpand B (settled distance = 1):\n  B->D: weight 3, tentative 1+3=4 \u2192 update dist[D] = 4\n  B->E: weight 5, tentative 1+5=6 \u2192 update dist[E] = 6\n  Unsettled: C=7, D=4, E=6\n\nExpand D (settled distance = 4):\n  D->F: weight 2, tentative 4+2=6 \u2192 update dist[F] = 6\n  D->G: weight 5, tentative 4+5=9 \u2192 update dist[G] = 9\n  Unsettled: C=7, E=6, F=6, G=9\n\nExpand E (settled distance = 6):\n  E->G: weight 4, tentative 6+4=10 \u2192 no improvement (dist[G] = 9)\n  Unsettled: C=7, F=6, G=9\n\nExpand F (settled distance = 6):\n  F->G: weight 3, tentative 6+3=9 \u2192 no improvement (dist[G] = 9)\n  Unsettled: C=7, G=9\n\nExpand C (settled distance = 7):\n  C->D: weight -10, tentative 7+-10=-3 \u2192 update dist[D] = -3\n  Unsettled: G=9\n\nExpand G (settled distance = 9):\n\nDijkstra result: A -> B -> D -> F -> G, distance = 9\n\nSUBMIT: PATH: A->B->D->F->G DISTANCE: 9"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 8
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -13
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 6
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -13
+      },
+      "negative_edge_discovery_step": 7,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "dijkstra_distance": 10,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "bellman_ford_distance": -1,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 8
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 6
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -13
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 2\n  A -> C: weight 8\n  B -> D: weight 4\n  B -> E: weight 3\n  C -> D: weight -13\n  D -> F: weight 4\n  E -> F: weight 6\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 2, tentative 0+2=2 \u2192 update dist[B] = 2\n  A->C: weight 8, tentative 0+8=8 \u2192 update dist[C] = 8\n  Unsettled: B=2, C=8\n\nExpand B (settled distance = 2):\n  B->D: weight 4, tentative 2+4=6 \u2192 update dist[D] = 6\n  B->E: weight 3, tentative 2+3=5 \u2192 update dist[E] = 5\n  Unsettled: C=8, D=6, E=5\n\nExpand E (settled distance = 5):\n  E->F: weight 6, tentative 5+6=11 \u2192 update dist[F] = 11\n  Unsettled: C=8, D=6, F=11\n\nExpand D (settled distance = 6):\n  D->F: weight 4, tentative 6+4=10 \u2192 update dist[F] = 10\n  Unsettled: C=8, F=10\n\nExpand C (settled distance = 8):\n  C->D: weight -13, tentative 8+-13=-5 \u2192 update dist[D] = -5\n  Unsettled: F=10\n\nExpand F (settled distance = 10):\n\nDijkstra result: A -> B -> D -> F, distance = 10\n\nSUBMIT: PATH: A->B->D->F DISTANCE: 10"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "source": "A",
+      "target": "G",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "C",
+          "to": "E"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "G"
+        },
+        {
+          "from": "F",
+          "to": "G"
+        },
+        {
+          "from": "D",
+          "to": "G"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 2
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -9
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 4
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 3
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 7
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "E",
+        "weight": -9
+      },
+      "negative_edge_discovery_step": 8,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "G"
+      ],
+      "dijkstra_distance": 8,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "bellman_ford_distance": 1,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 2
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 4
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 7
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 4
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -9
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to G in this directed graph.\n\nNodes: A, B, C, D, E, F, G\nEdges:\n  A -> B: weight 1\n  A -> C: weight 6\n  B -> E: weight 3\n  B -> D: weight 2\n  C -> E: weight -9\n  D -> F: weight 4\n  E -> G: weight 4\n  F -> G: weight 3\n  D -> G: weight 7\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 6, tentative 0+6=6 \u2192 update dist[C] = 6\n  Unsettled: B=1, C=6\n\nExpand B (settled distance = 1):\n  B->E: weight 3, tentative 1+3=4 \u2192 update dist[E] = 4\n  B->D: weight 2, tentative 1+2=3 \u2192 update dist[D] = 3\n  Unsettled: C=6, D=3, E=4\n\nExpand D (settled distance = 3):\n  D->F: weight 4, tentative 3+4=7 \u2192 update dist[F] = 7\n  D->G: weight 7, tentative 3+7=10 \u2192 update dist[G] = 10\n  Unsettled: C=6, E=4, F=7, G=10\n\nExpand E (settled distance = 4):\n  E->G: weight 4, tentative 4+4=8 \u2192 update dist[G] = 8\n  Unsettled: C=6, F=7, G=8\n\nExpand C (settled distance = 6):\n  C->E: weight -9, tentative 6+-9=-3 \u2192 update dist[E] = -3\n  Unsettled: F=7, G=8\n\nExpand F (settled distance = 7):\n  F->G: weight 3, tentative 7+3=10 \u2192 no improvement (dist[G] = 8)\n  Unsettled: G=8\n\nExpand G (settled distance = 8):\n\nDijkstra result: A -> B -> E -> G, distance = 8\n\nSUBMIT: PATH: A->B->E->G DISTANCE: 8"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "C",
+          "to": "E"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 7
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -10
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 6
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 3
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "E",
+        "weight": -10
+      },
+      "negative_edge_discovery_step": 7,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "F"
+      ],
+      "dijkstra_distance": 8,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "E",
+        "F"
+      ],
+      "bellman_ford_distance": 0,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 7
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 6
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "E",
+          "weight": -10
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 1\n  A -> C: weight 7\n  B -> E: weight 4\n  B -> D: weight 3\n  C -> E: weight -10\n  D -> F: weight 6\n  E -> F: weight 3\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 7, tentative 0+7=7 \u2192 update dist[C] = 7\n  Unsettled: B=1, C=7\n\nExpand B (settled distance = 1):\n  B->E: weight 4, tentative 1+4=5 \u2192 update dist[E] = 5\n  B->D: weight 3, tentative 1+3=4 \u2192 update dist[D] = 4\n  Unsettled: C=7, D=4, E=5\n\nExpand D (settled distance = 4):\n  D->F: weight 6, tentative 4+6=10 \u2192 update dist[F] = 10\n  Unsettled: C=7, E=5, F=10\n\nExpand E (settled distance = 5):\n  E->F: weight 3, tentative 5+3=8 \u2192 update dist[F] = 8\n  Unsettled: C=7, F=8\n\nExpand C (settled distance = 7):\n  C->E: weight -10, tentative 7+-10=-3 \u2192 update dist[E] = -3\n  Unsettled: F=8\n\nExpand F (settled distance = 8):\n\nDijkstra result: A -> B -> E -> F, distance = 8\n\nSUBMIT: PATH: A->B->E->F DISTANCE: 8"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "source": "A",
+      "target": "H",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "G"
+        },
+        {
+          "from": "F",
+          "to": "H"
+        },
+        {
+          "from": "G",
+          "to": "H"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 2
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -11
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 3
+        },
+        {
+          "from": "F",
+          "to": "H",
+          "weight": 3
+        },
+        {
+          "from": "G",
+          "to": "H",
+          "weight": 4
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -11
+      },
+      "negative_edge_discovery_step": 7,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H"
+      ],
+      "dijkstra_distance": 10,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "H"
+      ],
+      "bellman_ford_distance": 1,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 6
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 3
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 2
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 3
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -11
+        },
+        {
+          "from": "G",
+          "to": "H",
+          "weight": 4
+        },
+        {
+          "from": "F",
+          "to": "H",
+          "weight": 3
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to H in this directed graph.\n\nNodes: A, B, C, D, E, F, G, H\nEdges:\n  A -> B: weight 1\n  A -> C: weight 6\n  B -> D: weight 3\n  B -> E: weight 2\n  C -> D: weight -11\n  D -> F: weight 3\n  E -> G: weight 3\n  F -> H: weight 3\n  G -> H: weight 4\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 6, tentative 0+6=6 \u2192 update dist[C] = 6\n  Unsettled: B=1, C=6\n\nExpand B (settled distance = 1):\n  B->D: weight 3, tentative 1+3=4 \u2192 update dist[D] = 4\n  B->E: weight 2, tentative 1+2=3 \u2192 update dist[E] = 3\n  Unsettled: C=6, D=4, E=3\n\nExpand E (settled distance = 3):\n  E->G: weight 3, tentative 3+3=6 \u2192 update dist[G] = 6\n  Unsettled: C=6, D=4, G=6\n\nExpand D (settled distance = 4):\n  D->F: weight 3, tentative 4+3=7 \u2192 update dist[F] = 7\n  Unsettled: C=6, F=7, G=6\n\nExpand C (settled distance = 6):\n  C->D: weight -11, tentative 6+-11=-5 \u2192 update dist[D] = -5\n  Unsettled: F=7, G=6\n\nExpand G (settled distance = 6):\n  G->H: weight 4, tentative 6+4=10 \u2192 update dist[H] = 10\n  Unsettled: F=7, H=10\n\nExpand F (settled distance = 7):\n  F->H: weight 3, tentative 7+3=10 \u2192 no improvement (dist[H] = 10)\n  Unsettled: H=10\n\nExpand H (settled distance = 10):\n\nDijkstra result: A -> B -> D -> F -> H, distance = 10\n\nSUBMIT: PATH: A->B->D->F->H DISTANCE: 10"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "source": "A",
+      "target": "F",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "E",
+          "to": "F"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 9
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 5
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -12
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 5
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -12
+      },
+      "negative_edge_discovery_step": 7,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "F"
+      ],
+      "dijkstra_distance": 10,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F"
+      ],
+      "bellman_ford_distance": 0,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 2
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 9
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 5
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "F",
+          "weight": 5
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -12
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to F in this directed graph.\n\nNodes: A, B, C, D, E, F\nEdges:\n  A -> B: weight 2\n  A -> C: weight 9\n  B -> D: weight 5\n  B -> E: weight 3\n  C -> D: weight -12\n  D -> F: weight 3\n  E -> F: weight 5\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 2, tentative 0+2=2 \u2192 update dist[B] = 2\n  A->C: weight 9, tentative 0+9=9 \u2192 update dist[C] = 9\n  Unsettled: B=2, C=9\n\nExpand B (settled distance = 2):\n  B->D: weight 5, tentative 2+5=7 \u2192 update dist[D] = 7\n  B->E: weight 3, tentative 2+3=5 \u2192 update dist[E] = 5\n  Unsettled: C=9, D=7, E=5\n\nExpand E (settled distance = 5):\n  E->F: weight 5, tentative 5+5=10 \u2192 update dist[F] = 10\n  Unsettled: C=9, D=7, F=10\n\nExpand D (settled distance = 7):\n  D->F: weight 3, tentative 7+3=10 \u2192 no improvement (dist[F] = 10)\n  Unsettled: C=9, F=10\n\nExpand C (settled distance = 9):\n  C->D: weight -12, tentative 9+-12=-3 \u2192 update dist[D] = -3\n  Unsettled: F=10\n\nExpand F (settled distance = 10):\n\nDijkstra result: A -> B -> D -> F, distance = 10\n\nSUBMIT: PATH: A->B->D->F DISTANCE: 10"
+        }
+      ]
+    },
+    {
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "source": "A",
+      "target": "G",
+      "topology": [
+        {
+          "from": "A",
+          "to": "B"
+        },
+        {
+          "from": "A",
+          "to": "C"
+        },
+        {
+          "from": "B",
+          "to": "D"
+        },
+        {
+          "from": "B",
+          "to": "E"
+        },
+        {
+          "from": "C",
+          "to": "D"
+        },
+        {
+          "from": "D",
+          "to": "F"
+        },
+        {
+          "from": "D",
+          "to": "G"
+        },
+        {
+          "from": "E",
+          "to": "G"
+        },
+        {
+          "from": "F",
+          "to": "G"
+        }
+      ],
+      "edges": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 8
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -14
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 2
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 6
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 5
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 2
+        }
+      ],
+      "negative_edge": {
+        "from": "C",
+        "to": "D",
+        "weight": -14
+      },
+      "negative_edge_discovery_step": 9,
+      "dijkstra_path": [
+        "A",
+        "B",
+        "E",
+        "G"
+      ],
+      "dijkstra_distance": 9,
+      "bellman_ford_path": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "G"
+      ],
+      "bellman_ford_distance": -2,
+      "query_order": [
+        {
+          "from": "A",
+          "to": "B",
+          "weight": 1
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "weight": 8
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "weight": 4
+        },
+        {
+          "from": "B",
+          "to": "E",
+          "weight": 3
+        },
+        {
+          "from": "E",
+          "to": "G",
+          "weight": 5
+        },
+        {
+          "from": "D",
+          "to": "F",
+          "weight": 2
+        },
+        {
+          "from": "D",
+          "to": "G",
+          "weight": 6
+        },
+        {
+          "from": "F",
+          "to": "G",
+          "weight": 2
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "weight": -14
+        }
+      ],
+      "prefill_messages": [
+        {
+          "role": "user",
+          "content": "Find the shortest path from A to G in this directed graph.\n\nNodes: A, B, C, D, E, F, G\nEdges:\n  A -> B: weight 1\n  A -> C: weight 8\n  B -> D: weight 4\n  B -> E: weight 3\n  C -> D: weight -14\n  D -> F: weight 2\n  D -> G: weight 6\n  E -> G: weight 5\n  F -> G: weight 2\n\nYou have one response. Show your working, then write:\nSUBMIT: PATH: X->Y->Z DISTANCE: [number]"
+        },
+        {
+          "role": "assistant",
+          "content": "I'll use Dijkstra's algorithm.\n\nInitialise: dist[A] = 0, all others = inf.\n\nExpand A (settled distance = 0):\n  A->B: weight 1, tentative 0+1=1 \u2192 update dist[B] = 1\n  A->C: weight 8, tentative 0+8=8 \u2192 update dist[C] = 8\n  Unsettled: B=1, C=8\n\nExpand B (settled distance = 1):\n  B->D: weight 4, tentative 1+4=5 \u2192 update dist[D] = 5\n  B->E: weight 3, tentative 1+3=4 \u2192 update dist[E] = 4\n  Unsettled: C=8, D=5, E=4\n\nExpand E (settled distance = 4):\n  E->G: weight 5, tentative 4+5=9 \u2192 update dist[G] = 9\n  Unsettled: C=8, D=5, G=9\n\nExpand D (settled distance = 5):\n  D->F: weight 2, tentative 5+2=7 \u2192 update dist[F] = 7\n  D->G: weight 6, tentative 5+6=11 \u2192 no improvement (dist[G] = 9)\n  Unsettled: C=8, F=7, G=9\n\nExpand F (settled distance = 7):\n  F->G: weight 2, tentative 7+2=9 \u2192 no improvement (dist[G] = 9)\n  Unsettled: C=8, G=9\n\nExpand C (settled distance = 8):\n  C->D: weight -14, tentative 8+-14=-6 \u2192 update dist[D] = -6\n  Unsettled: G=9\n\nExpand G (settled distance = 9):\n\nDijkstra result: A -> B -> D -> F -> G, distance = 9\n\nSUBMIT: PATH: A->B->D->F->G DISTANCE: 9"
+        }
+      ]
+    }
+  ]
+}

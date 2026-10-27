@@ -1,0 +1,3888 @@
+{
+ "models": {
+  "sonnet-4": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 73.8,
+    "ece": 0.0437,
+    "brier": 0.1011,
+    "wr_a": 72.3,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 4652,
+    "gap": 2008,
+    "gap_per_item": 4.5,
+    "mean_conf": 76.3,
+    "overconf": 2.5,
+    "wagers": {
+     "BOLD": 249,
+     "MEDIUM": 121,
+     "SAFE": 81
+    },
+    "conf_gap": 43.4,
+    "n_valid_conf": 451,
+    "regret_per_item": 1.73,
+    "n_suboptimal": 125,
+    "n_cautious": 125,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      41,
+      43
+     ],
+     "80-89": [
+      68,
+      116
+     ],
+     "90-100": [
+      1,
+      200
+     ]
+    },
+    "points_per_item": 10.31
+   },
+   "deferral": {
+    "defer": {
+     "low": 18.4,
+     "medium": 20.5,
+     "high": 35.8
+    },
+    "delta": 17.3,
+    "att_acc": 88.9,
+    "clar_p": 95.0,
+    "clar_r": 68.1,
+    "clar_r_ci": [
+     60,
+     75
+    ],
+    "ev": 1960,
+    "ev_b": 2030,
+    "clar_r_b": 63.8,
+    "false_clar": 1.1,
+    "n_declined": 118,
+    "forced_acc": 27.1,
+    "attempted_below_threshold_A": 46,
+    "adherence_A": 89.9,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 5,
+    "adherence_B": 98.7,
+    "declined_above_threshold_B": 1,
+    "n_adherence_B": 454,
+    "forced_correct": 32,
+    "n_forced_scored": 118,
+    "forced_ci": [
+     20,
+     36
+    ],
+    "cf_gap": 61.8
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 153,
+     "pp": -2.0,
+     "ci": [
+      -7.2,
+      3.3
+     ],
+     "discordant": [
+      7,
+      10
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -2.0,
+      "ci": [
+       -7.2,
+       3.3
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 153,
+     "pp": 3.9,
+     "ci": [
+      -0.7,
+      9.2
+     ],
+     "discordant": [
+      10,
+      4
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 3.9,
+      "ci": [
+       -0.7,
+       9.2
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 152,
+     "pp": -6.6,
+     "ci": [
+      -11.8,
+      -1.3
+     ],
+     "discordant": [
+      4,
+      14
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -7.2,
+      "ci": [
+       -13.1,
+       -2.0
+      ]
+     }
+    },
+    "direct_acc": 84.3,
+    "answered": [
+     100.0,
+     100.0
+    ],
+    "conf_gap_direct": 5.8,
+    "decoy_rate": 11.2
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 25,
+    "acc": 83.7,
+    "acc_all153": 83.7,
+    "flag": 72.0,
+    "flag_ci": [
+     52,
+     86
+    ],
+    "fix": 20.0,
+    "n_fixed": 5,
+    "fc": 16.4,
+    "c_to_w": 12,
+    "w_to_c": 5,
+    "net_pp": -4.6,
+    "n_flagged": 18,
+    "n_flag_den": 25,
+    "flagged_fixed": 5,
+    "review_unparsed": 0,
+    "conf_bs": 91.7,
+    "conf_ta": 93.7,
+    "c2": {
+     "n": 25,
+     "fix_correct": 5,
+     "fresh_correct": 6,
+     "fix_only": 2,
+     "fresh_only": 3,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 15,
+    "rec_live": 13.3,
+    "rec_control": 6.7,
+    "diff_pp": 6.7,
+    "p": 0.386,
+    "counts": {
+     "live": [
+      6,
+      45
+     ],
+     "control": [
+      3,
+      45
+     ]
+    },
+    "flag": {
+     "live": [
+      16,
+      39
+     ],
+     "control": [
+      7,
+      42
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 55.0,
+     "sbw": 16.2,
+     "sbw_ci": [
+      10,
+      26
+     ],
+     "conv": [
+      31,
+      44
+     ],
+     "acc": 47.5,
+     "no_switch_correct": 7,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 62.9,
+     "sbw": 18.6,
+     "sbw_ci": [
+      11,
+      29
+     ],
+     "conv": [
+      31,
+      44
+     ],
+     "acc": 54.3,
+     "no_switch_correct": 7,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 9,
+     "truncated": 1
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 84.4,
+    "confab": 71.7,
+    "confab_ci": [
+     59,
+     81
+    ],
+    "n_fab": 60,
+    "inferred": 86.7,
+    "fab_prec": 93.5,
+    "confab_by_passage": {
+     "001": [
+      10,
+      12
+     ],
+     "002": [
+      11,
+      12
+     ],
+     "003": [
+      8,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      8,
+      12
+     ]
+    }
+   }
+  },
+  "sonnet-4.6": {
+   "wagering": {
+    "n": 448,
+    "n_items": 451,
+    "acc": 76.8,
+    "ece": 0.0652,
+    "brier": 0.0883,
+    "wr_a": 60.0,
+    "wr_b": 100.0,
+    "n_b": 449,
+    "payout": 4620,
+    "gap": 2260,
+    "gap_per_item": 5.0,
+    "mean_conf": 75.8,
+    "overconf": -1.0,
+    "wagers": {
+     "BOLD": 216,
+     "MEDIUM": 122,
+     "SAFE": 110
+    },
+    "conf_gap": 43.6,
+    "n_valid_conf": 448,
+    "regret_per_item": 1.54,
+    "n_suboptimal": 179,
+    "n_cautious": 179,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      60,
+      61
+     ],
+     "80-89": [
+      42,
+      57
+     ],
+     "90-100": [
+      9,
+      209
+     ]
+    },
+    "points_per_item": 10.31
+   },
+   "deferral": {
+    "defer": {
+     "low": 15.3,
+     "medium": 17.3,
+     "high": 28.5
+    },
+    "delta": 13.1,
+    "att_acc": 91.6,
+    "clar_p": 100.0,
+    "clar_r": 54.7,
+    "clar_r_ci": [
+     46,
+     62
+    ],
+    "ev": 2420,
+    "ev_b": 2710,
+    "clar_r_b": 54.0,
+    "false_clar": 0.0,
+    "n_declined": 92,
+    "forced_acc": 23.3,
+    "attempted_below_threshold_A": 83,
+    "adherence_A": 81.6,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 451,
+    "attempted_below_threshold_B": 35,
+    "adherence_B": 92.3,
+    "declined_above_threshold_B": 0,
+    "n_adherence_B": 452,
+    "forced_correct": 21,
+    "n_forced_scored": 90,
+    "forced_ci": [
+     16,
+     33
+    ],
+    "cf_gap": 68.3
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 145,
+     "pp": 2.1,
+     "ci": [
+      -1.4,
+      5.5
+     ],
+     "discordant": [
+      5,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 2.6,
+      "ci": [
+       -1.3,
+       7.2
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 145,
+     "pp": 2.8,
+     "ci": [
+      0.7,
+      5.5
+     ],
+     "discordant": [
+      4,
+      0
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 2.6,
+      "ci": [
+       -0.7,
+       6.5
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 146,
+     "pp": 0.7,
+     "ci": [
+      0.0,
+      2.1
+     ],
+     "discordant": [
+      1,
+      0
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 1.3,
+      "ci": [
+       -1.3,
+       3.9
+      ]
+     }
+    },
+    "direct_acc": 89.9,
+    "answered": [
+     96.7,
+     96.7
+    ],
+    "conf_gap_direct": 17.2,
+    "decoy_rate": 4.2
+   },
+   "self_review": {
+    "items": 149,
+    "n_errors": 15,
+    "acc": 89.9,
+    "acc_all153": 87.6,
+    "flag": 20.0,
+    "flag_ci": [
+     7,
+     45
+    ],
+    "fix": 6.7,
+    "n_fixed": 1,
+    "fc": 4.5,
+    "c_to_w": 0,
+    "w_to_c": 1,
+    "net_pp": 0.7,
+    "n_flagged": 3,
+    "n_flag_den": 15,
+    "flagged_fixed": 1,
+    "review_unparsed": 0,
+    "conf_bs": 87.6,
+    "conf_ta": 94.1,
+    "c2": {
+     "n": 15,
+     "fix_correct": 1,
+     "fresh_correct": 2,
+     "fix_only": 0,
+     "fresh_only": 1,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 9,
+    "rec_live": 37.0,
+    "rec_control": 40.7,
+    "diff_pp": -3.7,
+    "p": 1.0,
+    "counts": {
+     "live": [
+      10,
+      27
+     ],
+     "control": [
+      11,
+      27
+     ]
+    },
+    "flag": {
+     "live": [
+      0,
+      17
+     ],
+     "control": [
+      1,
+      16
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 70.0,
+     "sbw": 1.2,
+     "sbw_ci": [
+      0,
+      7
+     ],
+     "conv": [
+      55,
+      56
+     ],
+     "acc": 77.5,
+     "no_switch_correct": 7,
+     "usable": 68
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 80.0,
+     "sbw": 1.4,
+     "sbw_ci": [
+      0,
+      8
+     ],
+     "conv": [
+      55,
+      56
+     ],
+     "acc": 88.6,
+     "no_switch_correct": 7,
+     "usable": 68
+    },
+    "cipher_status": {
+     "truncated": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 81.9,
+    "confab": 65.0,
+    "confab_ci": [
+     52,
+     76
+    ],
+    "n_fab": 60,
+    "inferred": 86.7,
+    "fab_prec": 90.7,
+    "confab_by_passage": {
+     "001": [
+      8,
+      12
+     ],
+     "002": [
+      8,
+      12
+     ],
+     "003": [
+      8,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      9,
+      12
+     ]
+    }
+   }
+  },
+  "opus-4.6": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 79.8,
+    "ece": 0.0523,
+    "brier": 0.0839,
+    "wr_a": 76.5,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 5331,
+    "gap": 1869,
+    "gap_per_item": 4.1,
+    "mean_conf": 79.2,
+    "overconf": -0.6,
+    "wagers": {
+     "BOLD": 270,
+     "MEDIUM": 111,
+     "SAFE": 70
+    },
+    "conf_gap": 44.5,
+    "n_valid_conf": 451,
+    "regret_per_item": 1.15,
+    "n_suboptimal": 106,
+    "n_cautious": 106,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      35,
+      35
+     ],
+     "80-89": [
+      46,
+      62
+     ],
+     "90-100": [
+      1,
+      255
+     ]
+    },
+    "points_per_item": 11.82
+   },
+   "deferral": {
+    "defer": {
+     "low": 7.2,
+     "medium": 10.6,
+     "high": 23.2
+    },
+    "delta": 15.9,
+    "att_acc": 88.2,
+    "clar_p": 100.0,
+    "clar_r": 51.4,
+    "clar_r_ci": [
+     43,
+     60
+    ],
+    "ev": 1880,
+    "ev_b": 1970,
+    "clar_r_b": 55.8,
+    "false_clar": 0.0,
+    "n_declined": 62,
+    "forced_acc": 24.2,
+    "attempted_below_threshold_A": 65,
+    "adherence_A": 85.7,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 28,
+    "adherence_B": 93.8,
+    "declined_above_threshold_B": 0,
+    "n_adherence_B": 454,
+    "forced_correct": 15,
+    "n_forced_scored": 62,
+    "forced_ci": [
+     15,
+     36
+    ],
+    "cf_gap": 64.0
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 152,
+     "pp": 0.7,
+     "ci": [
+      -2.0,
+      3.9
+     ],
+     "discordant": [
+      3,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.7,
+      "ci": [
+       -2.0,
+       3.9
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 152,
+     "pp": 2.6,
+     "ci": [
+      -0.0,
+      5.9
+     ],
+     "discordant": [
+      5,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 2.6,
+      "ci": [
+       0.0,
+       5.9
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 151,
+     "pp": -0.7,
+     "ci": [
+      -4.0,
+      2.0
+     ],
+     "discordant": [
+      2,
+      3
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -3.3,
+       2.0
+      ]
+     }
+    },
+    "direct_acc": 88.8,
+    "answered": [
+     99.3,
+     99.3
+    ],
+    "conf_gap_direct": 18.8,
+    "decoy_rate": 4.0
+   },
+   "self_review": {
+    "items": 152,
+    "n_errors": 18,
+    "acc": 88.2,
+    "acc_all153": 87.6,
+    "flag": 11.1,
+    "flag_ci": [
+     3,
+     33
+    ],
+    "fix": 11.1,
+    "n_fixed": 2,
+    "fc": 1.5,
+    "c_to_w": 0,
+    "w_to_c": 2,
+    "net_pp": 1.3,
+    "n_flagged": 2,
+    "n_flag_den": 18,
+    "flagged_fixed": 2,
+    "review_unparsed": 0,
+    "conf_bs": 88.0,
+    "conf_ta": 95.3,
+    "c2": {
+     "n": 18,
+     "fix_correct": 2,
+     "fresh_correct": 5,
+     "fix_only": 1,
+     "fresh_only": 4,
+     "mcnemar_p": 0.375,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 13,
+    "rec_live": 28.2,
+    "rec_control": 30.8,
+    "diff_pp": -2.6,
+    "p": 1.0,
+    "counts": {
+     "live": [
+      11,
+      39
+     ],
+     "control": [
+      12,
+      39
+     ]
+    },
+    "flag": {
+     "live": [
+      1,
+      28
+     ],
+     "control": [
+      3,
+      27
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 66.2,
+     "sbw": 8.8,
+     "sbw_ci": [
+      4,
+      17
+     ],
+     "conv": [
+      46,
+      53
+     ],
+     "acc": 68.8,
+     "no_switch_correct": 9,
+     "usable": 70
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 75.7,
+     "sbw": 10.0,
+     "sbw_ci": [
+      5,
+      19
+     ],
+     "conv": [
+      46,
+      53
+     ],
+     "acc": 78.6,
+     "no_switch_correct": 9,
+     "usable": 70
+    },
+    "cipher_status": {
+     "blocked": 2,
+     "truncated": 8
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 83.8,
+    "confab": 65.0,
+    "confab_ci": [
+     52,
+     76
+    ],
+    "n_fab": 60,
+    "inferred": 91.7,
+    "fab_prec": 97.5,
+    "confab_by_passage": {
+     "001": [
+      8,
+      12
+     ],
+     "002": [
+      8,
+      12
+     ],
+     "003": [
+      8,
+      12
+     ],
+     "004": [
+      7,
+      12
+     ],
+     "005": [
+      8,
+      12
+     ]
+    }
+   }
+  },
+  "gpt-4.1": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 68.3,
+    "ece": 0.2577,
+    "brier": 0.2606,
+    "wr_a": 71.8,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 3263,
+    "gap": 2897,
+    "gap_per_item": 6.4,
+    "mean_conf": 94.1,
+    "overconf": 25.8,
+    "wagers": {
+     "BOLD": 323,
+     "MEDIUM": 127,
+     "SAFE": 1
+    },
+    "conf_gap": 6.0,
+    "n_valid_conf": 451,
+    "regret_per_item": 2.72,
+    "n_suboptimal": 127,
+    "n_cautious": 127,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      4,
+      4
+     ],
+     "80-89": [
+      50,
+      51
+     ],
+     "90-100": [
+      72,
+      394
+     ]
+    },
+    "points_per_item": 7.24
+   },
+   "deferral": {
+    "defer": {
+     "low": 1.3,
+     "medium": 5.3,
+     "high": 25.8
+    },
+    "delta": 24.5,
+    "att_acc": 75.2,
+    "clar_p": 94.9,
+    "clar_r": 40.9,
+    "clar_r_ci": [
+     33,
+     49
+    ],
+    "ev": -350,
+    "ev_b": 40,
+    "clar_r_b": 40.6,
+    "false_clar": 0.7,
+    "n_declined": 52,
+    "forced_acc": 26.9,
+    "attempted_below_threshold_A": 43,
+    "adherence_A": 90.5,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 100.0,
+    "declined_above_threshold_B": 0,
+    "n_adherence_B": 454,
+    "forced_correct": 14,
+    "n_forced_scored": 52,
+    "forced_ci": [
+     17,
+     40
+    ],
+    "cf_gap": 48.3
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 152,
+     "pp": 0.7,
+     "ci": [
+      -3.3,
+      4.6
+     ],
+     "discordant": [
+      5,
+      4
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.0,
+      "ci": [
+       -3.9,
+       3.9
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 152,
+     "pp": 6.6,
+     "ci": [
+      2.0,
+      12.5
+     ],
+     "discordant": [
+      13,
+      3
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 5.9,
+      "ci": [
+       1.3,
+       11.8
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 152,
+     "pp": 3.9,
+     "ci": [
+      0.7,
+      7.9
+     ],
+     "discordant": [
+      7,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 3.3,
+      "ci": [
+       0.0,
+       7.2
+      ]
+     }
+    },
+    "direct_acc": 78.4,
+    "answered": [
+     100.0,
+     99.3
+    ],
+    "conf_gap_direct": 7.5,
+    "decoy_rate": 7.2
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 33,
+    "acc": 78.4,
+    "acc_all153": 78.4,
+    "flag": 9.1,
+    "flag_ci": [
+     3,
+     24
+    ],
+    "fix": 3.0,
+    "n_fixed": 1,
+    "fc": 1.7,
+    "c_to_w": 1,
+    "w_to_c": 1,
+    "net_pp": 0.0,
+    "n_flagged": 3,
+    "n_flag_den": 33,
+    "flagged_fixed": 1,
+    "review_unparsed": 0,
+    "conf_bs": 98.3,
+    "conf_ta": 99.6,
+    "c2": {
+     "n": 33,
+     "fix_correct": 1,
+     "fresh_correct": 9,
+     "fix_only": 0,
+     "fresh_only": 8,
+     "mcnemar_p": 0.008,
+     "p_holm": 0.096
+    }
+   },
+   "loop": {
+    "items": 15,
+    "rec_live": 22.2,
+    "rec_control": 31.1,
+    "diff_pp": -8.9,
+    "p": 0.371,
+    "counts": {
+     "live": [
+      10,
+      45
+     ],
+     "control": [
+      14,
+      45
+     ]
+    },
+    "flag": {
+     "live": [
+      0,
+      35
+     ],
+     "control": [
+      1,
+      31
+     ]
+    },
+    "prev_correct": [
+     93.3,
+     93.3
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 53.8,
+     "sbw": 26.2,
+     "sbw_ci": [
+      18,
+      37
+     ],
+     "conv": [
+      22,
+      43
+     ],
+     "acc": 31.2,
+     "no_switch_correct": 3,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 61.4,
+     "sbw": 30.0,
+     "sbw_ci": [
+      21,
+      42
+     ],
+     "conv": [
+      22,
+      43
+     ],
+     "acc": 35.7,
+     "no_switch_correct": 3,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 79.4,
+    "confab": 61.7,
+    "confab_ci": [
+     49,
+     73
+    ],
+    "n_fab": 60,
+    "inferred": 86.7,
+    "fab_prec": 97.4,
+    "confab_by_passage": {
+     "001": [
+      8,
+      12
+     ],
+     "002": [
+      8,
+      12
+     ],
+     "003": [
+      7,
+      12
+     ],
+     "004": [
+      7,
+      12
+     ],
+     "005": [
+      7,
+      12
+     ]
+    }
+   }
+  },
+  "gpt-5.4": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 82.0,
+    "ece": 0.0324,
+    "brier": 0.0838,
+    "wr_a": 94.7,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 6087,
+    "gap": 1313,
+    "gap_per_item": 2.9,
+    "mean_conf": 84.7,
+    "overconf": 2.7,
+    "wagers": {
+     "BOLD": 365,
+     "MEDIUM": 50,
+     "SAFE": 36
+    },
+    "conf_gap": 37.8,
+    "n_valid_conf": 451,
+    "regret_per_item": 0.18,
+    "n_suboptimal": 24,
+    "n_cautious": 22,
+    "cautious_pct": 91.7,
+    "cautious_by_band": {
+     "66-79": [
+      8,
+      40
+     ],
+     "80-89": [
+      6,
+      49
+     ],
+     "90-100": [
+      0,
+      288
+     ]
+    },
+    "points_per_item": 13.5
+   },
+   "deferral": {
+    "defer": {
+     "low": 9.2,
+     "medium": 12.6,
+     "high": 26.5
+    },
+    "delta": 17.3,
+    "att_acc": 91.0,
+    "clar_p": 88.7,
+    "clar_r": 62.3,
+    "clar_r_ci": [
+     54,
+     70
+    ],
+    "ev": 2700,
+    "ev_b": 2750,
+    "clar_r_b": 65.9,
+    "false_clar": 2.4,
+    "n_declined": 84,
+    "forced_acc": 40.5,
+    "attempted_below_threshold_A": 12,
+    "adherence_A": 95.4,
+    "declined_above_threshold_A": 9,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 98.2,
+    "declined_above_threshold_B": 8,
+    "n_adherence_B": 454,
+    "forced_correct": 34,
+    "n_forced_scored": 84,
+    "forced_ci": [
+     31,
+     51
+    ],
+    "cf_gap": 50.5
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 153,
+     "pp": 0.7,
+     "ci": [
+      -2.0,
+      3.3
+     ],
+     "discordant": [
+      3,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.7,
+      "ci": [
+       -2.0,
+       3.3
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 153,
+     "pp": 3.3,
+     "ci": [
+      0.0,
+      6.5
+     ],
+     "discordant": [
+      6,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 3.3,
+      "ci": [
+       0.0,
+       6.5
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 153,
+     "pp": -0.7,
+     "ci": [
+      -3.3,
+      2.0
+     ],
+     "discordant": [
+      2,
+      3
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -3.3,
+       2.0
+      ]
+     }
+    },
+    "direct_acc": 88.9,
+    "answered": [
+     100.0,
+     100.0
+    ],
+    "conf_gap_direct": 9.5,
+    "decoy_rate": 3.3
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 16,
+    "acc": 89.5,
+    "acc_all153": 89.5,
+    "flag": 12.5,
+    "flag_ci": [
+     3,
+     36
+    ],
+    "fix": 0.0,
+    "n_fixed": 0,
+    "fc": 8.1,
+    "c_to_w": 4,
+    "w_to_c": 0,
+    "net_pp": -2.6,
+    "n_flagged": 2,
+    "n_flag_den": 16,
+    "flagged_fixed": 0,
+    "review_unparsed": 1,
+    "conf_bs": 90.4,
+    "conf_ta": 96.2,
+    "c2": {
+     "n": 16,
+     "fix_correct": 0,
+     "fresh_correct": 1,
+     "fix_only": 0,
+     "fresh_only": 1,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 8,
+    "rec_live": 0.0,
+    "rec_control": 0.0,
+    "diff_pp": 0.0,
+    "p": 1.0,
+    "counts": {
+     "live": [
+      0,
+      24
+     ],
+     "control": [
+      0,
+      24
+     ]
+    },
+    "flag": {
+     "live": [
+      4,
+      24
+     ],
+     "control": [
+      3,
+      24
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 27.5,
+     "sbw": 1.2,
+     "sbw_ci": [
+      0,
+      7
+     ],
+     "conv": [
+      21,
+      22
+     ],
+     "acc": 71.2,
+     "no_switch_correct": 36,
+     "usable": 70
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 31.4,
+     "sbw": 1.4,
+     "sbw_ci": [
+      0,
+      8
+     ],
+     "conv": [
+      21,
+      22
+     ],
+     "acc": 81.4,
+     "no_switch_correct": 36,
+     "usable": 70
+    },
+    "cipher_status": {
+     "truncated": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 82.5,
+    "confab": 76.7,
+    "confab_ci": [
+     65,
+     86
+    ],
+    "n_fab": 60,
+    "inferred": 76.7,
+    "fab_prec": 79.3,
+    "confab_by_passage": {
+     "001": [
+      10,
+      12
+     ],
+     "002": [
+      8,
+      12
+     ],
+     "003": [
+      9,
+      12
+     ],
+     "004": [
+      9,
+      12
+     ],
+     "005": [
+      10,
+      12
+     ]
+    }
+   }
+  },
+  "gemini-2.5-pro": {
+   "wagering": {
+    "n": 450,
+    "n_items": 451,
+    "acc": 82.0,
+    "ece": 0.1621,
+    "brier": 0.1719,
+    "wr_a": 98.4,
+    "wr_b": 100.0,
+    "n_b": 449,
+    "payout": 4985,
+    "gap": 2395,
+    "gap_per_item": 5.3,
+    "mean_conf": 97.8,
+    "overconf": 15.8,
+    "wagers": {
+     "BOLD": 441,
+     "MEDIUM": 7,
+     "SAFE": 2
+    },
+    "conf_gap": 1.1,
+    "n_valid_conf": 450,
+    "regret_per_item": 0.15,
+    "n_suboptimal": 7,
+    "n_cautious": 7,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      0,
+      0
+     ],
+     "80-89": [
+      5,
+      8
+     ],
+     "90-100": [
+      2,
+      440
+     ]
+    },
+    "points_per_item": 11.08
+   },
+   "deferral": {
+    "defer": {
+     "low": 0.0,
+     "medium": 0.7,
+     "high": 7.3
+    },
+    "delta": 7.3,
+    "att_acc": 84.1,
+    "clar_p": 89.4,
+    "clar_r": 67.4,
+    "clar_r_ci": [
+     59,
+     75
+    ],
+    "ev": 1170,
+    "ev_b": 710,
+    "clar_r_b": 65.9,
+    "false_clar": 2.4,
+    "n_declined": 23,
+    "forced_acc": 43.5,
+    "attempted_below_threshold_A": 0,
+    "adherence_A": 97.8,
+    "declined_above_threshold_A": 10,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 99.8,
+    "declined_above_threshold_B": 1,
+    "n_adherence_B": 454,
+    "forced_correct": 10,
+    "n_forced_scored": 23,
+    "forced_ci": [
+     26,
+     63
+    ],
+    "cf_gap": 40.6
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 149,
+     "pp": -3.4,
+     "ci": [
+      -6.7,
+      0.0
+     ],
+     "discordant": [
+      1,
+      6
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -3.3,
+      "ci": [
+       -7.2,
+       0.7
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 149,
+     "pp": 1.3,
+     "ci": [
+      -1.3,
+      4.0
+     ],
+     "discordant": [
+      3,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 1.3,
+      "ci": [
+       -2.0,
+       4.6
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 145,
+     "pp": -2.1,
+     "ci": [
+      -5.5,
+      0.7
+     ],
+     "discordant": [
+      1,
+      4
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -3.9,
+      "ci": [
+       -8.5,
+       0.0
+      ]
+     }
+    },
+    "direct_acc": 90.7,
+    "answered": [
+     98.7,
+     98.7
+    ],
+    "conf_gap_direct": 0.9,
+    "decoy_rate": 4.8
+   },
+   "self_review": {
+    "items": 152,
+    "n_errors": 16,
+    "acc": 89.5,
+    "acc_all153": 88.9,
+    "flag": 6.2,
+    "flag_ci": [
+     1,
+     28
+    ],
+    "fix": 6.2,
+    "n_fixed": 1,
+    "fc": 0.7,
+    "c_to_w": 0,
+    "w_to_c": 1,
+    "net_pp": 0.7,
+    "n_flagged": 1,
+    "n_flag_den": 16,
+    "flagged_fixed": 1,
+    "review_unparsed": 0,
+    "conf_bs": 99.7,
+    "conf_ta": 99.8,
+    "c2": {
+     "n": 16,
+     "fix_correct": 1,
+     "fresh_correct": 2,
+     "fix_only": 0,
+     "fresh_only": 1,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 11,
+    "rec_live": 12.1,
+    "rec_control": 21.2,
+    "diff_pp": -9.1,
+    "p": 0.5,
+    "counts": {
+     "live": [
+      4,
+      33
+     ],
+     "control": [
+      7,
+      33
+     ]
+    },
+    "flag": {
+     "live": [
+      0,
+      29
+     ],
+     "control": [
+      0,
+      26
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 46.2,
+     "sbw": 7.5,
+     "sbw_ci": [
+      3,
+      15
+     ],
+     "conv": [
+      31,
+      37
+     ],
+     "acc": 47.5,
+     "no_switch_correct": 7,
+     "usable": 69
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 52.9,
+     "sbw": 8.6,
+     "sbw_ci": [
+      4,
+      17
+     ],
+     "conv": [
+      31,
+      37
+     ],
+     "acc": 54.3,
+     "no_switch_correct": 7,
+     "usable": 69
+    },
+    "cipher_status": {
+     "truncated": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 80.0,
+    "confab": 66.7,
+    "confab_ci": [
+     54,
+     77
+    ],
+    "n_fab": 60,
+    "inferred": 80.0,
+    "fab_prec": 93.0,
+    "confab_by_passage": {
+     "001": [
+      11,
+      12
+     ],
+     "002": [
+      7,
+      12
+     ],
+     "003": [
+      8,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      8,
+      12
+     ]
+    }
+   }
+  },
+  "gemini-3.1-pro": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 87.4,
+    "ece": 0.0441,
+    "brier": 0.0689,
+    "wr_a": 89.4,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 6871,
+    "gap": 1009,
+    "gap_per_item": 2.2,
+    "mean_conf": 90.0,
+    "overconf": 2.6,
+    "wagers": {
+     "BOLD": 376,
+     "SAFE": 37,
+     "MEDIUM": 38
+    },
+    "conf_gap": 38.9,
+    "n_valid_conf": 451,
+    "regret_per_item": 0.49,
+    "n_suboptimal": 48,
+    "n_cautious": 48,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      17,
+      17
+     ],
+     "80-89": [
+      18,
+      30
+     ],
+     "90-100": [
+      1,
+      365
+     ]
+    },
+    "points_per_item": 15.24
+   },
+   "deferral": {
+    "defer": {
+     "low": 15.1,
+     "medium": 16.6,
+     "high": 31.1
+    },
+    "delta": 16.0,
+    "att_acc": 96.9,
+    "clar_p": 95.8,
+    "clar_r": 65.9,
+    "clar_r_ci": [
+     58,
+     73
+    ],
+    "ev": 3140,
+    "ev_b": 3240,
+    "clar_r_b": 65.2,
+    "false_clar": 0.9,
+    "n_declined": 99,
+    "forced_acc": 58.2,
+    "attempted_below_threshold_A": 3,
+    "adherence_A": 98.0,
+    "declined_above_threshold_A": 6,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 99.8,
+    "declined_above_threshold_B": 1,
+    "n_adherence_B": 454,
+    "forced_correct": 57,
+    "n_forced_scored": 98,
+    "forced_ci": [
+     48,
+     67
+    ],
+    "cf_gap": 38.7
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 153,
+     "pp": -0.7,
+     "ci": [
+      -2.0,
+      0.0
+     ],
+     "discordant": [
+      0,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -2.0,
+       0.0
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 153,
+     "pp": 1.3,
+     "ci": [
+      0.0,
+      3.3
+     ],
+     "discordant": [
+      2,
+      0
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 1.3,
+      "ci": [
+       0.0,
+       3.3
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 153,
+     "pp": 0.0,
+     "ci": [
+      -2.6,
+      2.6
+     ],
+     "discordant": [
+      2,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.0,
+      "ci": [
+       -2.6,
+       2.6
+      ]
+     }
+    },
+    "direct_acc": 94.1,
+    "answered": [
+     100.0,
+     100.0
+    ],
+    "conf_gap_direct": 9.2,
+    "decoy_rate": 2.0
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 8,
+    "acc": 94.8,
+    "acc_all153": 94.8,
+    "flag": 25.0,
+    "flag_ci": [
+     7,
+     59
+    ],
+    "fix": 12.5,
+    "n_fixed": 1,
+    "fc": 1.4,
+    "c_to_w": 1,
+    "w_to_c": 1,
+    "net_pp": 0.0,
+    "n_flagged": 2,
+    "n_flag_den": 8,
+    "flagged_fixed": 1,
+    "review_unparsed": 0,
+    "conf_bs": 100.0,
+    "conf_ta": 100.0,
+    "c2": {
+     "n": 8,
+     "fix_correct": 1,
+     "fresh_correct": 1,
+     "fix_only": 0,
+     "fresh_only": 0,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 5,
+    "rec_live": 0.0,
+    "rec_control": 13.3,
+    "diff_pp": -13.3,
+    "p": 1.0,
+    "counts": {
+     "live": [
+      0,
+      15
+     ],
+     "control": [
+      2,
+      15
+     ]
+    },
+    "flag": {
+     "live": [
+      2,
+      15
+     ],
+     "control": [
+      0,
+      13
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 55.0,
+     "sbw": 2.5,
+     "sbw_ci": [
+      1,
+      9
+     ],
+     "conv": [
+      42,
+      44
+     ],
+     "acc": 76.2,
+     "no_switch_correct": 19,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 62.9,
+     "sbw": 2.9,
+     "sbw_ci": [
+      1,
+      10
+     ],
+     "conv": [
+      42,
+      44
+     ],
+     "acc": 87.1,
+     "no_switch_correct": 19,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 9,
+     "truncated": 1
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 85.0,
+    "confab": 73.3,
+    "confab_ci": [
+     61,
+     83
+    ],
+    "n_fab": 60,
+    "inferred": 86.7,
+    "fab_prec": 89.8,
+    "confab_by_passage": {
+     "001": [
+      10,
+      12
+     ],
+     "002": [
+      9,
+      12
+     ],
+     "003": [
+      9,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      10,
+      12
+     ]
+    }
+   }
+  },
+  "gemma-4-31b": {
+   "wagering": {
+    "n": 450,
+    "n_items": 451,
+    "acc": 73.1,
+    "ece": 0.193,
+    "brier": 0.1871,
+    "wr_a": 89.1,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 4325,
+    "gap": 2255,
+    "gap_per_item": 5.0,
+    "mean_conf": 92.0,
+    "overconf": 18.9,
+    "wagers": {
+     "BOLD": 376,
+     "MEDIUM": 51,
+     "SAFE": 23
+    },
+    "conf_gap": 21.0,
+    "n_valid_conf": 450,
+    "regret_per_item": 0.78,
+    "n_suboptimal": 49,
+    "n_cautious": 49,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      10,
+      10
+     ],
+     "80-89": [
+      20,
+      22
+     ],
+     "90-100": [
+      16,
+      390
+     ]
+    },
+    "points_per_item": 9.61
+   },
+   "deferral": {
+    "defer": {
+     "low": 10.6,
+     "medium": 15.2,
+     "high": 26.5
+    },
+    "delta": 15.9,
+    "att_acc": 85.8,
+    "clar_p": 95.3,
+    "clar_r": 58.7,
+    "clar_r_ci": [
+     50,
+     67
+    ],
+    "ev": 1660,
+    "ev_b": 1260,
+    "clar_r_b": 56.5,
+    "false_clar": 0.9,
+    "n_declined": 83,
+    "forced_acc": 15.7,
+    "attempted_below_threshold_A": 10,
+    "adherence_A": 96.7,
+    "declined_above_threshold_A": 5,
+    "n_adherence_A": 453,
+    "attempted_below_threshold_B": 2,
+    "adherence_B": 98.9,
+    "declined_above_threshold_B": 3,
+    "n_adherence_B": 454,
+    "forced_correct": 13,
+    "n_forced_scored": 83,
+    "forced_ci": [
+     9,
+     25
+    ],
+    "cf_gap": 70.1
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 153,
+     "pp": 1.3,
+     "ci": [
+      -1.3,
+      3.9
+     ],
+     "discordant": [
+      3,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 1.3,
+      "ci": [
+       -1.3,
+       3.9
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 153,
+     "pp": 4.6,
+     "ci": [
+      2.0,
+      7.9
+     ],
+     "discordant": [
+      7,
+      0
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 4.6,
+      "ci": [
+       2.0,
+       7.9
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 153,
+     "pp": -2.6,
+     "ci": [
+      -6.5,
+      1.3
+     ],
+     "discordant": [
+      3,
+      7
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -2.6,
+      "ci": [
+       -6.5,
+       1.3
+      ]
+     }
+    },
+    "direct_acc": 87.6,
+    "answered": [
+     100.0,
+     100.0
+    ],
+    "conf_gap_direct": 7.5,
+    "decoy_rate": 5.9
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 17,
+    "acc": 88.9,
+    "acc_all153": 88.9,
+    "flag": 0.0,
+    "flag_ci": [
+     0,
+     19
+    ],
+    "fix": 0.0,
+    "n_fixed": 0,
+    "fc": 1.5,
+    "c_to_w": 2,
+    "w_to_c": 0,
+    "net_pp": -1.3,
+    "n_flagged": 0,
+    "n_flag_den": 16,
+    "flagged_fixed": 0,
+    "review_unparsed": 1,
+    "conf_bs": 98.6,
+    "conf_ta": 99.7,
+    "c2": {
+     "n": 17,
+     "fix_correct": 0,
+     "fresh_correct": 1,
+     "fix_only": 0,
+     "fresh_only": 1,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": null,
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 55.0,
+     "sbw": 2.5,
+     "sbw_ci": [
+      1,
+      9
+     ],
+     "conv": [
+      42,
+      44
+     ],
+     "acc": 67.5,
+     "no_switch_correct": 12,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 62.9,
+     "sbw": 2.9,
+     "sbw_ci": [
+      1,
+      10
+     ],
+     "conv": [
+      42,
+      44
+     ],
+     "acc": 77.1,
+     "no_switch_correct": 12,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 86.9,
+    "confab": 71.7,
+    "confab_ci": [
+     59,
+     81
+    ],
+    "n_fab": 60,
+    "inferred": 93.3,
+    "fab_prec": 97.7,
+    "confab_by_passage": {
+     "001": [
+      11,
+      12
+     ],
+     "002": [
+      7,
+      12
+     ],
+     "003": [
+      9,
+      12
+     ],
+     "004": [
+      7,
+      12
+     ],
+     "005": [
+      9,
+      12
+     ]
+    }
+   }
+  },
+  "deepseek-v3.2": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 74.7,
+    "ece": 0.1088,
+    "brier": 0.1457,
+    "wr_a": 98.9,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 4114,
+    "gap": 2626,
+    "gap_per_item": 5.8,
+    "mean_conf": 85.6,
+    "overconf": 10.9,
+    "wagers": {
+     "BOLD": 414,
+     "MEDIUM": 23,
+     "SAFE": 14
+    },
+    "conf_gap": 20.9,
+    "n_valid_conf": 451,
+    "regret_per_item": 0.02,
+    "n_suboptimal": 5,
+    "n_cautious": 5,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      3,
+      50
+     ],
+     "80-89": [
+      0,
+      92
+     ],
+     "90-100": [
+      0,
+      275
+     ]
+    },
+    "points_per_item": 9.12
+   },
+   "deferral": {
+    "defer": {
+     "low": 5.9,
+     "medium": 17.2,
+     "high": 37.1
+    },
+    "delta": 31.2,
+    "att_acc": 84.4,
+    "clar_p": 97.6,
+    "clar_r": 59.4,
+    "clar_r_ci": [
+     51,
+     67
+    ],
+    "ev": 1910,
+    "ev_b": 1750,
+    "clar_r_b": 55.8,
+    "false_clar": 0.4,
+    "n_declined": 93,
+    "forced_acc": 41.1,
+    "attempted_below_threshold_A": 20,
+    "adherence_A": 95.6,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 99.8,
+    "declined_above_threshold_B": 1,
+    "n_adherence_B": 454,
+    "forced_correct": 37,
+    "n_forced_scored": 90,
+    "forced_ci": [
+     32,
+     51
+    ],
+    "cf_gap": 43.3
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 146,
+     "pp": -0.7,
+     "ci": [
+      -4.1,
+      2.7
+     ],
+     "discordant": [
+      3,
+      4
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -4.6,
+       2.6
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 147,
+     "pp": 4.8,
+     "ci": [
+      1.4,
+      8.8
+     ],
+     "discordant": [
+      8,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 5.9,
+      "ci": [
+       2.0,
+       10.5
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 145,
+     "pp": 1.4,
+     "ci": [
+      -2.1,
+      4.8
+     ],
+     "discordant": [
+      4,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 1.3,
+      "ci": [
+       -2.6,
+       5.2
+      ]
+     }
+    },
+    "direct_acc": 87.1,
+    "answered": [
+     96.1,
+     96.7
+    ],
+    "conf_gap_direct": 9.5,
+    "decoy_rate": 6.2
+   },
+   "self_review": {
+    "items": 144,
+    "n_errors": 17,
+    "acc": 88.2,
+    "acc_all153": 83.0,
+    "flag": 17.6,
+    "flag_ci": [
+     6,
+     41
+    ],
+    "fix": 17.6,
+    "n_fixed": 3,
+    "fc": 3.2,
+    "c_to_w": 0,
+    "w_to_c": 3,
+    "net_pp": 2.1,
+    "n_flagged": 3,
+    "n_flag_den": 17,
+    "flagged_fixed": 3,
+    "review_unparsed": 2,
+    "conf_bs": 95.1,
+    "conf_ta": 97.1,
+    "c2": {
+     "n": 17,
+     "fix_correct": 3,
+     "fresh_correct": 2,
+     "fix_only": 1,
+     "fresh_only": 0,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 11,
+    "rec_live": 18.2,
+    "rec_control": 18.2,
+    "diff_pp": -0.0,
+    "p": 0.875,
+    "counts": {
+     "live": [
+      6,
+      33
+     ],
+     "control": [
+      6,
+      33
+     ]
+    },
+    "flag": {
+     "live": [
+      1,
+      27
+     ],
+     "control": [
+      0,
+      27
+     ]
+    },
+    "prev_correct": [
+     93.3,
+     95.6
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 38.8,
+     "sbw": 5.0,
+     "sbw_ci": [
+      2,
+      12
+     ],
+     "conv": [
+      27,
+      31
+     ],
+     "acc": 62.5,
+     "no_switch_correct": 23,
+     "usable": 63
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 44.3,
+     "sbw": 5.7,
+     "sbw_ci": [
+      2,
+      14
+     ],
+     "conv": [
+      27,
+      31
+     ],
+     "acc": 71.4,
+     "no_switch_correct": 23,
+     "usable": 63
+    },
+    "cipher_status": {
+     "truncated": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 80.6,
+    "confab": 65.0,
+    "confab_ci": [
+     52,
+     76
+    ],
+    "n_fab": 60,
+    "inferred": 83.3,
+    "fab_prec": 88.6,
+    "confab_by_passage": {
+     "001": [
+      8,
+      12
+     ],
+     "002": [
+      7,
+      12
+     ],
+     "003": [
+      10,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      8,
+      12
+     ]
+    }
+   }
+  },
+  "mistral-large": {
+   "wagering": {
+    "n": 450,
+    "n_items": 451,
+    "acc": 65.6,
+    "ece": 0.2303,
+    "brier": 0.2344,
+    "wr_a": 68.0,
+    "wr_b": 100.0,
+    "n_b": 450,
+    "payout": 3680,
+    "gap": 2220,
+    "gap_per_item": 4.9,
+    "mean_conf": 88.6,
+    "overconf": 23.0,
+    "wagers": {
+     "BOLD": 287,
+     "MEDIUM": 155,
+     "SAFE": 8
+    },
+    "conf_gap": 12.8,
+    "n_valid_conf": 450,
+    "regret_per_item": 2.23,
+    "n_suboptimal": 144,
+    "n_cautious": 144,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      43,
+      43
+     ],
+     "80-89": [
+      80,
+      80
+     ],
+     "90-100": [
+      19,
+      306
+     ]
+    },
+    "points_per_item": 8.18
+   },
+   "deferral": {
+    "defer": {
+     "low": 9.2,
+     "medium": 10.6,
+     "high": 17.2
+    },
+    "delta": 8.0,
+    "att_acc": 72.2,
+    "clar_p": 89.2,
+    "clar_r": 42.0,
+    "clar_r_ci": [
+     34,
+     50
+    ],
+    "ev": -2140,
+    "ev_b": -1760,
+    "clar_r_b": 42.0,
+    "false_clar": 1.5,
+    "n_declined": 63,
+    "forced_acc": 20.6,
+    "attempted_below_threshold_A": 78,
+    "adherence_A": 82.8,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 1,
+    "adherence_B": 99.8,
+    "declined_above_threshold_B": 0,
+    "n_adherence_B": 454,
+    "forced_correct": 13,
+    "n_forced_scored": 63,
+    "forced_ci": [
+     12,
+     32
+    ],
+    "cf_gap": 51.6
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 153,
+     "pp": 0.0,
+     "ci": [
+      -5.9,
+      5.9
+     ],
+     "discordant": [
+      9,
+      9
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.0,
+      "ci": [
+       -5.9,
+       5.9
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 153,
+     "pp": 10.5,
+     "ci": [
+      4.6,
+      16.3
+     ],
+     "discordant": [
+      18,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 10.5,
+      "ci": [
+       4.6,
+       16.3
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 153,
+     "pp": -0.7,
+     "ci": [
+      -5.9,
+      5.2
+     ],
+     "discordant": [
+      9,
+      10
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -5.9,
+       5.2
+      ]
+     }
+    },
+    "direct_acc": 77.8,
+    "answered": [
+     100.0,
+     100.0
+    ],
+    "conf_gap_direct": 5.1,
+    "decoy_rate": 9.8
+   },
+   "self_review": {
+    "items": 146,
+    "n_errors": 32,
+    "acc": 78.1,
+    "acc_all153": 74.5,
+    "flag": 75.0,
+    "flag_ci": [
+     58,
+     87
+    ],
+    "fix": 25.0,
+    "n_fixed": 8,
+    "fc": 36.8,
+    "c_to_w": 6,
+    "w_to_c": 8,
+    "net_pp": 1.4,
+    "n_flagged": 24,
+    "n_flag_den": 32,
+    "flagged_fixed": 8,
+    "review_unparsed": 0,
+    "conf_bs": 97.2,
+    "conf_ta": 98.1,
+    "c2": {
+     "n": 32,
+     "fix_correct": 8,
+     "fresh_correct": 9,
+     "fix_only": 4,
+     "fresh_only": 5,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 15,
+    "rec_live": 28.9,
+    "rec_control": 24.4,
+    "diff_pp": 4.4,
+    "p": 0.772,
+    "counts": {
+     "live": [
+      13,
+      45
+     ],
+     "control": [
+      11,
+      45
+     ]
+    },
+    "flag": {
+     "live": [
+      4,
+      32
+     ],
+     "control": [
+      7,
+      34
+     ]
+    },
+    "prev_correct": [
+     93.3,
+     91.1
+    ],
+    "feedback_misread": 2,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 56.2,
+     "sbw": 30.0,
+     "sbw_ci": [
+      21,
+      41
+     ],
+     "conv": [
+      21,
+      45
+     ],
+     "acc": 30.0,
+     "no_switch_correct": 3,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 64.3,
+     "sbw": 34.3,
+     "sbw_ci": [
+      24,
+      46
+     ],
+     "conv": [
+      21,
+      45
+     ],
+     "acc": 34.3,
+     "no_switch_correct": 3,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 68.8,
+    "confab": 48.3,
+    "confab_ci": [
+     36,
+     61
+    ],
+    "n_fab": 60,
+    "inferred": 71.7,
+    "fab_prec": 100.0,
+    "confab_by_passage": {
+     "001": [
+      7,
+      12
+     ],
+     "002": [
+      5,
+      12
+     ],
+     "003": [
+      7,
+      12
+     ],
+     "004": [
+      5,
+      12
+     ],
+     "005": [
+      5,
+      12
+     ]
+    }
+   }
+  },
+  "grok-4.7": {
+   "wagering": {
+    "n": 449,
+    "n_items": 451,
+    "acc": 82.9,
+    "ece": 0.0548,
+    "brier": 0.0867,
+    "wr_a": 82.4,
+    "wr_b": 100.0,
+    "n_b": 447,
+    "payout": 5319,
+    "gap": 2121,
+    "gap_per_item": 4.7,
+    "mean_conf": 77.8,
+    "overconf": -5.1,
+    "wagers": {
+     "BOLD": 288,
+     "MEDIUM": 104,
+     "SAFE": 57
+    },
+    "conf_gap": 41.4,
+    "n_valid_conf": 449,
+    "regret_per_item": 0.75,
+    "n_suboptimal": 79,
+    "n_cautious": 79,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      37,
+      52
+     ],
+     "80-89": [
+      24,
+      74
+     ],
+     "90-100": [
+      1,
+      224
+     ]
+    },
+    "points_per_item": 11.85
+   },
+   "deferral": {
+    "defer": {
+     "low": 18.4,
+     "medium": 22.5,
+     "high": 37.1
+    },
+    "delta": 18.7,
+    "att_acc": 95.6,
+    "clar_p": 85.1,
+    "clar_r": 75.2,
+    "clar_r_ci": [
+     68,
+     82
+    ],
+    "ev": 2760,
+    "ev_b": 2670,
+    "clar_r_b": 71.0,
+    "false_clar": 4.0,
+    "n_declined": 136,
+    "forced_acc": 57.8,
+    "attempted_below_threshold_A": 21,
+    "adherence_A": 93.6,
+    "declined_above_threshold_A": 8,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 0,
+    "adherence_B": 98.7,
+    "declined_above_threshold_B": 6,
+    "n_adherence_B": 454,
+    "forced_correct": 78,
+    "n_forced_scored": 135,
+    "forced_ci": [
+     49,
+     66
+    ],
+    "cf_gap": 37.8
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 147,
+     "pp": -0.7,
+     "ci": [
+      -3.4,
+      1.4
+     ],
+     "discordant": [
+      1,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -3.3,
+      "ci": [
+       -6.5,
+       0.0
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 151,
+     "pp": 0.0,
+     "ci": [
+      -2.6,
+      2.6
+     ],
+     "discordant": [
+      2,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -0.7,
+      "ci": [
+       -3.9,
+       2.0
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 152,
+     "pp": -2.0,
+     "ci": [
+      -5.9,
+      1.3
+     ],
+     "discordant": [
+      2,
+      5
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -2.0,
+      "ci": [
+       -5.2,
+       1.3
+      ]
+     }
+    },
+    "direct_acc": 92.1,
+    "answered": [
+     99.3,
+     96.7
+    ],
+    "conf_gap_direct": 12.4,
+    "decoy_rate": 4.1
+   },
+   "self_review": {
+    "items": 153,
+    "n_errors": 13,
+    "acc": 91.5,
+    "acc_all153": 91.5,
+    "flag": 18.2,
+    "flag_ci": [
+     5,
+     48
+    ],
+    "fix": 15.4,
+    "n_fixed": 2,
+    "fc": 11.5,
+    "c_to_w": 2,
+    "w_to_c": 2,
+    "net_pp": 0.0,
+    "n_flagged": 2,
+    "n_flag_den": 11,
+    "flagged_fixed": 2,
+    "review_unparsed": 20,
+    "conf_bs": 87.1,
+    "conf_ta": 93.7,
+    "c2": {
+     "n": 13,
+     "fix_correct": 2,
+     "fresh_correct": 1,
+     "fix_only": 2,
+     "fresh_only": 1,
+     "mcnemar_p": 1.0,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 8,
+    "rec_live": 4.2,
+    "rec_control": 12.5,
+    "diff_pp": -8.3,
+    "p": 0.5,
+    "counts": {
+     "live": [
+      1,
+      24
+     ],
+     "control": [
+      3,
+      24
+     ]
+    },
+    "flag": {
+     "live": [
+      1,
+      23
+     ],
+     "control": [
+      0,
+      21
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 26.2,
+     "sbw": 1.2,
+     "sbw_ci": [
+      0,
+      7
+     ],
+     "conv": [
+      20,
+      21
+     ],
+     "acc": 71.2,
+     "no_switch_correct": 37,
+     "usable": 80
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 28.6,
+     "sbw": 1.4,
+     "sbw_ci": [
+      0,
+      8
+     ],
+     "conv": [
+      19,
+      20
+     ],
+     "acc": 80.0,
+     "no_switch_correct": 37,
+     "usable": 70
+    },
+    "cipher_status": {
+     "ok": 10
+    },
+    "cipher_correct": 1,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 83.1,
+    "confab": 90.0,
+    "confab_ci": [
+     80,
+     95
+    ],
+    "n_fab": 60,
+    "inferred": 66.7,
+    "fab_prec": 79.4,
+    "confab_by_passage": {
+     "001": [
+      11,
+      12
+     ],
+     "002": [
+      10,
+      12
+     ],
+     "003": [
+      12,
+      12
+     ],
+     "004": [
+      10,
+      12
+     ],
+     "005": [
+      11,
+      12
+     ]
+    }
+   }
+  },
+  "qwen-3.8-max": {
+   "wagering": {
+    "n": 451,
+    "n_items": 451,
+    "acc": 83.8,
+    "ece": 0.0352,
+    "brier": 0.0951,
+    "wr_a": 56.8,
+    "wr_b": 100.0,
+    "n_b": 451,
+    "payout": 4857,
+    "gap": 2703,
+    "gap_per_item": 6.0,
+    "mean_conf": 82.3,
+    "overconf": -1.5,
+    "wagers": {
+     "BOLD": 226,
+     "MEDIUM": 151,
+     "SAFE": 74
+    },
+    "conf_gap": 32.7,
+    "n_valid_conf": 451,
+    "regret_per_item": 2.59,
+    "n_suboptimal": 195,
+    "n_cautious": 195,
+    "cautious_pct": 100.0,
+    "cautious_by_band": {
+     "66-79": [
+      48,
+      48
+     ],
+     "80-89": [
+      56,
+      60
+     ],
+     "90-100": [
+      41,
+      263
+     ]
+    },
+    "points_per_item": 10.77
+   },
+   "deferral": {
+    "defer": {
+     "low": 11.8,
+     "medium": 13.2,
+     "high": 25.2
+    },
+    "delta": 13.3,
+    "att_acc": 92.5,
+    "clar_p": 100.0,
+    "clar_r": 30.4,
+    "clar_r_ci": [
+     23,
+     39
+    ],
+    "ev": 2560,
+    "ev_b": 2700,
+    "clar_r_b": 34.1,
+    "false_clar": 0.0,
+    "n_declined": 76,
+    "forced_acc": 43.4,
+    "attempted_below_threshold_A": 46,
+    "adherence_A": 89.9,
+    "declined_above_threshold_A": 0,
+    "n_adherence_A": 454,
+    "attempted_below_threshold_B": 4,
+    "adherence_B": 99.1,
+    "declined_above_threshold_B": 0,
+    "n_adherence_B": 454,
+    "forced_correct": 33,
+    "n_forced_scored": 76,
+    "forced_ci": [
+     33,
+     55
+    ],
+    "cf_gap": 49.1
+   },
+   "consistency": {
+    "n_items": 153,
+    "explanation": {
+     "n": 152,
+     "pp": 0.0,
+     "ci": [
+      -2.0,
+      2.0
+     ],
+     "discordant": [
+      1,
+      1
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 0.0,
+      "ci": [
+       -2.0,
+       2.0
+      ]
+     }
+    },
+    "adversarial_correct": {
+     "n": 152,
+     "pp": 3.9,
+     "ci": [
+      1.3,
+      7.2
+     ],
+     "discordant": [
+      6,
+      0
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": 3.9,
+      "ci": [
+       1.3,
+       7.2
+      ]
+     }
+    },
+    "adversarial_wrong": {
+     "n": 150,
+     "pp": -0.7,
+     "ci": [
+      -2.7,
+      1.3
+     ],
+     "discordant": [
+      1,
+      2
+     ],
+     "ci_method": "bootstrap",
+     "all_items": {
+      "n": 153,
+      "pp": -2.0,
+      "ci": [
+       -5.2,
+       0.7
+      ]
+     }
+    },
+    "direct_acc": 90.8,
+    "answered": [
+     99.3,
+     99.3
+    ],
+    "conf_gap_direct": 7.8,
+    "decoy_rate": 2.7
+   },
+   "self_review": {
+    "items": 151,
+    "n_errors": 16,
+    "acc": 89.4,
+    "acc_all153": 88.2,
+    "flag": 6.2,
+    "flag_ci": [
+     1,
+     28
+    ],
+    "fix": 6.2,
+    "n_fixed": 1,
+    "fc": 0.7,
+    "c_to_w": 0,
+    "w_to_c": 1,
+    "net_pp": 0.7,
+    "n_flagged": 1,
+    "n_flag_den": 16,
+    "flagged_fixed": 1,
+    "review_unparsed": 0,
+    "conf_bs": 92.7,
+    "conf_ta": 96.7,
+    "c2": {
+     "n": 16,
+     "fix_correct": 1,
+     "fresh_correct": 5,
+     "fix_only": 0,
+     "fresh_only": 4,
+     "mcnemar_p": 0.125,
+     "p_holm": 1.0
+    }
+   },
+   "loop": {
+    "items": 9,
+    "rec_live": 7.4,
+    "rec_control": 14.8,
+    "diff_pp": -7.4,
+    "p": 1.0,
+    "counts": {
+     "live": [
+      2,
+      27
+     ],
+     "control": [
+      4,
+      27
+     ]
+    },
+    "flag": {
+     "live": [
+      0,
+      25
+     ],
+     "control": [
+      0,
+      23
+     ]
+    },
+    "prev_correct": [
+     100.0,
+     100.0
+    ],
+    "feedback_misread": 0,
+    "p_holm": 1.0
+   },
+   "switching": {
+    "full": {
+     "n": 80,
+     "switch": 50.0,
+     "sbw": 1.2,
+     "sbw_ci": [
+      0,
+      7
+     ],
+     "conv": [
+      39,
+      40
+     ],
+     "acc": 67.5,
+     "no_switch_correct": 15,
+     "usable": 70
+    },
+    "excl_cipher": {
+     "n": 70,
+     "switch": 57.1,
+     "sbw": 1.4,
+     "sbw_ci": [
+      0,
+      8
+     ],
+     "conv": [
+      39,
+      40
+     ],
+     "acc": 77.1,
+     "no_switch_correct": 15,
+     "usable": 70
+    },
+    "cipher_status": {
+     "truncated": 10
+    },
+    "cipher_correct": 0,
+    "task_types": {
+     "cipher": 10,
+     "code_breaker": 10,
+     "dijkstra": 10,
+     "graph_coloring": 10,
+     "knights": 10,
+     "letter_guess": 10,
+     "maze": 10,
+     "sphere": 10
+    }
+   },
+   "source_monitoring": {
+    "n": 160,
+    "answered": 160,
+    "lost_pct": 0.0,
+    "acc": 83.1,
+    "confab": 76.7,
+    "confab_ci": [
+     65,
+     86
+    ],
+    "n_fab": 60,
+    "inferred": 78.3,
+    "fab_prec": 86.8,
+    "confab_by_passage": {
+     "001": [
+      11,
+      12
+     ],
+     "002": [
+      10,
+      12
+     ],
+     "003": [
+      10,
+      12
+     ],
+     "004": [
+      6,
+      12
+     ],
+     "005": [
+      9,
+      12
+     ]
+    }
+   }
+  }
+ },
+ "pooled": {
+  "control2": {
+   "n_models": 12,
+   "errors": 226,
+   "fix": 25,
+   "fresh": 44,
+   "fix_only": 10,
+   "fresh_only": 29,
+   "model_level_mean_pp": -7.0,
+   "model_level_signflip_p": 0.037,
+   "models_fresh_better": 9,
+   "models_fix_better": 2,
+   "diff_range_pp": [
+    -25.0,
+    7.7
+   ]
+  },
+  "loop": {
+   "n_models": 11,
+   "items": 119,
+   "rec_live": [
+    63,
+    357,
+    17.6
+   ],
+   "rec_control": [
+    73,
+    357,
+    20.4
+   ],
+   "mean_item_diff_pp": -2.8,
+   "model_level_mean_pp": -3.8,
+   "model_level_signflip_p": 0.074,
+   "models_live_lower": 7,
+   "models_live_higher": 2,
+   "flag_live": [
+    29,
+    294
+   ],
+   "flag_control": [
+    22,
+    284
+   ],
+   "per_model_range_pp": [
+    -13.3,
+    6.7
+   ],
+   "min_p_holm": 1.0
+  },
+  "self_review": {
+   "flagged": 61,
+   "flagged_fixed": 25,
+   "errors": 226,
+   "net_range_pp": [
+    -4.6,
+    2.1
+   ],
+   "flag_zero": [
+    "gemma-4-31b"
+   ]
+  },
+  "monitoring_control": {
+   "both": [
+    "gpt-5.4"
+   ],
+   "ece_only": [
+    "sonnet-4",
+    "sonnet-4.6",
+    "opus-4.6",
+    "gemini-3.1-pro",
+    "grok-4.7",
+    "qwen-3.8-max"
+   ],
+   "wr_only": [
+    "gemini-2.5-pro",
+    "deepseek-v3.2"
+   ],
+   "neither": [
+    "gpt-4.1",
+    "gemma-4-31b",
+    "mistral-large"
+   ],
+   "wr_b_min": 100.0,
+   "ece_wr_spearman": [
+    -0.014,
+    0.976
+   ],
+   "ece_wr_spearman_ci95_models": [
+    -0.64,
+    0.63
+   ],
+   "n_valid_conf": 5404,
+   "n_suboptimal": 1088,
+   "n_cautious": 1086,
+   "regret_range": [
+    0.02,
+    2.72
+   ],
+   "cautious_by_band": {
+    "66-79": [
+     306,
+     403
+    ],
+    "80-89": [
+     415,
+     701
+    ],
+    "90-100": [
+     163,
+     3609
+    ]
+   },
+   "overconf_range": [
+    -5.1,
+    25.8
+   ]
+  },
+  "deferral": {
+   "ev_b_up": [
+    "sonnet-4",
+    "sonnet-4.6",
+    "opus-4.6",
+    "gpt-4.1",
+    "gpt-5.4",
+    "gemini-3.1-pro",
+    "mistral-large",
+    "qwen-3.8-max"
+   ],
+   "ev_b_down": [
+    "gemini-2.5-pro",
+    "gemma-4-31b",
+    "deepseek-v3.2",
+    "grok-4.7"
+   ],
+   "clar_r_change_max": 4.399999999999999,
+   "forced_range": [
+    15.7,
+    58.2
+   ],
+   "att_range": [
+    72.2,
+    96.9
+   ],
+   "cf_gap_median": 49.8,
+   "n_cf": 12,
+   "ev_positive": [
+    "sonnet-4",
+    "sonnet-4.6",
+    "opus-4.6",
+    "gpt-5.4",
+    "gemini-2.5-pro",
+    "gemini-3.1-pro",
+    "gemma-4-31b",
+    "deepseek-v3.2",
+    "grok-4.7",
+    "qwen-3.8-max"
+   ],
+   "ev_per_item_range": [
+    -3.6,
+    5.3
+   ],
+   "clar_r_range": [
+    30.4,
+    75.2
+   ],
+   "adherence_A_range": [
+    81.6,
+    98.0
+   ],
+   "adherence_B_range": [
+    92.3,
+    100.0
+   ],
+   "adherence_B_minus_A": {
+    "sonnet-4": 8.8,
+    "sonnet-4.6": 10.7,
+    "opus-4.6": 8.1,
+    "gpt-4.1": 9.5,
+    "gpt-5.4": 2.8,
+    "gemini-2.5-pro": 2.0,
+    "gemini-3.1-pro": 1.8,
+    "gemma-4-31b": 2.2,
+    "deepseek-v3.2": 4.2,
+    "mistral-large": 17.0,
+    "grok-4.7": 5.1,
+    "qwen-3.8-max": 9.2
+   },
+   "departures_A": {
+    "attempted_below": 427,
+    "declined_above": 38
+   }
+  },
+  "consistency": {
+   "expl_ci_excludes_zero": [],
+   "expl_all_items_ci_excludes_zero": [],
+   "expl_all_items_range": [
+    -3.3,
+    2.6
+   ],
+   "expl_discordant_max": 18,
+   "expl_no_discordant": [],
+   "expl_range": [
+    -3.4,
+    2.1
+   ],
+   "adv_wrong_range": [
+    -6.6,
+    3.9
+   ],
+   "adv_correct_range": [
+    0.0,
+    10.5
+   ],
+   "decoy_range": [
+    2.0,
+    11.2
+   ]
+  },
+  "switching_by_type": {
+   "cipher": {
+    "n": 120,
+    "switch": 0.8,
+    "acc": 0.8,
+    "sbw": 0.0,
+    "correct_no_switch": [
+     0,
+     1
+    ]
+   },
+   "code_breaker": {
+    "n": 120,
+    "switch": 25.0,
+    "acc": 69.2,
+    "sbw": 1.7,
+    "correct_no_switch": [
+     55,
+     83
+    ]
+   },
+   "dijkstra": {
+    "n": 120,
+    "switch": 98.3,
+    "acc": 100.0,
+    "sbw": 0.0,
+    "correct_no_switch": [
+     2,
+     120
+    ]
+   },
+   "graph_coloring": {
+    "n": 120,
+    "switch": 42.5,
+    "acc": 31.7,
+    "sbw": 12.5,
+    "correct_no_switch": [
+     2,
+     38
+    ]
+   },
+   "knights": {
+    "n": 120,
+    "switch": 90.0,
+    "acc": 95.8,
+    "sbw": 3.3,
+    "correct_no_switch": [
+     11,
+     115
+    ]
+   },
+   "letter_guess": {
+    "n": 120,
+    "switch": 10.0,
+    "acc": 49.2,
+    "sbw": 2.5,
+    "correct_no_switch": [
+     50,
+     59
+    ]
+   },
+   "maze": {
+    "n": 120,
+    "switch": 53.3,
+    "acc": 69.2,
+    "sbw": 20.8,
+    "correct_no_switch": [
+     44,
+     83
+    ]
+   },
+   "sphere": {
+    "n": 120,
+    "switch": 80.0,
+    "acc": 63.3,
+    "sbw": 28.3,
+    "correct_no_switch": [
+     14,
+     76
+    ]
+   }
+  }
+ }
+}

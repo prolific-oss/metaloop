@@ -1,0 +1,3905 @@
+[
+ {
+  "id": "underspec_gen_329",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_297",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_297",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    21
+   ],
+   [
+    "drop",
+    21,
+    36
+   ],
+   [
+    "keep",
+    36,
+    165
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_209",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_easy_045",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_easy",
+  "validation": null,
+  "_rejoin_original": "arc_easy_045",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    96
+   ],
+   [
+    "drop",
+    96,
+    113
+   ],
+   [
+    "keep",
+    113,
+    116
+   ],
+   [
+    "drop",
+    116,
+    117
+   ],
+   [
+    "keep",
+    117,
+    150
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_211",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_301",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_301",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    134
+   ],
+   [
+    "drop",
+    134,
+    161
+   ],
+   [
+    "keep",
+    161,
+    209
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_213",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_154",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_154",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    54
+   ],
+   [
+    "drop",
+    54,
+    68
+   ],
+   [
+    "keep",
+    68,
+    78
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_093",
+  "question": null,
+  "reason": "the specific year (1982)",
+  "clarification_needed": null,
+  "original_id": "q_381",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_381",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    25
+   ],
+   [
+    "drop",
+    25,
+    33
+   ],
+   [
+    "keep",
+    33,
+    34
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_214",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_264",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_264",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    81
+   ],
+   [
+    "drop",
+    81,
+    93
+   ],
+   [
+    "keep",
+    93,
+    94
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_095",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_409",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_409",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_219",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_151",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_151",
+  "_transform_ops": [
+   [
+    "ins",
+    "W"
+   ],
+   [
+    "keep",
+    20,
+    67
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_339",
+  "question": null,
+  "reason": "the year 2020",
+  "clarification_needed": null,
+  "original_id": "simpleqa_147",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_147",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    76
+   ],
+   [
+    "drop",
+    76,
+    84
+   ],
+   [
+    "keep",
+    84,
+    85
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_340",
+  "question": null,
+  "reason": "to Earth's surface",
+  "clarification_needed": null,
+  "original_id": "arc_hard_062",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_challenge",
+  "validation": null,
+  "_rejoin_original": "arc_hard_062",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    52
+   ],
+   [
+    "drop",
+    52,
+    71
+   ],
+   [
+    "keep",
+    71,
+    72
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_102",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_hard_099",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_challenge",
+  "validation": null,
+  "_rejoin_original": "arc_hard_099",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    51
+   ],
+   [
+    "drop",
+    51,
+    60
+   ],
+   [
+    "keep",
+    60,
+    61
+   ],
+   [
+    "drop",
+    61,
+    63
+   ],
+   [
+    "keep",
+    63,
+    72
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_220",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_112",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_112",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    40
+   ],
+   [
+    "drop",
+    40,
+    59
+   ],
+   [
+    "keep",
+    59,
+    68
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_343",
+  "question": null,
+  "reason": "magnetic",
+  "clarification_needed": null,
+  "original_id": "mmlu_202",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_202",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    51
+   ],
+   [
+    "drop",
+    51,
+    60
+   ],
+   [
+    "keep",
+    60,
+    67
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_104",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_165",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_165",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_229",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_336",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_336",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    120
+   ],
+   [
+    "drop",
+    120,
+    153
+   ],
+   [
+    "keep",
+    153,
+    196
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_230",
+  "question": null,
+  "reason": "crops",
+  "clarification_needed": null,
+  "original_id": "q_404",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_404",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    33
+   ],
+   [
+    "drop",
+    33,
+    39
+   ],
+   [
+    "keep",
+    39,
+    58
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_351",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_335",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_335",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    7
+   ],
+   [
+    "drop",
+    7,
+    16
+   ],
+   [
+    "keep",
+    16,
+    31
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_234",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_179",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_179",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    89
+   ],
+   [
+    "drop",
+    89,
+    97
+   ],
+   [
+    "keep",
+    97,
+    99
+   ],
+   [
+    "ins",
+    "l"
+   ],
+   [
+    "keep",
+    99,
+    100
+   ],
+   [
+    "ins",
+    "st"
+   ],
+   [
+    "keep",
+    106,
+    107
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_235",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_359",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_359",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    29
+   ],
+   [
+    "drop",
+    29,
+    37
+   ],
+   [
+    "keep",
+    37,
+    38
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_116",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_182",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_182",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    40
+   ],
+   [
+    "drop",
+    40,
+    48
+   ],
+   [
+    "keep",
+    48,
+    86
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_352",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_368",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_368",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    27
+   ],
+   [
+    "drop",
+    27,
+    33
+   ],
+   [
+    "keep",
+    33,
+    34
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_236",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_184",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_184",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    11
+   ],
+   [
+    "drop",
+    11,
+    18
+   ],
+   [
+    "keep",
+    18,
+    35
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_356",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_341",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_341",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    12
+   ],
+   [
+    "drop",
+    12,
+    20
+   ],
+   [
+    "keep",
+    20,
+    36
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_357",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_124",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_124",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    17
+   ],
+   [
+    "ins",
+    "h"
+   ],
+   [
+    "keep",
+    26,
+    43
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_359",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_353",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_353",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    316
+   ],
+   [
+    "drop",
+    316,
+    330
+   ],
+   [
+    "keep",
+    330,
+    468
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_240",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_197",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_197",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    51
+   ],
+   [
+    "drop",
+    51,
+    65
+   ],
+   [
+    "keep",
+    65,
+    66
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_120",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_178",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_178",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    42
+   ],
+   [
+    "ins",
+    "an"
+   ],
+   [
+    "keep",
+    45,
+    51
+   ],
+   [
+    "drop",
+    51,
+    65
+   ],
+   [
+    "keep",
+    65,
+    92
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_362",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_280",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_280",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    171
+   ],
+   [
+    "drop",
+    171,
+    187
+   ],
+   [
+    "keep",
+    187,
+    257
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_244",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_easy_032",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_easy",
+  "validation": null,
+  "_rejoin_original": "arc_easy_032",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    201
+   ],
+   [
+    "drop",
+    201,
+    211
+   ],
+   [
+    "keep",
+    211,
+    219
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_124",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_191",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_191",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    50
+   ],
+   [
+    "drop",
+    50,
+    69
+   ],
+   [
+    "keep",
+    69,
+    70
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_364",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_108",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_108",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_365",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_109",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_109",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    37
+   ],
+   [
+    "drop",
+    37,
+    42
+   ],
+   [
+    "keep",
+    42,
+    107
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_125",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_135",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_135",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_127",
+  "question": null,
+  "reason": "the specific year (1998)",
+  "clarification_needed": null,
+  "original_id": "simpleqa_176",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_176",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    53
+   ],
+   [
+    "drop",
+    53,
+    61
+   ],
+   [
+    "keep",
+    61,
+    62
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_248",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_305",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_305",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_129",
+  "question": null,
+  "reason": "Charlotte Lee",
+  "clarification_needed": null,
+  "original_id": "simpleqa_183",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_183",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    58
+   ],
+   [
+    "drop",
+    58,
+    73
+   ],
+   [
+    "keep",
+    73,
+    88
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_130",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_354",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_354",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    151
+   ],
+   [
+    "drop",
+    151,
+    177
+   ],
+   [
+    "keep",
+    177,
+    267
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_133",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_430",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_430"
+ },
+ {
+  "id": "underspec_gen_134",
+  "question": null,
+  "reason": "the context of chess",
+  "clarification_needed": null,
+  "original_id": "q_356",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_356",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    27
+   ],
+   [
+    "drop",
+    27,
+    36
+   ],
+   [
+    "keep",
+    36,
+    37
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_375",
+  "question": null,
+  "reason": "the subject 'Kim Fields'",
+  "clarification_needed": null,
+  "original_id": "simpleqa_161",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_161",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    17
+   ],
+   [
+    "ins",
+    "sh"
+   ],
+   [
+    "keep",
+    23,
+    24
+   ],
+   [
+    "drop",
+    24,
+    27
+   ],
+   [
+    "keep",
+    27,
+    75
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_136",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_328",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_328",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    57
+   ],
+   [
+    "drop",
+    57,
+    66
+   ],
+   [
+    "keep",
+    66,
+    97
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_376",
+  "question": null,
+  "reason": "the sport (wrestling)",
+  "clarification_needed": null,
+  "original_id": "simpleqa_127",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_127",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    61
+   ],
+   [
+    "drop",
+    61,
+    74
+   ],
+   [
+    "keep",
+    74,
+    121
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_377",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_436",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_436",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_259",
+  "question": null,
+  "reason": "the planning process",
+  "clarification_needed": null,
+  "original_id": "mmlu_258",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_258",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    14
+   ],
+   [
+    "drop",
+    14,
+    38
+   ],
+   [
+    "keep",
+    38,
+    69
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_379",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_333",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_333",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_380",
+  "question": null,
+  "reason": "the pipe length (200 ft)",
+  "clarification_needed": null,
+  "original_id": "q_352",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_352",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    161
+   ],
+   [
+    "drop",
+    161,
+    188
+   ],
+   [
+    "keep",
+    188,
+    266
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_144",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_153",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_153",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_384",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_117",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_117",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    45
+   ],
+   [
+    "drop",
+    45,
+    67
+   ],
+   [
+    "keep",
+    67,
+    76
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_265",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_426",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_426",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_266",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_100",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_100",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    46
+   ],
+   [
+    "drop",
+    46,
+    56
+   ],
+   [
+    "keep",
+    56,
+    61
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_386",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_easy_017",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_easy",
+  "validation": null,
+  "_rejoin_original": "arc_easy_017",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    13
+   ],
+   [
+    "drop",
+    13,
+    22
+   ],
+   [
+    "keep",
+    22,
+    61
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_267",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_155",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_155",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    28
+   ],
+   [
+    "drop",
+    28,
+    42
+   ],
+   [
+    "keep",
+    42,
+    56
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_269",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_408",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_408",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_388",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_339",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_339",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    36
+   ],
+   [
+    "ins",
+    "p"
+   ],
+   [
+    "keep",
+    36,
+    37
+   ],
+   [
+    "ins",
+    "ly"
+   ],
+   [
+    "keep",
+    40,
+    44
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_149",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_446",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_446"
+ },
+ {
+  "id": "underspec_gen_150",
+  "question": null,
+  "reason": "Chicago",
+  "clarification_needed": null,
+  "original_id": "mmlu_278",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_278",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    13
+   ],
+   [
+    "drop",
+    13,
+    21
+   ],
+   [
+    "keep",
+    21,
+    27
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_151",
+  "question": null,
+  "reason": "nonprofit sector",
+  "clarification_needed": null,
+  "original_id": "mmlu_259",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_259",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    32
+   ],
+   [
+    "drop",
+    32,
+    49
+   ],
+   [
+    "keep",
+    49,
+    90
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_270",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_119",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_119",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    29
+   ],
+   [
+    "drop",
+    29,
+    40
+   ],
+   [
+    "keep",
+    40,
+    170
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_152",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_383",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_383",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    30
+   ],
+   [
+    "drop",
+    30,
+    41
+   ],
+   [
+    "keep",
+    41,
+    42
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_153",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_172",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_172",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    27
+   ],
+   [
+    "drop",
+    27,
+    52
+   ],
+   [
+    "keep",
+    52,
+    78
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_035",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_303",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_303",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    6
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    6,
+    11
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    11,
+    60
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    60,
+    115
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    115,
+    123
+   ],
+   [
+    "drop",
+    123,
+    147
+   ],
+   [
+    "keep",
+    147,
+    176
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    176,
+    188
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_395",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_138",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_138",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    21
+   ],
+   [
+    "drop",
+    21,
+    24
+   ],
+   [
+    "keep",
+    24,
+    25
+   ],
+   [
+    "ins",
+    "h"
+   ],
+   [
+    "keep",
+    27,
+    28
+   ],
+   [
+    "drop",
+    28,
+    45
+   ],
+   [
+    "keep",
+    45,
+    78
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_155",
+  "question": null,
+  "reason": null,
+  "clarification_needed": "How long did he run for?",
+  "original_id": "arc_hard_094",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_challenge",
+  "validation": null,
+  "_rejoin_original": "arc_hard_094",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    24
+   ],
+   [
+    "drop",
+    24,
+    42
+   ],
+   [
+    "keep",
+    42,
+    158
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_394",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_424",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_424",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_157",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_390",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_390",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    35
+   ],
+   [
+    "drop",
+    35,
+    39
+   ],
+   [
+    "keep",
+    39,
+    44
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_275",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_355",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_355",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    16
+   ],
+   [
+    "drop",
+    16,
+    36
+   ],
+   [
+    "keep",
+    36,
+    67
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    67,
+    73
+   ],
+   [
+    "ins",
+    "\u03a9"
+   ],
+   [
+    "keep",
+    79,
+    121
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    121,
+    144
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    144,
+    149
+   ],
+   [
+    "ins",
+    "a"
+   ],
+   [
+    "keep",
+    150,
+    154
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    154,
+    174
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    174,
+    177
+   ],
+   [
+    "ins",
+    "\u03a9"
+   ],
+   [
+    "keep",
+    183,
+    252
+   ],
+   [
+    "ins",
+    " "
+   ],
+   [
+    "keep",
+    252,
+    256
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_039",
+  "question": null,
+  "reason": "the game name (Terraria)",
+  "clarification_needed": null,
+  "original_id": "simpleqa_196",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_196",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    4
+   ],
+   [
+    "drop",
+    4,
+    13
+   ],
+   [
+    "keep",
+    13,
+    78
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_398",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_369",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_369",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    41
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_044",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_145",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_145",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_165",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_317",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_317",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    132
+   ],
+   [
+    "drop",
+    132,
+    133
+   ],
+   [
+    "keep",
+    133,
+    167
+   ],
+   [
+    "ins",
+    "\u21cc"
+   ],
+   [
+    "keep",
+    183,
+    202
+   ],
+   [
+    "drop",
+    202,
+    203
+   ],
+   [
+    "keep",
+    203,
+    221
+   ],
+   [
+    "ins",
+    "so"
+   ],
+   [
+    "keep",
+    225,
+    226
+   ],
+   [
+    "drop",
+    226,
+    228
+   ],
+   [
+    "keep",
+    228,
+    229
+   ],
+   [
+    "drop",
+    229,
+    232
+   ],
+   [
+    "keep",
+    232,
+    297
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_403",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_291",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_291",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    50
+   ],
+   [
+    "ins",
+    "he"
+   ],
+   [
+    "keep",
+    53,
+    54
+   ],
+   [
+    "ins",
+    "e"
+   ],
+   [
+    "keep",
+    65,
+    74
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_045",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_173",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_173",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    50
+   ],
+   [
+    "drop",
+    50,
+    70
+   ],
+   [
+    "keep",
+    70,
+    87
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_166",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_110",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_110",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    36
+   ],
+   [
+    "drop",
+    36,
+    54
+   ],
+   [
+    "keep",
+    54,
+    55
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_047",
+  "question": null,
+  "reason": "the show name 'Fauda'",
+  "clarification_needed": null,
+  "original_id": "q_363",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_363",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    21
+   ],
+   [
+    "drop",
+    21,
+    27
+   ],
+   [
+    "keep",
+    27,
+    36
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_049",
+  "question": null,
+  "reason": "the mean (600)",
+  "clarification_needed": null,
+  "original_id": "q_338",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_338",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    87
+   ],
+   [
+    "drop",
+    87,
+    100
+   ],
+   [
+    "keep",
+    100,
+    148
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_409",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_314",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_314",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    48
+   ],
+   [
+    "drop",
+    48,
+    58
+   ],
+   [
+    "keep",
+    58,
+    59
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_169",
+  "question": null,
+  "reason": "Classical Music",
+  "clarification_needed": null,
+  "original_id": "simpleqa_174",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_174",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    48
+   ],
+   [
+    "drop",
+    48,
+    64
+   ],
+   [
+    "keep",
+    64,
+    77
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_290",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_163",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_163",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    22
+   ],
+   [
+    "ins",
+    "th"
+   ],
+   [
+    "keep",
+    27,
+    28
+   ],
+   [
+    "drop",
+    28,
+    31
+   ],
+   [
+    "keep",
+    31,
+    75
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_051",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_304",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_304",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    387
+   ],
+   [
+    "drop",
+    387,
+    399
+   ],
+   [
+    "keep",
+    399,
+    423
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_291",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_302",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_302",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    5
+   ],
+   [
+    "drop",
+    5,
+    26
+   ],
+   [
+    "keep",
+    26,
+    107
+   ],
+   [
+    "ins",
+    "n"
+   ],
+   [
+    "keep",
+    108,
+    167
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_052",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_293",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_293",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    405
+   ],
+   [
+    "drop",
+    405,
+    409
+   ],
+   [
+    "keep",
+    409,
+    686
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_411",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_450",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_450"
+ },
+ {
+  "id": "underspec_gen_173",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_401",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_401",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_054",
+  "question": null,
+  "reason": "the show name 'Archer'",
+  "clarification_needed": null,
+  "original_id": "simpleqa_160",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_160",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    27
+   ],
+   [
+    "drop",
+    27,
+    37
+   ],
+   [
+    "keep",
+    37,
+    77
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_414",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_141",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_141",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    98
+   ],
+   [
+    "drop",
+    98,
+    132
+   ],
+   [
+    "keep",
+    132,
+    166
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_296",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_228",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_228",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    43
+   ],
+   [
+    "drop",
+    43,
+    55
+   ],
+   [
+    "keep",
+    55,
+    105
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_057",
+  "question": null,
+  "reason": "food",
+  "clarification_needed": null,
+  "original_id": "arc_easy_011",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_easy",
+  "validation": null,
+  "_rejoin_original": "arc_easy_011",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    45
+   ],
+   [
+    "drop",
+    45,
+    50
+   ],
+   [
+    "keep",
+    50,
+    60
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_417",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_hard_087",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_challenge",
+  "validation": null,
+  "_rejoin_original": "arc_hard_087",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    209
+   ],
+   [
+    "ins",
+    "had "
+   ],
+   [
+    "keep",
+    209,
+    216
+   ],
+   [
+    "drop",
+    216,
+    228
+   ],
+   [
+    "keep",
+    228,
+    340
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_297",
+  "question": null,
+  "reason": "Season 4 of RPDR",
+  "clarification_needed": null,
+  "original_id": "simpleqa_168",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_168",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    52
+   ],
+   [
+    "drop",
+    52,
+    72
+   ],
+   [
+    "keep",
+    72,
+    73
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_058",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_384",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_384",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_419",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_411",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_411"
+ },
+ {
+  "id": "underspec_gen_418",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_387",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_387",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    3
+   ],
+   [
+    "drop",
+    3,
+    6
+   ],
+   [
+    "keep",
+    6,
+    7
+   ],
+   [
+    "ins",
+    "t"
+   ],
+   [
+    "keep",
+    14,
+    37
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_060",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_247",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_247",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    25
+   ],
+   [
+    "drop",
+    25,
+    34
+   ],
+   [
+    "keep",
+    34,
+    41
+   ],
+   [
+    "drop",
+    41,
+    42
+   ],
+   [
+    "keep",
+    42,
+    43
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_302",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_209",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_209",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    37
+   ],
+   [
+    "ins",
+    "t"
+   ],
+   [
+    "keep",
+    37,
+    38
+   ],
+   [
+    "ins",
+    "e"
+   ],
+   [
+    "keep",
+    40,
+    60
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_182",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_392",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_392",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    7
+   ],
+   [
+    "drop",
+    7,
+    17
+   ],
+   [
+    "keep",
+    17,
+    48
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_423",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_311",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_311",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_184",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_143",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_143",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    39
+   ],
+   [
+    "drop",
+    39,
+    60
+   ],
+   [
+    "keep",
+    60,
+    61
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_004",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_181",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_181",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    65
+   ],
+   [
+    "drop",
+    65,
+    92
+   ],
+   [
+    "keep",
+    92,
+    111
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_303",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_452",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_452"
+ },
+ {
+  "id": "underspec_gen_005",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_351",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_351",
+  "_transform_ops": [
+   [
+    "drop",
+    0,
+    1
+   ],
+   [
+    "keep",
+    1,
+    92
+   ],
+   [
+    "drop",
+    92,
+    95
+   ],
+   [
+    "keep",
+    95,
+    98
+   ],
+   [
+    "drop",
+    98,
+    111
+   ],
+   [
+    "keep",
+    111,
+    124
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_426",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "arc_easy_031",
+  "original_question": null,
+  "original_answer": null,
+  "source": "arc_easy",
+  "validation": null,
+  "_rejoin_original": "arc_easy_031",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_304",
+  "question": null,
+  "reason": "the year 2006",
+  "clarification_needed": null,
+  "original_id": "simpleqa_134",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_134",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    36
+   ],
+   [
+    "drop",
+    36,
+    44
+   ],
+   [
+    "keep",
+    44,
+    45
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_006",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_230",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_230",
+  "_transform_ops": [
+   [
+    "drop",
+    0,
+    1183
+   ],
+   [
+    "keep",
+    1183,
+    1215
+   ],
+   [
+    "drop",
+    1215,
+    1230
+   ],
+   [
+    "keep",
+    1230,
+    1264
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_186",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_187",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_187",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    73
+   ],
+   [
+    "drop",
+    73,
+    85
+   ],
+   [
+    "keep",
+    85,
+    86
+   ],
+   [
+    "drop",
+    86,
+    93
+   ],
+   [
+    "keep",
+    93,
+    137
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_307",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_144",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_144",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    61
+   ],
+   [
+    "drop",
+    61,
+    92
+   ],
+   [
+    "keep",
+    92,
+    93
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_187",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_162",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_162",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    49
+   ],
+   [
+    "drop",
+    49,
+    66
+   ],
+   [
+    "keep",
+    66,
+    74
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_428",
+  "question": null,
+  "reason": "Kentucky",
+  "clarification_needed": null,
+  "original_id": "q_395",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_395",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    6
+   ],
+   [
+    "drop",
+    6,
+    15
+   ],
+   [
+    "keep",
+    15,
+    54
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_070",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_444",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_444",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_190",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_454",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_454",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_012",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_364",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_364",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    42
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_431",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_175",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_175",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    82
+   ],
+   [
+    "drop",
+    82,
+    92
+   ],
+   [
+    "keep",
+    92,
+    104
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_313",
+  "question": null,
+  "reason": "the year (2011)",
+  "clarification_needed": null,
+  "original_id": "simpleqa_104",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_104",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    78
+   ],
+   [
+    "drop",
+    78,
+    86
+   ],
+   [
+    "keep",
+    86,
+    87
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_014",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_186",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_186",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    48
+   ],
+   [
+    "drop",
+    48,
+    90
+   ],
+   [
+    "keep",
+    90,
+    120
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_194",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_386",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_386",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    6
+   ],
+   [
+    "drop",
+    6,
+    9
+   ],
+   [
+    "keep",
+    9,
+    52
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_434",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_120",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_120",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    85
+   ],
+   [
+    "drop",
+    85,
+    93
+   ],
+   [
+    "keep",
+    93,
+    115
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_015",
+  "question": null,
+  "reason": "the risk-free rate of 7%",
+  "clarification_needed": null,
+  "original_id": "q_325",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_325",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    99
+   ],
+   [
+    "drop",
+    99,
+    128
+   ],
+   [
+    "keep",
+    128,
+    239
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_016",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_406",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_406",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_315",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_377",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_377",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    10
+   ],
+   [
+    "drop",
+    10,
+    27
+   ],
+   [
+    "keep",
+    27,
+    40
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_196",
+  "question": null,
+  "reason": "the mass $m_{X}=1.2GeV$",
+  "clarification_needed": null,
+  "original_id": "q_429",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_429"
+ },
+ {
+  "id": "underspec_gen_017",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_130",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_130",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    39
+   ],
+   [
+    "drop",
+    39,
+    55
+   ],
+   [
+    "keep",
+    55,
+    73
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_437",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_136",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_136",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_078",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_380",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_380",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    28
+   ],
+   [
+    "drop",
+    28,
+    37
+   ],
+   [
+    "keep",
+    37,
+    43
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_198",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "mmlu_294",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu",
+  "validation": null,
+  "_rejoin_original": "mmlu_294",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    61
+   ],
+   [
+    "drop",
+    61,
+    113
+   ],
+   [
+    "keep",
+    113,
+    231
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_080",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_316",
+  "original_question": null,
+  "original_answer": null,
+  "source": "mmlu_pro",
+  "validation": null,
+  "_rejoin_original": "q_316",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    28
+   ],
+   [
+    "drop",
+    28,
+    39
+   ],
+   [
+    "keep",
+    39,
+    87
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_441",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_107",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_107",
+  "_regen_only": true
+ },
+ {
+  "id": "underspec_gen_081",
+  "question": null,
+  "reason": "the show name 'Moesha'",
+  "clarification_needed": null,
+  "original_id": "simpleqa_164",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_164",
+  "_transform_ops": [
+   [
+    "ins",
+    "W"
+   ],
+   [
+    "keep",
+    12,
+    42
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_201",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_425",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_425"
+ },
+ {
+  "id": "underspec_gen_442",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_132",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_132",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    17
+   ],
+   [
+    "ins",
+    "the "
+   ],
+   [
+    "keep",
+    17,
+    33
+   ],
+   [
+    "drop",
+    33,
+    51
+   ],
+   [
+    "keep",
+    51,
+    86
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_083",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_375",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_375",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    19
+   ],
+   [
+    "drop",
+    19,
+    35
+   ],
+   [
+    "keep",
+    35,
+    36
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_324",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_114",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_114",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    44
+   ],
+   [
+    "drop",
+    44,
+    63
+   ],
+   [
+    "keep",
+    63,
+    72
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_085",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_122",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_122",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    35
+   ],
+   [
+    "drop",
+    35,
+    47
+   ],
+   [
+    "keep",
+    47,
+    48
+   ],
+   [
+    "ins",
+    "h"
+   ],
+   [
+    "keep",
+    48,
+    49
+   ],
+   [
+    "drop",
+    49,
+    88
+   ],
+   [
+    "keep",
+    88,
+    128
+   ],
+   [
+    "drop",
+    128,
+    129
+   ],
+   [
+    "keep",
+    129,
+    209
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_025",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_159",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_159",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    23
+   ],
+   [
+    "ins",
+    "u"
+   ],
+   [
+    "keep",
+    24,
+    33
+   ],
+   [
+    "drop",
+    33,
+    44
+   ],
+   [
+    "keep",
+    44,
+    83
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_026",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_102",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_102",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    19
+   ],
+   [
+    "drop",
+    19,
+    28
+   ],
+   [
+    "keep",
+    28,
+    45
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_086",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_150",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_150",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    60
+   ],
+   [
+    "drop",
+    60,
+    79
+   ],
+   [
+    "keep",
+    79,
+    87
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_325",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_431",
+  "original_question": null,
+  "original_answer": null,
+  "source": "gpqa_diamond",
+  "validation": null,
+  "_rejoin_original": "q_431"
+ },
+ {
+  "id": "underspec_gen_326",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_125",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_125",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    26
+   ],
+   [
+    "drop",
+    26,
+    27
+   ],
+   [
+    "keep",
+    27,
+    28
+   ],
+   [
+    "drop",
+    28,
+    42
+   ],
+   [
+    "keep",
+    42,
+    145
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_028",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "q_382",
+  "original_question": null,
+  "original_answer": null,
+  "source": "boolq",
+  "validation": null,
+  "_rejoin_original": "q_382",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    14
+   ],
+   [
+    "drop",
+    14,
+    22
+   ],
+   [
+    "keep",
+    22,
+    40
+   ]
+  ]
+ },
+ {
+  "id": "underspec_gen_208",
+  "question": null,
+  "reason": null,
+  "clarification_needed": null,
+  "original_id": "simpleqa_142",
+  "original_question": null,
+  "original_answer": null,
+  "source": "simpleqa",
+  "validation": null,
+  "_rejoin_original": "simpleqa_142",
+  "_transform_ops": [
+   [
+    "keep",
+    0,
+    37
+   ],
+   [
+    "drop",
+    37,
+    98
+   ],
+   [
+    "keep",
+    98,
+    135
+   ]
+  ]
+ }
+]

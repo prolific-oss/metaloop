@@ -1,0 +1,120 @@
+{
+ "model": "gemma-4-31b",
+ "wagering": {
+  "A": {
+   "n_items": 451,
+   "n_scored": 450,
+   "excluded": {
+    "status_truncated": 1
+   },
+   "accuracy": 73.111111111,
+   "ece": 0.193,
+   "wr": 89.11,
+   "brier": 0.1871,
+   "payout": 4325,
+   "payout_gap": 2255,
+   "mean_conf_correct": 97.647416413,
+   "mean_conf_wrong": 76.595041322,
+   "wagers": {
+    "BOLD": 376,
+    "MEDIUM": 51,
+    "SAFE": 23
+   }
+  },
+  "B": {
+   "n_items": 451,
+   "n_scored": 451,
+   "excluded": {},
+   "accuracy": 73.835920177,
+   "ece": 0.1621,
+   "wr": 100.0,
+   "brier": 0.166,
+   "payout": 3942,
+   "payout_gap": 2718,
+   "mean_conf_correct": 96.642642643,
+   "mean_conf_wrong": 71.43220339,
+   "wagers": {
+    "BOLD": 420,
+    "MEDIUM": 8,
+    "SAFE": 23
+   }
+  }
+ },
+ "deferral": {
+  "A": {
+   "n_items": 592,
+   "n_valid": 591,
+   "excluded": {
+    "status_truncated": 1
+   },
+   "decisions_wellspec": {
+    "ATTEMPT": 370,
+    "DEFER": 79,
+    "CLARIFY": 4
+   },
+   "defer_rate": {
+    "low": 10.59602649,
+    "medium": 15.231788079,
+    "high": 26.490066225
+   },
+   "defer_change_low_to_high_pp": 15.894039735,
+   "clar_recall": 58.7,
+   "clar_precision": 95.29,
+   "points": {
+    "low": 740,
+    "high": 330,
+    "medium": 590,
+    "total": 1660
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 85.83106267,
+   "counterfactual": {
+    "n_declined": 83,
+    "n_forced_scored": 83,
+    "accuracy_declined": 15.662650602
+   }
+  },
+  "B": {
+   "n_items": 592,
+   "n_valid": 592,
+   "excluded": {},
+   "decisions_wellspec": {
+    "ATTEMPT": 382,
+    "DEFER": 70,
+    "CLARIFY": 2
+   },
+   "defer_rate": {
+    "low": 12.5,
+    "medium": 14.569536424,
+    "high": 19.205298013
+   },
+   "defer_change_low_to_high_pp": 6.705298013,
+   "clar_recall": 56.52,
+   "clar_precision": 97.5,
+   "points": {
+    "low": 800,
+    "high": -230,
+    "medium": 690,
+    "total": 1260
+   },
+   "attempted_unscorable": 3,
+   "accuracy_attempted": 86.015831135
+  }
+ },
+ "consistency": {
+  "n_items": 153,
+  "n_paired": 153,
+  "accuracy": {
+   "direct": 87.581699346,
+   "explanation": 88.888888889,
+   "adversarial_correct": 92.156862745,
+   "adversarial_wrong": 84.967320261
+  },
+  "explanation_effect_pp": 1.307189543,
+  "conf_correct": 98.609022556,
+  "conf_wrong": 91.052631579,
+  "conf_gap": 7.556390977,
+  "n_wrong_direct": 19,
+  "decoy_rate_adversarial_wrong": 5.882352941
+ }
+}

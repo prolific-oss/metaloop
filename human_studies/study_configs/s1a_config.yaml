@@ -1,0 +1,43 @@
+# MetaLoop Study 1 — Condition A (Direct Answer)
+# Participant reads a MC question and picks an answer + confidence.
+
+study:
+  title: "Knowledge Quiz"
+  subtitle: "Answer each question to the best of your ability"
+  logo_text: "M"
+  guidelines: >
+    Answer each question to the best of your ability based on your own knowledge.
+    Do not look anything up — we're interested in what you know off the top of your head.
+
+allocation:
+  scenarios_per_participant: 10
+  target_ratings_per_scenario: 20
+  slot_timeout_minutes: 20
+
+questions:
+  - id: answer
+    type: rating
+    label: "Your answer"
+    required: true
+    options:
+      A: "A"
+      B: "B"
+      C: "C"
+      D: "D"
+    colors:
+      A: "#4f46e5"
+      B: "#4f46e5"
+      C: "#4f46e5"
+      D: "#4f46e5"
+
+  - id: confidence
+    type: slider
+    label: "How confident are you?"
+    required: true
+    min: 0
+    max: 100
+    step: 1
+    default: 50
+    labels:
+      left: "Guessing"
+      right: "Certain"

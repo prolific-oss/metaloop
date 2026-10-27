@@ -1,0 +1,140 @@
+{"unit": "cipher_0", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_1", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_2", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_2", "repeat": 1, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_2", "repeat": 2, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_3", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_4", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_5", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_5", "repeat": 1, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_5", "repeat": 2, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_6", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_6", "repeat": 1, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_6", "repeat": 2, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_7", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_8", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "cipher_9", "repeat": 0, "task_type": "cipher", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_0", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_1", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_2", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_3", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_4", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_4", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_4", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_5", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_5", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_5", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "code_breaker_6", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_6", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_6", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_7", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_7", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_7", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_8", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_8", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_8", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_9", "repeat": 0, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_9", "repeat": 1, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "code_breaker_9", "repeat": 2, "task_type": "code_breaker", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_0", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_1", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_2", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_2", "repeat": 1, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_2", "repeat": 2, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_3", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_4", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_5", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_5", "repeat": 1, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_5", "repeat": 2, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_6", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_7", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_8", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_8", "repeat": 1, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_8", "repeat": 2, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "dijkstra_9", "repeat": 0, "task_type": "dijkstra", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "graph_coloring_0", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_1", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_2", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_3", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_3", "repeat": 1, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_3", "repeat": 2, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_4", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_4", "repeat": 1, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_4", "repeat": 2, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_5", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_6", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_7", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_8", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "graph_coloring_9", "repeat": 0, "task_type": "graph_coloring", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "knights_0", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_0", "repeat": 1, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_0", "repeat": 2, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_1", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_2", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_3", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_4", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_4", "repeat": 1, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_4", "repeat": 2, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_5", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_5", "repeat": 1, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_5", "repeat": 2, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_6", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_7", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_8", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_8", "repeat": 1, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_8", "repeat": 2, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "knights_9", "repeat": 0, "task_type": "knights", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "knights_votes": [true, true, true]}
+{"unit": "letter_guess_0", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_0", "repeat": 1, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_0", "repeat": 2, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_1", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_2", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": true, "judge_ok": true}
+{"unit": "letter_guess_3", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": true, "judge_ok": true}
+{"unit": "letter_guess_3", "repeat": 1, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": true, "judge_ok": true}
+{"unit": "letter_guess_3", "repeat": 2, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_4", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_5", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_5", "repeat": 1, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_5", "repeat": 2, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_6", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_7", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_8", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_8", "repeat": 1, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_8", "repeat": 2, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "letter_guess_9", "repeat": 0, "task_type": "letter_guess", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": true, "judge_ok": true}
+{"unit": "maze_0", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_0", "repeat": 1, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_0", "repeat": 2, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_1", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_2", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_3", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_3", "repeat": 1, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_3", "repeat": 2, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_4", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "judge_correct": true}
+{"unit": "maze_5", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_6", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_7", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_8", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_8", "repeat": 1, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_8", "repeat": 2, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true, "judge_correct": false}
+{"unit": "maze_9", "repeat": 0, "task_type": "maze", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true, "judge_correct": false}
+{"unit": "sphere_0", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_1", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_1", "repeat": 1, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_1", "repeat": 2, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_2", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_2", "repeat": 1, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "sphere_2", "repeat": 2, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_3", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "sphere_3", "repeat": 1, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "sphere_3", "repeat": 2, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "sphere_4", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_5", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "sphere_5", "repeat": 1, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_5", "repeat": 2, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "sphere_6", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_7", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_7", "repeat": 1, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": true, "judge_ok": true}
+{"unit": "sphere_7", "repeat": 2, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}
+{"unit": "sphere_8", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": true, "correct": false, "judge_ok": true}
+{"unit": "sphere_9", "repeat": 0, "task_type": "sphere", "status": "ok", "judged": true, "submitted": true, "switched": false, "correct": false, "judge_ok": true}

@@ -1,0 +1,343 @@
+{
+ "sonnet-4.6": {
+  "targeted": {
+   "n_t6": 28,
+   "acc": 0.9285714285714286,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 28,
+   "acc": 0.8571428571428571,
+   "n_errors": 4,
+   "n_flag_den": 4,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": -0.06666666666666665,
+   "fab_detect": 0.0
+  }
+ },
+ "opus-4.6": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9,
+   "n_errors": 3,
+   "n_flag_den": 3,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.9333333333333333,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.5,
+   "blind": 0.5,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": -0.5,
+   "consistency": 0.0,
+   "fab_detect": 0.0
+  }
+ },
+ "gpt-4.1": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.8333333333333334,
+   "n_errors": 5,
+   "n_flag_den": 5,
+   "flag": 0.2,
+   "blind": 0.8,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 0.8
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.6666666666666666,
+   "n_errors": 10,
+   "n_flag_den": 10,
+   "flag": 0.3,
+   "blind": 0.7,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 0.8
+  },
+  "delta": {
+   "flag": -0.09999999999999998,
+   "consistency": 0.06666666666666665,
+   "fab_detect": 0.0
+  }
+ },
+ "gpt-5.4": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9333333333333333,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.5,
+   "blind": 0.5,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.9333333333333333,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.5,
+   "consistency": 0.0,
+   "fab_detect": 0.0
+  }
+ },
+ "gemini-2.5-pro": {
+  "targeted": {
+   "n_t6": 29,
+   "acc": 0.7931034482758621,
+   "n_errors": 6,
+   "n_flag_den": 6,
+   "flag": 0.16666666666666666,
+   "blind": 0.8333333333333334,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 27,
+   "acc": 0.6666666666666666,
+   "n_errors": 9,
+   "n_flag_den": 9,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.16666666666666666,
+   "consistency": 0.0,
+   "fab_detect": 0.0
+  }
+ },
+ "gemini-3.1-pro": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9666666666666667,
+   "n_errors": 1,
+   "n_flag_den": 1,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.9666666666666667,
+   "n_errors": 1,
+   "n_flag_den": 1,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": 0.0,
+   "fab_detect": 0.0
+  }
+ },
+ "gemma-4-31b": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9666666666666667,
+   "n_errors": 1,
+   "n_flag_den": 1,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.9666666666666667,
+   "n_errors": 1,
+   "n_flag_den": 1,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 1,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": 0.06666666666666665,
+   "fab_detect": 0.0
+  }
+ },
+ "deepseek-v3.2": {
+  "targeted": {
+   "n_t6": 26,
+   "acc": 0.9230769230769231,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 28,
+   "acc": 0.8571428571428571,
+   "n_errors": 4,
+   "n_flag_den": 4,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": 0.0,
+   "fab_detect": 0.0
+  }
+ },
+ "mistral-large": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.7333333333333333,
+   "n_errors": 8,
+   "n_flag_den": 8,
+   "flag": 0.375,
+   "blind": 0.625,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 0.8
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.7,
+   "n_errors": 9,
+   "n_flag_den": 8,
+   "flag": 0.375,
+   "blind": 0.625,
+   "unparsed_verdicts": 1,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 0.4
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": 0.0,
+   "fab_detect": 0.4
+  }
+ },
+ "grok-4.7": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9333333333333333,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.5,
+   "blind": 0.5,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.8,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 30,
+   "acc": 0.9,
+   "n_errors": 3,
+   "n_flag_den": 3,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.5,
+   "consistency": -0.1333333333333333,
+   "fab_detect": 0.0
+  }
+ },
+ "qwen-3.8-max": {
+  "targeted": {
+   "n_t6": 30,
+   "acc": 0.9333333333333333,
+   "n_errors": 2,
+   "n_flag_den": 2,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 0.9333333333333333,
+   "fab_detect": 1.0
+  },
+  "generic": {
+   "n_t6": 29,
+   "acc": 0.9655172413793104,
+   "n_errors": 1,
+   "n_flag_den": 1,
+   "flag": 0.0,
+   "blind": 1.0,
+   "unparsed_verdicts": 0,
+   "n_pairs": 15,
+   "consistency": 1.0,
+   "fab_detect": 1.0
+  },
+  "delta": {
+   "flag": 0.0,
+   "consistency": -0.06666666666666665,
+   "fab_detect": 0.0
+  }
+ }
+}

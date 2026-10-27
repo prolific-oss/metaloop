@@ -1,0 +1,61 @@
+# MetaLoop Study 3: Confidence Wagering (T2)
+# Answer + confidence + wager. Wager payoff incentivises calibration.
+
+study:
+  title: "Knowledge Quiz with Wagering"
+  subtitle: "Answer questions and place wagers based on your confidence"
+  logo_text: "M"
+  guidelines: |
+    For each question, pick your answer, rate your confidence, then place a wager. Your wager determines how many points you gain or lose:
+
+    - **SAFE** — +1 if correct, 0 if wrong
+    - **MEDIUM** — +5 if correct, -2 if wrong
+    - **BOLD** — +20 if correct, -30 if wrong
+
+    Try to maximise your total score!
+
+allocation:
+  scenarios_per_participant: 10
+  target_ratings_per_scenario: 20
+  slot_timeout_minutes: 20
+
+questions:
+  - id: answer
+    type: rating
+    label: "Your answer"
+    required: true
+    options:
+      A: "A"
+      B: "B"
+      C: "C"
+      D: "D"
+    colors:
+      A: "#4f46e5"
+      B: "#4f46e5"
+      C: "#4f46e5"
+      D: "#4f46e5"
+
+  - id: confidence
+    type: slider
+    label: "How confident are you?"
+    required: true
+    min: 0
+    max: 100
+    step: 1
+    default: 50
+    labels:
+      left: "Guessing"
+      right: "Certain"
+
+  - id: wager
+    type: rating
+    label: "Place your wager"
+    required: true
+    options:
+      SAFE: "SAFE — low risk (+1 / 0)"
+      MEDIUM: "MEDIUM — moderate risk (+5 / -2)"
+      BOLD: "BOLD — high risk (+20 / -30)"
+    colors:
+      SAFE: "#16a34a"
+      MEDIUM: "#ca8a04"
+      BOLD: "#dc2626"

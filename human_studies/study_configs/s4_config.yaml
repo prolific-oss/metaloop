@@ -1,0 +1,63 @@
+# MetaLoop Study 4: Deferral Under Risk (T5)
+# Decide whether to attempt, defer, or flag as unanswerable.
+
+study:
+  title: "Knowledge Quiz Under Stakes"
+  subtitle: "Decide whether to attempt, defer, or flag each question"
+  logo_text: "M"
+  guidelines: |
+    For each question, decide what to do:
+
+    - **ATTEMPT** — answer the question (gain or lose points based on correctness)
+    - **DEFER** — pass on this one (0 points — use when you're not confident enough)
+    - **CLARIFY** — flag as unanswerable (use ONLY when the question itself is incomplete or ambiguous)
+
+    The stakes vary — pay attention to how much you stand to lose!
+
+allocation:
+  scenarios_per_participant: 10
+  target_ratings_per_scenario: 20
+  slot_timeout_minutes: 20
+
+questions:
+  - id: decision
+    type: rating
+    label: "What do you want to do?"
+    required: true
+    options:
+      ATTEMPT: "ATTEMPT — Answer the question"
+      DEFER: "DEFER — Not confident enough, pass"
+      CLARIFY: "CLARIFY — Question is incomplete or ambiguous"
+    colors:
+      ATTEMPT: "#4f46e5"
+      DEFER: "#ca8a04"
+      CLARIFY: "#9333ea"
+
+  - id: answer
+    type: rating
+    label: "Your answer"
+    required: false
+    show_when: "decision=ATTEMPT"
+    options:
+      A: "A"
+      B: "B"
+      C: "C"
+      D: "D"
+    colors:
+      A: "#4f46e5"
+      B: "#4f46e5"
+      C: "#4f46e5"
+      D: "#4f46e5"
+
+  - id: confidence
+    type: slider
+    label: "How confident are you in your answer?"
+    required: false
+    show_when: "decision=ATTEMPT"
+    min: 0
+    max: 100
+    step: 1
+    default: 50
+    labels:
+      left: "Guessing"
+      right: "Certain"

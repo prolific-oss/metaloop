@@ -1,0 +1,163 @@
+{
+ "model": "gemma-4-31b-crusoe",
+ "self_review": null,
+ "control2": null,
+ "loop": {
+  "n_items_pw": 10,
+  "sessions": {
+   "live": 3,
+   "control": 3
+  },
+  "recovery_live": 3.333333333,
+  "recovery_control": 10.0,
+  "prev_correct_acc_live": 100.0,
+  "prev_correct_acc_control": 100.0,
+  "diff_pp": -6.666666667,
+  "signflip_p": 1.0,
+  "no_answer_online": 0,
+  "no_answer_after_judge": 0,
+  "feedback_misread": {
+   "live": 0,
+   "control": 0
+  },
+  "strict_audit": {
+   "audited": 21,
+   "judge_disagreed": 0
+  },
+  "flag_still_wrong": {
+   "live": [
+    0,
+    29
+   ],
+   "control": [
+    0,
+    27
+   ]
+  },
+  "recovery_counts": {
+   "live": [
+    1,
+    30
+   ],
+   "control": [
+    3,
+    30
+   ]
+  }
+ },
+ "loop_item_diffs": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  -0.6666666666666666
+ ],
+ "loop_items": {
+  "mmlu_215": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_251": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_258": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_232": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "q_348": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "q_421": {
+   "live": [
+    1,
+    3
+   ],
+   "control": [
+    1,
+    3
+   ]
+  },
+  "mmlu_294": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_268": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_229": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    0,
+    3
+   ]
+  },
+  "mmlu_202": {
+   "live": [
+    0,
+    3
+   ],
+   "control": [
+    2,
+    3
+   ]
+  }
+ },
+ "self_review_rows": []
+}
